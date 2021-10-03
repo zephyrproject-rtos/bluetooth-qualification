@@ -1,10 +1,10 @@
 # AutoPTS report
 
-    Start time: 2021_10_02_10_48_53
+    Start time: 2021_10_03_02_13_05
 
-    End time: 2021_10_02_10_53_02
+    End time: 2021_10_03_12_47_52
 
     PTS version: 8.0.3.2
 
-    HEAD commit: a8f02ed5eec27de81a2759fc7b95530c452bb862 [v2.7.0-rc3-240-ga8f02ed5ee]
+    HEAD commit: 12351cb39100a510089979bd4728cf763e7a851b [v2.7.0-rc3-248-g12351cb391]
     
