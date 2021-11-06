@@ -1,10 +1,11 @@
 # AutoPTS report
 
-    Start time: 2021_10_29_21_43_04
+    Start time: 2021_11_05_19_18_03
 
-    End time: 2021_10_30_05_19_29
+    End time: 2021_11_06_06_05_05
 
     PTS version: 8.1.2.5
 
-    HEAD commit: 84dc5766704cca583b04a9127d3b1e641c702007 [v2.7.99-856-g84dc576670]
-    
+    Repositories:
+
+    	zephyr: 1bd54d6f1163cdaf4fee83d672ee6d46f0bde414 [v2.7.99-1118-g1bd54d6f11]
