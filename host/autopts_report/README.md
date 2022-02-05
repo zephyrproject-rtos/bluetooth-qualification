@@ -1,11 +1,11 @@
 # AutoPTS report
 
-    Start time: 2022_01_29_16_28_05
+    Start time: 2022_02_04_19_06_34
 
-    End time: 2022_01_29_23_18_26
+    End time: 2022_02_05_01_55_47
 
-    PTS version: 8.1.2.5
+    PTS version: 8.2.0.8
 
     Repositories:
 
-    	zephyr: b374dc6a7fd8f841394ad6cf2364c7ceef05f3c7 [v3.0.0-rc1-102-gb374dc6a7f]
+    	zephyr: d0ebeee0aad15e6f66e33f7ed4d06cbce29e06d0 [v3.0.0-rc1-290-gd0ebeee0aa]
