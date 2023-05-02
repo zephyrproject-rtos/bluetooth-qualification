@@ -1,0 +1,19 @@
+2023-05-02 22:17:20,562 root ERROR client.py                 814   run_test_case_thread_entry : 'NoneType' object has no attribute 'send'
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\client.py", line 796, in run_test_case_thread_entry
+    test_case.pre_run()
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\testcase.py", line 751, in pre_run
+    cmd.start()
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\testcase.py", line 260, in start
+    self.func(*args, **self.kwds)
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\pybtp\btp\btp.py", line 405, in core_reg_svc_gap
+    iutctl.btp_socket.send(*CORE['gap_reg'])
+AttributeError: 'NoneType' object has no attribute 'send'
+2023-05-02 22:17:25,044 root ERROR btp.py                    698   event_handler             : Unhandled event! svc_id 0 op 128
+2023-05-02 22:17:30,641 root ERROR client.py                 814   run_test_case_thread_entry : 
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\client.py", line 800, in run_test_case_thread_entry
+    synchronize_instances(test_case.state, ["FINISHING"])
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\client.py", line 753, in synchronize_instances
+    raise SynchError
+autopts.pybtp.types.SynchError
