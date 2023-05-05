@@ -1,0 +1,25 @@
+2023-05-05 20:45:59,815 root ERROR btp.py                    698   event_handler             : Unhandled event! svc_id 0 op 128
+2023-05-05 20:46:07,741 root ERROR client.py                 192   on_implicit_send          : OnImplicitSend caught exception Invalid format specifier
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\zephyr\gatt_wid.py", line 27, in gatt_wid_hdl
+    handler = getattr(module, "hdl_wid_%d" % wid)
+AttributeError: module 'autopts.ptsprojects.zephyr.gatt_wid' has no attribute 'hdl_wid_31'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\client.py", line 185, in on_implicit_send
+    testcase_response = RUNNING_TEST_CASE[test_case_name].on_implicit_send(project_name, wid, test_case_name,
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\testcase.py", line 693, in on_implicit_send
+    my_response = self.handle_mmi_generic(wid, description, style,
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\testcase.py", line 642, in handle_mmi_generic
+    response = self.generic_wid_hdl(wid, description, test_case_name)
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\zephyr\gatt_wid.py", line 30, in gatt_wid_hdl
+    return gen_wid_hdl(wid, description, test_case_name, False)
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\wid\gatt.py", line 65, in gatt_wid_hdl
+    return handler(WIDParams(wid, description, test_case_name))
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\wid\gatt.py", line 559, in hdl_wid_31
+    btp.gattc_disc_all_desc_rsp(True)
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\pybtp\btp\gatt.py", line 1581, in gattc_disc_all_desc_rsp
+    handle = f'{desc.handle:%04X}'
+ValueError: Invalid format specifier
