@@ -1,0 +1,13 @@
+2023-05-12 23:10:25,022 root ERROR btp.py                    698   event_handler             : Unhandled event! svc_id 0 op 128
+2023-05-12 23:10:30,788 root ERROR sm.py                     36    sm_wid_hdl                : module 'autopts.wid.sm' has no attribute 'hdl_wid_174'
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\ptsprojects\zephyr\sm_wid.py", line 32, in sm_wid_hdl
+    handler = getattr(module, "hdl_wid_%d" % wid)
+AttributeError: module 'autopts.ptsprojects.zephyr.sm_wid' has no attribute 'hdl_wid_174'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Codecoup\workspace\auto-pts\autopts\wid\sm.py", line 33, in sm_wid_hdl
+    handler = getattr(module, "hdl_wid_%d" % wid)
+AttributeError: module 'autopts.wid.sm' has no attribute 'hdl_wid_174'
