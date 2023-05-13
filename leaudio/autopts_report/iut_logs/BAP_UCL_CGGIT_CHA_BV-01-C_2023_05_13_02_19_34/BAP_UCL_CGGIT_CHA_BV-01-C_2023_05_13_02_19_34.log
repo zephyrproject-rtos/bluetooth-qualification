@@ -1,0 +1,53 @@
+2023-05-13 02:19:39,315 root ERROR btp.py                    698   event_handler             : Unhandled event! svc_id 0 op 128
+2023-05-13 02:20:34,098 root ERROR client.py                 192   on_implicit_send          : OnImplicitSend caught exception Error opcode in response!
+Traceback (most recent call last):
+  File "C:\work\auto-pts\autopts\ptsprojects\zephyr\bap_wid.py", line 31, in bap_wid_hdl
+    handler = getattr(module, "hdl_wid_%d" % wid)
+AttributeError: module 'autopts.ptsprojects.zephyr.bap_wid' has no attribute 'hdl_wid_20107'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\work\auto-pts\autopts\client.py", line 185, in on_implicit_send
+    testcase_response = RUNNING_TEST_CASE[test_case_name].on_implicit_send(project_name, wid, test_case_name,
+  File "C:\work\auto-pts\autopts\ptsprojects\testcase.py", line 693, in on_implicit_send
+    my_response = self.handle_mmi_generic(wid, description, style,
+  File "C:\work\auto-pts\autopts\ptsprojects\testcase.py", line 642, in handle_mmi_generic
+    response = self.generic_wid_hdl(wid, description, test_case_name)
+  File "C:\work\auto-pts\autopts\ptsprojects\zephyr\bap_wid.py", line 34, in bap_wid_hdl
+    return gen_wid_hdl(wid, description, test_case_name, False)
+  File "C:\work\auto-pts\autopts\wid\bap.py", line 38, in bap_wid_hdl
+    return handler(WIDParams(wid, description, test_case_name))
+  File "C:\work\auto-pts\autopts\wid\bap.py", line 1079, in hdl_wid_20107
+    btp.gattc_read_rsp()
+  File "C:\work\auto-pts\autopts\pybtp\btp\gatt.py", line 1601, in gattc_read_rsp
+    btp_hdr_check(tuple_hdr, defs.BTP_SERVICE_ID_GATT, defs.GATT_READ)
+  File "C:\work\auto-pts\autopts\pybtp\btp\btp.py", line 342, in btp_hdr_check
+    raise BTPError("Error opcode in response!")
+autopts.pybtp.types.BTPError: Error opcode in response!
+2023-05-13 02:21:04,180 root ERROR client.py                 192   on_implicit_send          : OnImplicitSend caught exception Error opcode in response!
+Traceback (most recent call last):
+  File "C:\work\auto-pts\autopts\ptsprojects\zephyr\bap_wid.py", line 31, in bap_wid_hdl
+    handler = getattr(module, "hdl_wid_%d" % wid)
+AttributeError: module 'autopts.ptsprojects.zephyr.bap_wid' has no attribute 'hdl_wid_20107'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\work\auto-pts\autopts\client.py", line 185, in on_implicit_send
+    testcase_response = RUNNING_TEST_CASE[test_case_name].on_implicit_send(project_name, wid, test_case_name,
+  File "C:\work\auto-pts\autopts\ptsprojects\testcase.py", line 693, in on_implicit_send
+    my_response = self.handle_mmi_generic(wid, description, style,
+  File "C:\work\auto-pts\autopts\ptsprojects\testcase.py", line 642, in handle_mmi_generic
+    response = self.generic_wid_hdl(wid, description, test_case_name)
+  File "C:\work\auto-pts\autopts\ptsprojects\zephyr\bap_wid.py", line 34, in bap_wid_hdl
+    return gen_wid_hdl(wid, description, test_case_name, False)
+  File "C:\work\auto-pts\autopts\wid\bap.py", line 38, in bap_wid_hdl
+    return handler(WIDParams(wid, description, test_case_name))
+  File "C:\work\auto-pts\autopts\wid\bap.py", line 1079, in hdl_wid_20107
+    btp.gattc_read_rsp()
+  File "C:\work\auto-pts\autopts\pybtp\btp\gatt.py", line 1601, in gattc_read_rsp
+    btp_hdr_check(tuple_hdr, defs.BTP_SERVICE_ID_GATT, defs.GATT_READ)
+  File "C:\work\auto-pts\autopts\pybtp\btp\btp.py", line 342, in btp_hdr_check
+    raise BTPError("Error opcode in response!")
+autopts.pybtp.types.BTPError: Error opcode in response!
