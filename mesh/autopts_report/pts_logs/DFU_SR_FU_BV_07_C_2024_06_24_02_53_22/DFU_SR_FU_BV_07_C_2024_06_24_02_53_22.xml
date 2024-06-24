@@ -1,0 +1,5584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ARCHIVE>
+  <VERSION>2.0</VERSION>
+  <PicsPixit>Test Case Started: DFU v. 8.5.4.6, DFU/SR/FU/BV-07-C started on Monday, June 24, 2024, 02:53:22
+
+ICS VALUES:
+
+TSPC_DFU_ALL FALSE
+TSPC_DFU_0_1 TRUE
+TSPC_DFU_3_1 TRUE
+TSPC_DFU_3_2 TRUE
+TSPC_DFU_3_3 TRUE
+TSPC_DFU_3_4 FALSE
+TSPC_DFU_10_1 TRUE
+TSPC_DFU_11_1 TRUE
+TSPC_DFU_11_2 TRUE
+TSPC_DFU_20_1 TRUE
+TSPC_DFU_21_1 TRUE
+TSPC_DFU_21_2 TRUE
+TSPC_DFU_22_1 TRUE
+TSPC_DFU_22_2 FALSE
+TSPC_DFU_22_3 TRUE
+TSPC_DFU_30_1 TRUE
+TSPC_DFU_40_1 FALSE
+TSPC_DFU_41_1 FALSE
+
+IXIT VALUES:
+
+TSPX_bd_addr_iut 000000000000
+TSPX_time_guard 300000
+TSPX_use_implicit_send TRUE
+TSPX_tester_database_file C:\Program Files\Bluetooth SIG\Bluetooth PTS\Data\SIGDatabase\PTS_SMPP_db.xml
+TSPX_mtu_size 23
+TSPX_delete_link_key TRUE
+TSPX_delete_ltk TRUE
+TSPX_security_enabled FALSE
+TSPX_iut_setup_att_over_br_edr FALSE
+TSPX_scan_interval 30
+TSPX_scan_window 30
+TSPX_scan_filter 00
+TSPX_advertising_interval_min 160
+TSPX_advertising_interval_max 160
+TSPX_tester_OOB_information F87F
+TSPX_device_uuid C54FF961C83E4279BCCB574FC0AE72B3
+TSPX_device_uuid2 0ED0EE646DBD4E1B84E6327333996DB5
+TSPX_use_pb_gatt_bearer FALSE
+TSPX_iut_comp_data_page 2
+TSPX_oob_state_change FALSE
+TSPX_enable_IUT_provisioner FALSE
+TSPX_Procedure_Timeout 60
+TSPX_Client_BLOB_ID 1100000000000011
+TSPX_Client_BLOB_Data C:\Users\Codecoup\auto-pts\autopts\test_data\sample_data_1.txt
+TSPX_TTL 2
+TSPX_Reception_Counter 1
+TSPX_Server_Timeout 10
+TSPX_Firmware_ID 11000011
+TSPX_Firmware_Metadata 1100000000000011
+TSPX_Firmware_Update_URI http://www.dummy.com
+TSPX_New_Firmware_Image C:\Users\Codecoup\auto-pts\autopts\test_data\sample_data_1.txt
+TSPX_Update_Firmware_Image_Index 0
+</PicsPixit>
+  <LOG>
+
++265 ms
+Message:                 MindTree Stack Version - 026.000.000
+
+
+
++265 ms
+Initialize Test Case:    Build date: Jun  1 2024, 16:45:00
+
+
+
++265 ms
+Start Test Case:         DFU/SR/FU/BV-07-C
+
+
+
++265 ms
+Message:                   PTS Log started on Monday, June 24, 2024, 02:53:54
+
+
+
++265 ms
+Message:                   PTS: v8.5.4 Build 6
+
+
+
++265 ms
+Message:                   OS: Microsoft Windows NT 10.0.19045.0
+
+
+
++265 ms
+Message:                   OS Name: Microsoft Windows 10 Home
+
+
+
++4281 ms
+Send Event:              HCI!HCI_RESET
+
+
++4609 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4609 ms
+Preliminary Verdict:     PASS
+
+
+
++4609 ms
+Send Event:              HCI!HCI_READ_LOCAL_VERSION_INFORMATION
+
+
++4609 ms
+Receive Event:           HCI?HCI_READ_LOCAL_VERSION_INFORMATION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           hciVersion=0x0D,
+                           hciRevision=0x5B0E,
+                           lmpVersion=0x0D,
+                           manufacturerName=0x07E8,
+                           lmpSubversion=0x5B0E
+                         }
+
+
++4609 ms
+Preliminary Verdict:     PASS
+
+
+
++4609 ms
+Send Event:              HCI!HCI_SET_EVENT_MASK{
+                           eventMask=0x3FFFFFFFFFFFFFFF
+                         }
+
+
++4609 ms
+Receive Event:           HCI?HCI_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4609 ms
+Preliminary Verdict:     PASS
+
+
+
++4609 ms
+Send Event:              HCI!HCI_READ_LOCAL_SUPPORTED_FEATURES
+
+
++4625 ms
+Receive Event:           HCI?HCI_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           lmpFeatures=0x0000006000000000
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_READ_LOCAL_SUPPORTED_COMMANDS
+
+
++4625 ms
+Receive Event:           HCI?HCI_READ_LOCAL_SUPPORTED_COMMANDS_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           supported_commands=0x0000000000000000000000000000000003E741FFFFFFF7E01FFFFFFFFFFFF0300000007FFFFFF700000400000000000022280C00000400000C00C00000800020
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_READ_BD_ADDR
+
+
++4625 ms
+Receive Event:           HCI?HCI_READ_BD_ADDR_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           bdAddress=0xC007E856C9EF
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_LOCAL_SUPPORTED_FEATURES
+
+
++4625 ms
+Receive Event:           HCI?HCI_LE_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           leFeatures=0x000019BEFF017FFF
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_SET_EVENT_MASK{
+                           leEventMask=0x000000FE7F8FFFFF
+                         }
+
+
++4625 ms
+Receive Event:           HCI?HCI_LE_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x20,
+                           bit_value=0x01
+                         }
+
+
++4625 ms
+Receive Event:           HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x26,
+                           bit_value=0x01
+                         }
+
+
++4625 ms
+Receive Event:           HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4625 ms
+Preliminary Verdict:     PASS
+
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_READ_BUFFER_V2
+
+
++4625 ms
+Send Event:              HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           address=0x000000000000
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_READ_BUFFER_SIZE_V2_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           HC_LE_Data_Packet_Length=0x0200,
+                           HC_Total_Num_LE_Data_Packets=0x04,
+                           HC_LE_ISO_Packet_Length=0x0200,
+                           HC_Total_Num_LE_ISO_Packets=0x06
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           address=0x000000000000
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Preliminary Verdict:     PASS
+
+
+
++4640 ms
+Preliminary Verdict:     PASS
+
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_SET_SCAN_PARAMETERS{
+                           leScanType=HCI_LE_ACTIVE_SCANNING,
+                           leScanInterval=0x001E,
+                           leScanWindow=0x001E,
+                           ownAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           scanningFilterPolicy=HCI_LE_ACCEPT_FILTER_ACCEPT_LIST_ADVERTISING_PACKETS
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_SET_SCAN_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Preliminary Verdict:     PASS
+
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_SET_SCAN_ENABLE{
+                           leScanEnable=HCI_LE_SCAN_DISABLE,
+                           filterDuplicates=HCI_LE_DUPLICATE_FILTERING_DISABLE
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_SET_SCAN_ENABLE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_SET_SCAN_PARAMETERS{
+                           leScanType=HCI_LE_PASSIVE_SCANNING,
+                           leScanInterval=0x001E,
+                           leScanWindow=0x001E,
+                           ownAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           scanningFilterPolicy=HCI_LE_ACCEPT_ALL_ADVERTISING_PACKETS
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_SET_SCAN_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Preliminary Verdict:     PASS
+
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_SET_SCAN_ENABLE{
+                           leScanEnable=HCI_LE_SCAN_ENABLE,
+                           filterDuplicates=HCI_LE_DUPLICATE_FILTERING_DISABLE
+                         }
+
+
++4640 ms
+Receive Event:           HCI?HCI_LE_SET_SCAN_ENABLE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4640 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_PARAMETERS{
+                           advertisingIntervalMin=0x00A0,
+                           advertisingIntervalMax=0x00A0,
+                           advertisingType=HCI_LE_NON_CONNECTABLE_UNDIRECTED_ADVERTISING,
+                           ownAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           directAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           directAddress=0x000000000000,
+                           advertisingChannelMap=0x07,
+                           advertisingFilterPolicy=HCI_LE_ALLOW_REQ_SCAN_ANY_CONNECT_ANY
+                         }
+
+
++4656 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++4765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_PARAMETERS{
+                           advertisingIntervalMin=0x00A0,
+                           advertisingIntervalMax=0x00A0,
+                           advertisingType=HCI_LE_NON_CONNECTABLE_UNDIRECTED_ADVERTISING,
+                           ownAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           directAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           directAddress=0x000000000000,
+                           advertisingChannelMap=0x07,
+                           advertisingFilterPolicy=HCI_LE_ALLOW_REQ_SCAN_ANY_CONNECT_ANY
+                         }
+
+
++4781 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5453 ms
+Verdict Description:     Received unprovisioned device beacon with TSPX_device_uuid value successfully with OOB information = 0x0002.
+
+
+
++5453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x18,
+                           advertisingData=0x1729B417FA1E0003C54FF961C83E4279BCCB574FC0AE72B3
+                         }
+
+
++5468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5562 ms
+Verdict Description:     INFO: SendProv Link data (name org.bluetooth.mesh.provision_bearer_adv)(size 24) = Mesh Provisioning Bearer Advertising: 
+    Length: [23 (0x17)]
+    PB AD Type: [41 (0x29)]
+    Connection ID: [519706548 (0x1EFA17B4)]
+    Transaction Number: [0 (0x00)]
+    C Info: [3 (0x03)] Link Open
+    Data: [0xC54FF961C83E4279BCCB574FC0AE72B3]
+
+
+
++5562 ms
+Verdict Description:     
+**************** Establish link succeeded.****************
+
+
+
+
++5578 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 0] (name Mesh Provisioning)(size 2) = Mesh Provisioning: 
+    Op Code: [0 (0x00)] Provisioning Invite
+    IdentityTimer: [2 (0x02)]
+
+
+
++5578 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x0D,
+                           advertisingData=0x0C29B417FA1E00000002F70002
+                         }
+
+
++5593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5593 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5625 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5625 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5656 ms
+Verdict Description:     
+**************** Invite send successful. ****************
+
+
+
+
++5656 ms
+Warning:                 The value (0) is within the reserved start/end(0 to 0) specified by the XML for the field named 'NumberElements'.
+
+
+
++5656 ms
+Verdict Description:     The value (0) is within the reserved start/end(0 to 0) specified by the XML for the field named 'NumberElements'.
+
+
+
++5656 ms
+Verdict Description:     Wait for cmd = 0x1 with link ID  = 0x1EFA17B4, transaction number = 0x80, holdAck= 0x0
+
+
+
++5765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x08,
+                           advertisingData=0x0729B417FA1E8001
+                         }
+
+
++5765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5859 ms
+Verdict Description:     Received provisioning command code 0x01 with data = 1629B417FA1E8000000CDA010100030001020010020004 successfully.
+
+
+
++5875 ms
+Verdict Description:     
+**************** Capabilities received. Mesh Provisioning Capabilities: 
+    NumberElements: [1 (0x01)]
+    Algorithms: [3 (0x0003)]
+    Public Key Type: [0 (0x00)]
+    OOB Type: [1 (0x01)]
+    Output OOB Size: [2 (0x02)]
+    Output OOB Action: [16 (0x0010)]
+    Input OOB Size: [2 (0x02)]
+    Input OOB Action: [4 (0x0004)] ****************
+
+
+
+
++5875 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 1] (name Mesh Provisioning)(size 6) = Mesh Provisioning: 
+    Op Code: [2 (0x02)] Provisioning Start
+    Start: 
+        Algorithm: [1 (0x01)] BTM_ECDH_P256_HMAC_SHA256_AES_CCM
+        Public Key: [0 (0x00)] No OOB Public Key is used
+        Authentication Method: [0 (0x00)] No OOB authentication is used
+        No OOB Action: [0 (0x00)] No OOB action to be used
+        No OOB Size: [0 (0x00)] No OOB size to be used
+
+
+
++5875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x11,
+                           advertisingData=0x1029B417FA1E010000068D020100000000
+                         }
+
+
++5875 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++5890 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++5906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++5906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6312 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x11,
+                           advertisingData=0x1029B417FA1E010000068D020100000000
+                         }
+
+
++6312 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6312 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6312 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6343 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6343 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6375 ms
+Verdict Description:     
+**************** Provisioning Start send succeeded. Mesh Provisioning Start: 
+    Algorithm: [1 (0x01)] BTM_ECDH_P256_HMAC_SHA256_AES_CCM
+    Public Key: [0 (0x00)] No OOB Public Key is used
+    Authentication Method: [0 (0x00)] No OOB authentication is used
+    No OOB Action: [0 (0x00)] No OOB action to be used
+    No OOB Size: [0 (0x00)] No OOB size to be used ****************
+
+
+
+
++6375 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 2] (name Mesh Provisioning)(size 65) = Mesh Provisioning: 
+    Op Code: [3 (0x03)] Provisioning Public Key
+    Public Key: [0x3B424B3812A21FD6C5694FB017115B6AD6CDE5A10114340B53C38F3345EF31C773D387F36C73FD7503638A3A8C86F85676E811F9B8F0E33BD6E9BEAEF39D3DE6]
+
+
+
++6390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E02080041F6033B424B3812A21FD6C5694FB017115B6AD6CDE5
+                         }
+
+
++6390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E0206A10114340B53C38F3345EF31C773D387F36C73FD750363
+                         }
+
+
++6422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1E,
+                           advertisingData=0x1D29B417FA1E020A8A3A8C86F85676E811F9B8F0E33BD6E9BEAEF39D3DE6
+                         }
+
+
++6453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6484 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6484 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6890 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E02080041F6033B424B3812A21FD6C5694FB017115B6AD6CDE5
+                         }
+
+
++6890 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6937 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6953 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6953 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E0206A10114340B53C38F3345EF31C773D387F36C73FD750363
+                         }
+
+
++6953 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6953 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6953 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6984 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++6984 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6984 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1E,
+                           advertisingData=0x1D29B417FA1E020A8A3A8C86F85676E811F9B8F0E33BD6E9BEAEF39D3DE6
+                         }
+
+
++6984 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6984 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++6984 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7015 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7015 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7172 ms
+Verdict Description:     
+**************** Public Key send succeeded. ****************
+
+
+
+
++7172 ms
+Verdict Description:     Wait for cmd = 0x3 with link ID  = 0x1EFA17B4, transaction number = 0x81, holdAck= 0x0
+
+
+
++7375 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x08,
+                           advertisingData=0x0729B417FA1E8101
+                         }
+
+
++7375 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7375 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7375 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7406 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7406 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7406 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7468 ms
+Verdict Description:     Received provisioning command code 0x03 with data = 1D29B417FA1E810A5CF762778426418F8B755469C6367E25574A8665FAFE successfully.
+
+
+
++7484 ms
+Verdict Description:     Public key received successfully. Mesh Provisioning: 
+    Op Code: [3 (0x03)] Provisioning Public Key
+    Public Key: [0x3B0BEFA55BA6246623BB1D770414DDDFC9819005BA4D09709987EEBF0DFA41374E075EE64F3C79417F6D5CF762778426418F8B755469C6367E25574A8665FAFE]
+
+
+
++7500 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 3] (name Mesh Provisioning)(size 33) = Mesh Provisioning: 
+    Op Code: [5 (0x05)] Provisioning Confirmation
+    Confirmation: [0x384FD1DFCACFCCC41FBD3040EEE3FE4AD82A950A518FC40E544E7A059FAA4343]
+
+
+
++7500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E03040021D805384FD1DFCACFCCC41FBD3040EEE3FE4AD82A95
+                         }
+
+
++7500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x15,
+                           advertisingData=0x1429B417FA1E03060A518FC40E544E7A059FAA4343
+                         }
+
+
++7531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7578 ms
+Verdict Description:     
+**************** Confirmation send succeeded. ****************
+
+
+
+
++7593 ms
+Verdict Description:     Wait for cmd = 0x5 with link ID  = 0x1EFA17B4, transaction number = 0x82, holdAck= 0x0
+
+
+
++7765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x08,
+                           advertisingData=0x0729B417FA1E8201
+                         }
+
+
++7765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7859 ms
+Verdict Description:     Received provisioning command code 0x05 with data = 1429B417FA1E8206712F953F08B7103908007D8EF6 successfully.
+
+
+
++7859 ms
+Verdict Description:     
+**************** Confirmation received successfully. Value = 05EA-18DD-7C06-18A3-5A15-533B-46E5-81D6-7631-1784-712F-953F-08B7-1039-0800-7D8E-F6 ****************
+
+
+
+
++7859 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 4] (name Mesh Provisioning)(size 33) = Mesh Provisioning: 
+    Op Code: [6 (0x06)] Provisioning Random
+    Random: [0x13A6D20964B5CCCF1285EC304242716275B9E6048988C826815AA0C9365E19EF]
+
+
+
++7875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E04040021C00613A6D20964B5CCCF1285EC304242716275B9E6
+                         }
+
+
++7875 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7875 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x15,
+                           advertisingData=0x1429B417FA1E0406048988C826815AA0C9365E19EF
+                         }
+
+
++7906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++7906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7937 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++7937 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8140 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E04040021C00613A6D20964B5CCCF1285EC304242716275B9E6
+                         }
+
+
++8140 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8140 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8156 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8172 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8172 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8172 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x15,
+                           advertisingData=0x1429B417FA1E0406048988C826815AA0C9365E19EF
+                         }
+
+
++8187 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8187 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8187 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8203 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8203 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8234 ms
+Verdict Description:     
+**************** Random send successfully. ****************
+
+
+
+
++8250 ms
+Verdict Description:     Wait for cmd = 0x6 with link ID  = 0x1EFA17B4, transaction number = 0x83, holdAck= 0x0
+
+
+
++8437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x08,
+                           advertisingData=0x0729B417FA1E8301
+                         }
+
+
++8437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8547 ms
+Verdict Description:     Received provisioning command code 0x06 with data = 1429B417FA1E83062D49A9CBA395D397B5C3C08C5C successfully.
+
+
+
++8547 ms
+Verdict Description:     
+**************** Random received successfully. ****************
+
+
+
+
++8547 ms
+Verdict Description:     Value constructed from the IUT random = 05EA-18DD-7C06-18A3-5A15-533B-46E5-81D6-7631-1784-712F-953F-08B7-1039-0800-7D8E-F6
+
+
+
++8547 ms
+Verdict Description:     
+**************** Confirmation match.****************
+
+
+
+
++8562 ms
+Verdict Description:     INFO: Sending provision data [connection id = 1efa17b4][transaction number = 5] (name Mesh Provisioning)(size 34) = Mesh Provisioning: 
+    Op Code: [7 (0x07)] Provisioning Data
+    Data: [0x96F7AEE3B7F5561885BE97222C067AC60E6FE6DCA7B77CD893D7520F0437374022]
+
+
+
++8562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E29B417FA1E05040022480796F7AEE3B7F5561885BE97222C067AC60E6FE6
+                         }
+
+
++8562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8593 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8593 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x16,
+                           advertisingData=0x1529B417FA1E0506DCA7B77CD893D7520F0437374022
+                         }
+
+
++8593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8593 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8625 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8625 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8672 ms
+Verdict Description:     
+**************** Data send successfully. ****************
+
+
+
+
++8672 ms
+Verdict Description:     Wait for cmd = 0x8 with link ID  = 0x1EFA17B4, transaction number = 0x84, holdAck= 0x0
+
+
+
++8828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x08,
+                           advertisingData=0x0729B417FA1E8401
+                         }
+
+
++8828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8890 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8890 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8890 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++8906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8922 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++8922 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++8922 ms
+Verdict Description:     Received provisioning command code 0x08 with data = 0B29B417FA1E840000013E08 successfully.
+
+
+
++8922 ms
+Verdict Description:     
+**************** Complete received successfully.****************
+
+
+
+
++8922 ms
+Verdict Description:     Wait for cmd = 0xFE with link ID  = 0x1EFA17B4, transaction number = 0x85, holdAck= 0x0
+
+
+
++9937 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x09,
+                           advertisingData=0x0829B417FA1E000B00
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++9937 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++9968 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++9968 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++9968 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++9968 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++10000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++10000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++10000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++10000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++10031 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++10047 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++10047 ms
+Verdict Description:     INFO: SendProv Link data (name org.bluetooth.mesh.provision_bearer_adv)(size 9) = Mesh Provisioning Bearer Advertising: 
+    Length: [8 (0x08)]
+    PB AD Type: [41 (0x29)]
+    Connection ID: [519706548 (0x1EFA17B4)]
+    Transaction Number: [0 (0x00)]
+    C Info: [11 (0x0B)] Link Close
+    Data: [0x00]
+
+
+
++10562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x19FF9A0501055CD9727D93405D90CEE8C864C125950F0000000A
+                         }
+
+
++10562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++10562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x16,
+                           advertisingData=0x15FF9A0501039D0CF36B5EC6DE9D454E265A6C7D1C2D
+                         }
+
+
++10562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11062 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x8008] Device Composition Data Get
+**** Waiting for: Op Code: [0x02] Device Composition Data Status
+
+
+
+
++11062 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x8008] Device Composition Data Get
+    Page: [127 (0x7F)]
+Send Access Payload = 80087F
+
+
+
+
++11078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1E,
+                           advertisingData=0x1D2A1EEECC6C3A3FB1DE4AF7483055F335D5046DE7477949D2277E23B651
+                         }
+
+
++11078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11109 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11109 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11140 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: (lt)WildCard: Exists(gt)
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: (lt)WildCard: Exists(gt)
+    Data: (lt)WildCard: Exists(gt)
+
+
+
+
++11172 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000001]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x008CB482B93171849D5D02C422D1F623]
+Received Access Payload = 0202001601000001000000
+
+
+
+
++11187 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: [2 (0x02)]
+    Data: [0x001601000001000000]
+
+
+
++11187 ms
+Verdict Description:     Response received: Op Code: [0x02] Device Composition Data Status
+
+
+
++11203 ms
+Pass:                    Receive composition data successfully.
+
+
+
++11203 ms
+Verdict Description:     Receive composition data successfully.
+
+
+
++11203 ms
+Verdict Description:     Receive composition data page = 0x02, data = 0x001601000001000000
+
+
+
++11203 ms
+Pass:                    IUT sent composition data block with correct format.
+
+
+
++11203 ms
+Verdict Description:     IUT sent composition data block with correct format.
+
+
+
++11203 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x8008] Device Composition Data Get
+**** Waiting for: Op Code: [0x02] Device Composition Data Status
+
+
+
+
++11203 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x8008] Device Composition Data Get
+    Page: [1 (0x01)]
+Send Access Payload = 800801
+
+
+
+
++11203 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1E,
+                           advertisingData=0x1D2A1E7FDE88C8FDD441AF434876483A59D94978C13C0F55802AEAF67F24
+                         }
+
+
++11203 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11203 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11234 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11250 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11281 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: (lt)WildCard: Exists(gt)
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: (lt)WildCard: Exists(gt)
+    Data: (lt)WildCard: Exists(gt)
+
+
+
+
++11422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1EBC4E1706FB80A42B8E3A71DBACE3DFDCC06299F9852C22
+                         }
+
+
++11422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11500 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11500 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11547 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000005]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x80800C42CE9954FF19F836BB7CACD8A4]
+Received Access Payload = 02011301000000000000000000000000000460000000010005007800
+
+
+
+
++11547 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: [1 (0x01)]
+    Data: [0x1301000000000000000000000000000460000000010005007800]
+
+
+
++11562 ms
+Verdict Description:     Response received: Op Code: [0x02] Device Composition Data Status
+
+
+
++11562 ms
+Pass:                    Receive composition data successfully.
+
+
+
++11562 ms
+Verdict Description:     Receive composition data successfully.
+
+
+
++11562 ms
+Verdict Description:     Receive composition data page = 0x01, data = 0x1301000000000000000000000000000460000000010005007800
+
+
+
++11562 ms
+Pass:                    IUT sent composition data block with correct format.
+
+
+
++11562 ms
+Verdict Description:     IUT sent composition data block with correct format.
+
+
+
++11562 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x8008] Device Composition Data Get
+**** Waiting for: Op Code: [0x02] Device Composition Data Status
+
+
+
+
++11562 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x8008] Device Composition Data Get
+    Page: [0 (0x00)]
+Send Access Payload = 800800
+
+
+
+
++11578 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1E,
+                           advertisingData=0x1D2A1E5DB99C21FCAC47ABEEA5762CCBD829B7261EF3B8990355754A4540
+                         }
+
+
++11578 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11578 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++11593 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11609 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++11609 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++11640 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: (lt)WildCard: Exists(gt)
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: (lt)WildCard: Exists(gt)
+    Data: (lt)WildCard: Exists(gt)
+
+
+
+
++12000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1EFE69D757DBCF3E27C5ED55C55DD7841391850E7FC8B826
+                         }
+
+
++12000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12015 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12031 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12031 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12047 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12109 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12109 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12125 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00000C]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x80801CA5056A064DB0C4]
+Received Access Payload = 0200F105000001000A000F000000130100000100020003000E000F001200130010001100050004000014021401140A000B0014000C00F1053412
+
+
+
+
++12125 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x02] Device Composition Data Status
+    Page: [0 (0x00)]
+    Data: [0xF105000001000A000F000000130100000100020003000E000F001200130010001100050004000014021401140A000B0014000C00F1053412]
+
+
+
++12125 ms
+Verdict Description:     Response received: Op Code: [0x02] Device Composition Data Status
+
+
+
++12140 ms
+Pass:                    Receive composition data successfully.
+
+
+
++12140 ms
+Verdict Description:     Receive composition data successfully.
+
+
+
++12140 ms
+Verdict Description:     Receive composition data page = 0x00, data = 0xF105000001000A000F000000130100000100020003000E000F001200130010001100050004000014021401140A000B0014000C00F1053412
+
+
+
++12140 ms
+Pass:                    IUT sent composition data block with correct format.
+
+
+
++12140 ms
+Verdict Description:     IUT sent composition data block with correct format.
+
+
+
++12140 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x00] AppKey Add
+**** Waiting for: Op Code: [0x8003] AppKey Status
+
+
+
+
++12140 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x00] AppKey Add
+    NetKey and AppKey Index: [0 (0x000000)]
+    AppKey: [0x977B2AF7879FB18D2BDB1A76C46762E0]
+Send Access Payload = 00000000977B2AF7879FB18D2BDB1A76C46762E0
+
+
+
+
++12156 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E968C6544E514A89A2EF0BFC8E4205571BB71EBECAE1C87D0A2368DF5
+                         }
+
+
++12156 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12156 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12156 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12187 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12203 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E1ACBE4DE71CAFD1B4D0D7F20690BA8CD8EF8EAFD1E305ACA8B3D3069
+                         }
+
+
++12218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12250 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12265 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12297 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x8003] AppKey Status
+    Status: (lt)WildCard: Exists(gt)
+    NetKey and AppKey Index: [0 (0x000000)]
+
+
+
+
++12312 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00000E]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x00C4655383997B1C44722E]
+Received Access Payload = 800300000000
+
+
+
+
++12328 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x8003] AppKey Status
+    Status: [0 (0x00)]
+    NetKey and AppKey Index: [0 (0x000000)]
+
+
+
++12343 ms
+Verdict Description:     Response received: Op Code: [0x8003] AppKey Status
+
+
+
++12343 ms
+Pass:                    App key added successfully.
+
+
+
++12343 ms
+Verdict Description:     App key added successfully.
+
+
+
++12343 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++12343 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0200]
+Send Access Payload = 803D020000000200
+
+
+
+
++12359 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EA5D7D090D64B3A9C22F965210457A93013772C47EA58182F489BAAF4
+                         }
+
+
++12359 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12359 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12375 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EF501E538C2007F25AFB64C7E0302DBD3897AB3C863C7BEB0A2F49654
+                         }
+
+
++12859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++12859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++12906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12922 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++12953 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000010]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x00BCD27FD34874A53BC44E455974]
+Received Access Payload = 803E00020000000200
+
+
+
+
++12953 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0200]
+
+
+
++12968 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++12984 ms
+Pass:                    App key bind to model id = 0x2 successfully.
+
+
+
++12984 ms
+Verdict Description:     App key bind to model id = 0x2 successfully.
+
+
+
++12984 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++12984 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0300]
+Send Access Payload = 803D020000000300
+
+
+
+
++13000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E916E3BEB9C065E65FA1ED9B5D6FC7C92B5ABFBC1B36A19E2A3B801CF
+                         }
+
+
++13000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13000 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++13000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13031 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++13031 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13047 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++13093 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000012]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x00894537202EF0D2894CD94FF746]
+Received Access Payload = 803E00020000000300
+
+
+
+
++13093 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0300]
+
+
+
++13109 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++13125 ms
+Pass:                    App key bind to model id = 0x3 successfully.
+
+
+
++13125 ms
+Verdict Description:     App key bind to model id = 0x3 successfully.
+
+
+
++13125 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++13125 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0014]
+Send Access Payload = 803D020000000014
+
+
+
+
++13140 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E075B1DA3DC462AAC67F886F09DDF6D6D4872F0C979749BB419E08EE1
+                         }
+
+
++13140 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13140 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++13140 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13172 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++13172 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13203 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++13218 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000014]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x00396E70322AE5DBCE4FBE1A6FC6]
+Received Access Payload = 803E00020000000014
+
+
+
+
++13234 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0014]
+
+
+
++13250 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++13250 ms
+Pass:                    App key bind to model id = 0x1400 successfully.
+
+
+
++13250 ms
+Verdict Description:     App key bind to model id = 0x1400 successfully.
+
+
+
++13250 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++13250 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0214]
+Send Access Payload = 803D020000000214
+
+
+
+
++13265 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E0F0322BD7961C6201F590CFE6CDC2BBBDD0BEE61744003164DEE7D54
+                         }
+
+
++13265 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13265 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++13265 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13297 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++13297 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13328 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++13375 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000016]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x00C313D4085C85BC5BB539D200A9]
+Received Access Payload = 803E00020000000214
+
+
+
+
++13375 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0214]
+
+
+
++13390 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++13406 ms
+Pass:                    App key bind to model id = 0x1402 successfully.
+
+
+
++13406 ms
+Verdict Description:     App key bind to model id = 0x1402 successfully.
+
+
+
++13406 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++13406 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0114]
+Send Access Payload = 803D020000000114
+
+
+
+
++13422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EC20C13E3AF46E3A49B673E1A8F605C9C7B4FE4F04B24CB434EF00D76
+                         }
+
+
++13422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++13422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++13437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13468 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++13500 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000018]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x005143E2652713940F9D22597071]
+Received Access Payload = 803E00020000000114
+
+
+
+
++13500 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x0114]
+
+
+
++13515 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++13531 ms
+Pass:                    App key bind to model id = 0x1401 successfully.
+
+
+
++13531 ms
+Verdict Description:     App key bind to model id = 0x1401 successfully.
+
+
+
++13531 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x803D] Model App Bind
+**** Waiting for: Op Code: [0x803E] Model App Status
+
+
+
+
++13531 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Configuration Client: 
+    Op Code: [0x803D] Model App Bind
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x1400]
+Send Access Payload = 803D020000001400
+
+
+
+
++13547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EB2EDD0AA191792D9EC57163F1E00C88E88BD6C8AA0FC94D16C58EFE7
+                         }
+
+
++13547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++13547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++13578 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13593 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Configuration Client: 
+    Op Code: [0x803E] Model App Status
+    Status: (lt)WildCard: Exists(gt)
+    ElementAddress: (lt)WildCard: Exists(gt)
+    AppKey Index: (lt)WildCard: Exists(gt)
+    Model Identifier: (lt)WildCard: Exists(gt)
+
+
+
+
++13640 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00001A]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x0024ABE3D88D6326F5C38F4D4EB0]
+Received Access Payload = 803E00020000001400
+
+
+
+
++13640 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Configuration Server: 
+    Op Code: [0x803E] Model App Status
+    Status: [0 (0x00)]
+    ElementAddress: [2 (0x0002)]
+    AppKey Index: [0 (0x0000)]
+    Model Identifier: [0x1400]
+
+
+
++13656 ms
+Verdict Description:     Response received: Op Code: [0x803E] Model App Status
+
+
+
++13672 ms
+Pass:                    App key bind to model id = 0x14 successfully.
+
+
+
++13672 ms
+Verdict Description:     App key bind to model id = 0x14 successfully.
+
+
+
++13672 ms
+Verdict Description:     ***** Waiting for: MeshTransport Eventlower transport header Network Header: 
+    AID: (lt)WildCard: Exists(gt)
+    AKF: (lt)WildCard: Exists(gt)
+    SEG: (lt)WildCard: Exists(gt)Network Header: 
+    AID: (lt)WildCard: Exists(gt)
+    AKF: (lt)WildCard: Exists(gt)
+    SEG: (lt)WildCard: Exists(gt)
+    SegInfo: (lt)WildCard: Exists(gt)MeshNetworkData:: MeshNetwork Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: [0x00]
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: (lt)WildCard: Exists(gt)
+    DST: (lt)WildCard: Exists(gt)
+
+
+
+
++14687 ms
+Verdict Description:     Found model 0x1402 at address 0x0002.
+
+
+
++14687 ms
+Verdict Description:     
+
+
+   [ Preamble: IUT Updating Node In Idle Phase ]
+
+
+
+
++14687 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830E] Firmware Update Cancel
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++14687 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830E] Firmware Update Cancel
+Send Access Payload = 830E
+
+
+
+
++14703 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1D,
+                           advertisingData=0x1C2A1EB7DBFC32CF0F84B10CDD355996BEBCA7CF598E7EB24A8324A925
+                         }
+
+
++14703 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14703 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++14703 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14734 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++14734 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14765 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++14828 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00001C]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0x46C4CA7D7D68F167]
+Received Access Payload = 831000
+
+
+
+
++14828 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x00] Success
+    RFU1: [0x00]
+    Update Phase: [0x00] Idle
+
+
+
++14828 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++14843 ms
+Verdict Description:     
+
+
+   [ Preamble: IUT Updating Node In Transfer Active Phase ]
+
+
+
+
++14843 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++14843 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D070600D61A3815371DE020001100000000000011
+
+
+
+
++14859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1ED95E24C8CBB734CF626D38ADF36FB218F1D3C3249EFF94DCB19FE74B
+                         }
+
+
++14859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14859 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++14859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++14890 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14890 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EA3427F0790E3065E215AA248374DE7007EA3943F074EE79672A278FA
+                         }
+
+
++14906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++14906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14922 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++14937 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14953 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1E8643FE8CD3067E9DE2C17B8120933BFF6FEDADD4A529
+                         }
+
+
++14953 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14953 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++14968 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++14984 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15000 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15015 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++15218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1E5513390C99CA8CF3CA05CFA38FC333CB999D0A8D4F0BDE
+                         }
+
+
++15218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15250 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15250 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15250 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15250 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15281 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15281 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15281 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15281 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15312 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15328 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15343 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00001F]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC6807821022E33967B8514046366B369]
+Received Access Payload = 83104007000600D61A3815371DE02000
+
+
+
+
++15343 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x00] Success
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++15359 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++15359 ms
+Verdict Description:     
+
+**** Executing test steps for round 1 ****
+
+
+
+
++15375 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++15375 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D070600D61A3815371DE020001100000000000011
+
+
+
+
++15375 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E6D845D0A8EEF824AF011FDDA7BD46ED56CF4E09A6B34C2C37A2A9F9B
+                         }
+
+
++15375 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15375 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EFADA56107A9503990DCB06A53EF8AB45C81E512F95C2A44B614570FB
+                         }
+
+
++15437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15484 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1E652712E4696DDDB1B96CB285219A8F1B5B1B1FA955AA
+                         }
+
+
++15484 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15484 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15484 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15531 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++15640 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1ED65EA9E966C0C01A7FC3914D3EED7309CCF728080F8C38
+                         }
+
+
++15640 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15640 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15640 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15672 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15672 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15672 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15672 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15703 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15703 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15703 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15703 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15734 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15734 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15750 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000022]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC680842121F4DB076FA6F5C72582A685]
+Received Access Payload = 83104007000600D61A3815371DE02000
+
+
+
+
++15750 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x00] Success
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++15765 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++15781 ms
+Verdict Description:     
+
+**** Executing test steps for round 2 ****
+
+
+
+
++15781 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++15781 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [1 (0x01)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D070600D61A3815371DE020011100000000000011
+
+
+
+
++15797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E1ED15F0516E770A6EC86AE52AEB3317975EBFFD0AB9A0AD60751AEA8
+                         }
+
+
++15797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15797 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15843 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E90E4F79C579E320FC016AED834D15A47C41583EB7B708C855A624A71
+                         }
+
+
++15843 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15843 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15890 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1EB2F61BAFF09971CF0267686F558E52CC68995DC9721F
+                         }
+
+
++15906 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15906 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++15922 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15937 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++15937 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15953 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++16078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1EB41E6EF8D65D93F33D4490472DDBD8A4D545114FD81CAE
+                         }
+
+
++16078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16093 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16109 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16109 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16109 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16125 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16140 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16140 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16140 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16172 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16172 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16172 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000025]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC6809021346D0DF649620494726DC8CA]
+Received Access Payload = 83104207000600D61A3815371DE02000
+
+
+
+
++16187 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x02] Wrong Phase
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++16203 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++16203 ms
+Verdict Description:     
+
+**** Executing test steps for round 3 ****
+
+
+
+
++16203 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++16203 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD7)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D070600D71A3815371DE020001100000000000011
+
+
+
+
++16218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1EF51DE3592BBBEB0DE5D5BDF51F8029AF302EE28DF41DB472AE773826
+                         }
+
+
++16234 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16234 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16234 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16265 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16281 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16297 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E20BE1D19674671DC94372575D82321690DD381E3914354A04DD194B7
+                         }
+
+
++16297 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16297 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16297 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16328 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16343 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16359 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1EFABA9D98F0C63701475EAA78E6EC006FC27F9DCFEDE6
+                         }
+
+
++16359 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16359 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16359 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16406 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++16515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1ED935207C97D44698F5DD251E241ADF0ECB08CE2A718B3F
+                         }
+
+
++16515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16515 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16547 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16547 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16578 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16578 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16578 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++16578 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++16609 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++16609 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26281 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000028]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC6809C21760469D1763F67D1DFE83792]
+Received Access Payload = 83104207000600D61A3815371DE02000
+
+
+
+
++26297 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x02] Wrong Phase
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++26312 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++26312 ms
+Verdict Description:     
+
+**** Executing test steps for round 4 ****
+
+
+
+
++26312 ms
+Verdict Description:     
+
+**** Executing test steps for round 5 ****
+
+
+
+
++26312 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++26312 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000012]
+Send Access Payload = 830D070600D61A3815371DE020001100000000000012
+
+
+
+
++26343 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E3DCE86BD8F839D0D1C090B144E9FE4313EE7B3B9C47DD391109DB613
+                         }
+
+
++26343 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26343 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26343 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26375 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26375 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E68F12E770C1CABB9B66B692591E990783938A844720E7541A06D39D1
+                         }
+
+
++26390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26390 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26390 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26422 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26422 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1E4ACA1E5FBD66B441A9A44AAD468D6015B6DB9CCB9776
+                         }
+
+
++26437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26437 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26437 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26468 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26468 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26500 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++26609 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1EEEE413864185BB510D6F126DCBDDFA29462CAC73F7144E
+                         }
+
+
++26609 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26609 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26609 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26640 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26640 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26640 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26640 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26672 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26672 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26672 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26672 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26703 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26703 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26718 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00002B]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC680A8210E4473178A5A3315A8FA602A]
+Received Access Payload = 83104207000600D61A3815371DE02000
+
+
+
+
++26718 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x02] Wrong Phase
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++26734 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++26750 ms
+Verdict Description:     
+
+**** Executing test steps for round 6 ****
+
+
+
+
++26750 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++26750 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [8 (0x08)]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D080600D61A3815371DE020001100000000000011
+
+
+
+
++26765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E970027F041B99CDA7F3167528DC236871540930625A181EE0E7E18BF
+                         }
+
+
++26765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26765 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26765 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26781 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26781 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26797 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1ED93F0584D76A0CDEB2CB36520B01C3857B3C5593C968A96001801DEF
+                         }
+
+
++26812 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26812 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26812 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26828 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26828 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26843 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1EFE2203FA2905F3CD3CCF5BA313CAE5B66B81F1D82FD3
+                         }
+
+
++26843 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26843 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++26859 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26875 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++26875 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++26906 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++27015 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1EA80C2C4410AF4153BF49F70E3B1F1D29B852F720A9F441
+                         }
+
+
++27015 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27015 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27015 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27031 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27047 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27047 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27047 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27062 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27078 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27078 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27093 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27109 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27109 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x00002E]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC680B4210FD0DC1EADD998A698AD1C42]
+Received Access Payload = 83104207000600D61A3815371DE02000
+
+
+
+
++27125 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x02] Wrong Phase
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++27140 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++27140 ms
+Verdict Description:     
+
+**** Executing test steps for round 7 ****
+
+
+
+
++27140 ms
+Verdict Description:     SendAndReceive
+**** Sending: Op Code: [0x830D] Firmware Update Start
+**** Waiting for: Op Code: [0x8310] Firmware Update Status
+
+
+
+
++27140 ms
+Verdict Description:     MeshApplicationLayer SendValue 
+Device Firmware Update Client: 
+    Op Code: [0x830D] Firmware Update Start
+    Update TTL: [7 (0x07)]
+    Update Timeout Base: [7 (0x0007)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+    Incoming Firmware Metadata: [0x1100000000000011]
+Send Access Payload = 830D070700D61A3815371DE020001100000000000011
+
+
+
+
++27156 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E481D46891C564359CB654E4C2C0044009936CA3EDFFE09F1ABCA5DCE
+                         }
+
+
++27172 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27172 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27172 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27203 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27203 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1F,
+                           advertisingData=0x1E2A1E1025EB523E2A703FEB1C6A53B1F85E25BCBCF1DF224C4E304FCC0379
+                         }
+
+
++27218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27218 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27218 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27250 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27265 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27297 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x19,
+                           advertisingData=0x182A1E4B3E2F6C8200546B865A18FEFEB47DA6AAD86810F7A9
+                         }
+
+
++27297 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27297 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27297 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27328 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27328 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27343 ms
+Verdict Description:     ***** Waiting for: MeshApplicationData::Network Header
+Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: (lt)WildCard: Exists(gt)
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: (lt)WildCard: Exists(gt)
+MeshApplicationData::Application Data
+Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: (lt)WildCard: Exists(gt)
+    RFU1: (lt)WildCard: Exists(gt)
+    Update Phase: (lt)WildCard: Exists(gt)
+
+
+
+
++27453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x1A,
+                           advertisingData=0x192A1E6F60C7C9D5EF0B4B31AE47E844AEFA773C415A3563E384
+                         }
+
+
++27453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27453 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27453 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27484 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27484 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27484 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27484 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27515 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27531 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+
+
++27531 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27562 ms
+Send Event:              HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_DISABLE
+                         }
+
+
++27562 ms
+Receive Event:           HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++27578 ms
+Verdict Description:     ApplicationLayer Poll Received Value :
+Network header = Network Header: 
+    NID: [0x1E]
+    IVI: [0x00]
+    TTL: [0x07]
+    CTL: [0x00]
+    SEQ: [0x000031]
+    SRC: [0x0002]
+    DST: [0x0001]
+    TransportPDU: [0xC680C021DA0CF70B28227A12C9156E24]
+Received Access Payload = 83104207000600D61A3815371DE02000
+
+
+
+
++27578 ms
+Verdict Description:     MeshApplicationLayer Broadcast value Device Firmware Update Server: 
+    Op Code: [0x8310] Firmware Update Status
+    Status: [0x02] Wrong Phase
+    RFU1: [0x00]
+    Update Phase: [0x02] Transfer Active
+    Update TTL: [7 (0x07)]
+    Additional Information: [0x00] No changes to node composition data.
+    RFU2: [0x00]
+    Update Timeout Base: [6 (0x0006)]
+    Update BLOB ID: [ (0x20E01D3715381AD6)]
+    Update Firmware Image Index: [0 (0x00)]
+
+
+
++27593 ms
+Verdict Description:     Response received: Op Code: [0x8310] Firmware Update Status
+
+
+
++27609 ms
+Verdict Description:     ***** Waiting for: MeshTransport Eventlower transport header Network Header: 
+    AID: (lt)WildCard: Exists(gt)
+    AKF: (lt)WildCard: Exists(gt)
+    SEG: (lt)WildCard: Exists(gt)Network Header: 
+    AID: (lt)WildCard: Exists(gt)
+    AKF: (lt)WildCard: Exists(gt)
+    SEG: (lt)WildCard: Exists(gt)
+    SegInfo: (lt)WildCard: Exists(gt)MeshNetworkData:: MeshNetwork Network Header: 
+    NID: (lt)WildCard: Exists(gt)
+    IVI: (lt)WildCard: Exists(gt)
+    TTL: (lt)WildCard: Exists(gt)
+    CTL: [0x00]
+    SEQ: (lt)WildCard: Exists(gt)
+    SRC: (lt)WildCard: Exists(gt)
+    DST: (lt)WildCard: Exists(gt)
+
+
+
+
++28609 ms
+Send Event:              HCI!HCI_LE_SET_SCAN_ENABLE{
+                           leScanEnable=HCI_LE_SCAN_DISABLE,
+                           filterDuplicates=HCI_LE_DUPLICATE_FILTERING_DISABLE
+                         }
+
+
++28609 ms
+Receive Event:           HCI?HCI_LE_SET_SCAN_ENABLE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++28609 ms
+Send Event:              HCI!HCI_RESET
+
+
++28625 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++29640 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++31172 ms
+Final Verdict:           PASS
+
+
+
++31172 ms
+Encrypted Verdict:       A1#ZWY4MzQ5MDg3MmQwNTIxOGQzMzQ5YjY2ODA5M2MzNjQ5ZDY4NmY0Yjc2MzIzM2VkNTUyNTFhNGU4Mjg1MjI0NA==#Lye8JyDDYFTS04ArzUCnOf5Kv/bZuHxot/PKTEuf5I/P9OlKxCZm+IJZSlhAGrew
+
+
+
++31172 ms
+Test Case Ended:         DFU/SR/FU/BV-07-C
+
+</LOG>
+  <SUMMARY>Test case : DFU/SR/FU/BV-07-C started
+Final Verdict:PASS
+DFU/SR/FU/BV-07-C finished
+</SUMMARY>
+</ARCHIVE>
