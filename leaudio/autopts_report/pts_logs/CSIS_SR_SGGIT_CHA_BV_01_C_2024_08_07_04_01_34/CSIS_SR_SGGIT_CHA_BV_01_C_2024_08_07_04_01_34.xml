@@ -1,0 +1,1291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ARCHIVE>
+  <VERSION>2.0</VERSION>
+  <PicsPixit>Test Case Started: CSIS v. 8.6.0.6, CSIS/SR/SGGIT/CHA/BV-01-C started on Wednesday, August 07, 2024, 04:01:34
+
+ICS VALUES:
+
+TSPC_CSIS_0_1 TRUE
+TSPC_CSIS_0a_1 FALSE
+TSPC_CSIS_0a_2 TRUE
+TSPC_CSIS_1_1 FALSE
+TSPC_CSIS_1_2 TRUE
+TSPC_CSIS_2_1 TRUE
+TSPC_CSIS_2_2 TRUE
+TSPC_CSIS_2_3 TRUE
+TSPC_CSIS_2_4 TRUE
+TSPC_CSIS_2_5 TRUE
+TSPC_CSIS_2_6 TRUE
+TSPC_CSIS_2_7 FALSE
+TSPC_CSIS_3_1 TRUE
+TSPC_CSIS_3_2 TRUE
+TSPC_CSIS_3_3 TRUE
+TSPC_CSIS_3_4 TRUE
+TSPC_CSIS_3_5 FALSE
+TSPC_CSIS_3_6 TRUE
+TSPC_CSIS_4_1 FALSE
+TSPC_ALL FALSE
+
+IXIT VALUES:
+
+TSPX_bd_addr_iut D7B81B0B51C3
+TSPX_iut_device_name_in_adv_packet_for_random_address 
+TSPX_time_guard 18000
+TSPX_use_implicit_send TRUE
+TSPX_tester_database_file C:\Program Files (x86)\Bluetooth SIG\Bluetooth PTS\Data\SIGDatabase\PTS_CSIP_db.xml
+TSPX_mtu_size 23
+TSPX_secure_simple_pairing_pass_key_confirmation FALSE
+TSPX_delete_link_key FALSE
+TSPX_pin_code 0000
+TSPX_use_dynamic_pin FALSE
+TSPX_delete_ltk TRUE
+TSPX_security_enabled TRUE
+TSPX_Lock_Timeout_Seconds 60
+TSPX_iut_ATT_transport ATT Bearer on LE Transport
+</PicsPixit>
+  <LOG>
+
++1000 ms
+Message:                 MindTree Stack Version - 026.000.000
+
+
+
++1015 ms
+Initialize Test Case:    Build date: Jun 26 2024, 21:26:53
+
+
+
++1015 ms
+Start Test Case:         CSIS/SR/SGGIT/CHA/BV-01-C
+
+
+
++1015 ms
+Message:                   PTS Log started on Wednesday, August 07, 2024, 04:01:50
+
+
+
++1015 ms
+Message:                   PTS: v8.6.0 Build 6
+
+
+
++1015 ms
+Message:                   OS: Microsoft Windows NT 10.0.19045.0
+
+
+
++1015 ms
+Message:                   OS Name: Microsoft Windows 10 Home
+
+
+
++5031 ms
+Send Event:              HCI!HCI_RESET
+
+
++6000 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6000 ms
+Preliminary Verdict:     PASS
+
+
+
++6000 ms
+Send Event:              HCI!HCI_READ_LOCAL_VERSION_INFORMATION
+
+
++6000 ms
+Receive Event:           HCI?HCI_READ_LOCAL_VERSION_INFORMATION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           hciVersion=0x0D,
+                           hciRevision=0x5B0E,
+                           lmpVersion=0x0D,
+                           manufacturerName=0x07E8,
+                           lmpSubversion=0x5B0E
+                         }
+
+
++6000 ms
+Preliminary Verdict:     PASS
+
+
+
++6000 ms
+Send Event:              HCI!HCI_SET_EVENT_MASK{
+                           eventMask=0x3FFFFFFFFFFFFFFF
+                         }
+
+
++6000 ms
+Receive Event:           HCI?HCI_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6000 ms
+Preliminary Verdict:     PASS
+
+
+
++6000 ms
+Send Event:              HCI!HCI_READ_LOCAL_SUPPORTED_FEATURES
+
+
++6000 ms
+Receive Event:           HCI?HCI_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           lmpFeatures=0x0000006000000000
+                         }
+
+
++6000 ms
+Preliminary Verdict:     PASS
+
+
+
++6000 ms
+Send Event:              HCI!HCI_READ_LOCAL_SUPPORTED_COMMANDS
+
+
++6015 ms
+Receive Event:           HCI?HCI_READ_LOCAL_SUPPORTED_COMMANDS_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           supported_commands=0x0000000000000000000000000000000003E741FFFFFFF7E01FFFFFFFFFFFF0300000007FFFFFF700000400000000000022280C00000400000C00C00000800020
+                         }
+
+
++6015 ms
+Preliminary Verdict:     PASS
+
+
+
++6015 ms
+Send Event:              HCI!HCI_READ_BD_ADDR
+
+
++6015 ms
+Receive Event:           HCI?HCI_READ_BD_ADDR_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           bdAddress=0xC007E81C28DF
+                         }
+
+
++6015 ms
+Preliminary Verdict:     PASS
+
+
+
++6015 ms
+Send Event:              HCI!HCI_LE_LOCAL_SUPPORTED_FEATURES
+
+
++6015 ms
+Receive Event:           HCI?HCI_LE_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           leFeatures=0x000019BEFF017FFF
+                         }
+
+
++6015 ms
+Preliminary Verdict:     PASS
+
+
+
++6015 ms
+Preliminary Verdict:     PASS
+
+
+
++6015 ms
+Send Event:              HCI!HCI_LE_SET_EVENT_MASK{
+                           leEventMask=0x000000FE7F8FFFFF
+                         }
+
+
++6015 ms
+Receive Event:           HCI?HCI_LE_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6015 ms
+Send Event:              HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x20,
+                           bit_value=0x01
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6031 ms
+Preliminary Verdict:     PASS
+
+
+
++6031 ms
+Send Event:              HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x26,
+                           bit_value=0x01
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6031 ms
+Preliminary Verdict:     PASS
+
+
+
++6031 ms
+Send Event:              HCI!HCI_LE_READ_BUFFER_V2
+
+
++6031 ms
+Send Event:              HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           address=0xD7B81B0B51C3
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_READ_BUFFER_SIZE_V2_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           HC_LE_Data_Packet_Length=0x0200,
+                           HC_Total_Num_LE_Data_Packets=0x04,
+                           HC_LE_ISO_Packet_Length=0x0200,
+                           HC_Total_Num_LE_ISO_Packets=0x06
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6031 ms
+Send Event:              HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           address=0xD7B81B0B51C3
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6031 ms
+Preliminary Verdict:     PASS
+
+
+
++6031 ms
+Send Event:              HCI!HCI_LE_SET_EXTENDED_SCAN_PARAMETERS{
+                           own_addr_type=0x00,
+                           scan_filter_policy=0x01,
+                           scan_phy=0x01,
+                           {
+                             scan_type=0x01,
+                             scan_interval=0x001E,
+                             scan_window=0x001E
+                           },
+                           
+                         }
+
+
++6031 ms
+Receive Event:           HCI?HCI_LE_SET_EXTENDED_SCAN_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6031 ms
+Preliminary Verdict:     PASS
+
+
+
++6031 ms
+Preliminary Verdict:     PASS
+
+
+
++6047 ms
+Send Event:              HCI!HCI_LE_SET_EXTENDED_SCAN_ENABLE{
+                           enable=0x01,
+                           filter_duplicate=0x00,
+                           duration=0x0000,
+                           period=0x0000
+                         }
+
+
++6047 ms
+Receive Event:           HCI?HCI_LE_SET_EXTENDED_SCAN_ENABLE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++6047 ms
+Preliminary Verdict:     PASS
+
+
+
++6047 ms
+Preliminary Verdict:     PASS
+
+
+
++6984 ms
+Receive Event:           HCI?HCI_LE_EXTENDED_ADVERTISING_REPORT_EVENT{
+                           {
+                             eventtype=0x0013,
+                             addrType=0x01,
+                             bd_addr=D7B81B0B51C3,
+                             prim_phy=0x01,
+                             sec_phy=0x00,
+                             advSID=0xFF,
+                             periodic_int=0x0000,
+                             direc_addr_type=0x00,
+                             direc_addr=000000000000,
+                             data_length=0x12,
+                             data=0201060E095465737465725F314332384446
+                           }
+
+                         }
+
+
++6984 ms
+Send Event:              HCI!HCI_LE_SET_EXTENDED_SCAN_ENABLE{
+                           enable=0x00,
+                           filter_duplicate=0x00,
+                           duration=0x0000,
+                           period=0x0000
+                         }
+
+
++6984 ms
+Receive Event:           HCI?HCI_LE_EXTENDED_ADVERTISING_REPORT_EVENT{
+                           {
+                             eventtype=0x001B,
+                             addrType=0x01,
+                             bd_addr=D7B81B0B51C3,
+                             prim_phy=0x01,
+                             sec_phy=0x00,
+                             advSID=0xFF,
+                             periodic_int=0x0000,
+                             direc_addr_type=0x00,
+                             direc_addr=000000000000,
+                             data_length=0x00,
+                             data=
+                           }
+
+                         }
+
+
++7000 ms
+Receive Event:           HCI?HCI_LE_SET_EXTENDED_SCAN_ENABLE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7000 ms
+Preliminary Verdict:     PASS
+
+
+
++7000 ms
+Preliminary Verdict:     PASS
+
+
+
++7000 ms
+Preliminary Verdict:     PASS
+
+
+
++7000 ms
+Send Event:              HCI!HCI_LE_EXTENDED_CREATE_CONNECTION{
+                           initiator_filter_policy=0x00,
+                           own_addr_type=0x00,
+                           peer_addr_type=0x01,
+                           peer_addr=0xD7B81B0B51C3,
+                           initiating_phys=0x01,
+                           {
+                             scan_interval=0x0020,
+                             scan_window=0x0020,
+                             conn_interval_min=0x0032,
+                             conn_interval_max=0x0046,
+                             conn_latency=0x0000,
+                             supervision_timeout=0x09D0,
+                             min_ce_length=0x0000,
+                             max_ce_length=0x0000
+                           },
+                           
+                         }
+
+
++7000 ms
+Receive Event:           HCI?HCI_LE_EXTENDED_CREATE_CONNECTION_STATUS_EVENT{
+                           status=HCI_OK
+                         }
+
+
++7000 ms
+Preliminary Verdict:     PASS
+
+
+
++7000 ms
+Preliminary Verdict:     PASS
+
+
+
++7094 ms
+Receive Event:           ATT?ATT_CONNECT_IND{
+                           bdAddr=0xD7B81B0B51C3,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           lcid=0x1205,
+                           status=0x0000
+                         }
+
+
++7094 ms
+Receive Event:           HCI?HCI_LE_ENHANCED_CONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle=0x0000,
+                           role=0x00,
+                           peerAddrType=0x01,
+                           peer_addr=0xD7B81B0B51C3,
+                           local_rpa=0x000000000000,
+                           peer_rpa=0x000000000000,
+                           conn_interval=0x0032,
+                           conn_latency=0x0000,
+                           conn_timeout=0x09D0,
+                           central_clock_accuracy=0x07
+                         }
+
+
++7094 ms
+Send Event:              HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD7B81B0B51C3,
+                           addr_type=0x01,
+                           conn_handle=0xFFFF
+                         }
+
+
++7094 ms
+Send Event:              HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD7B81B0B51C3,
+                           addr_type=0x01,
+                           conn_handle=0x0000
+                         }
+
+
++7094 ms
+Preliminary Verdict:     PASS
+
+
+
++7094 ms
+Receive Event:           HCI?HCI_LE_CHANNEL_SELECTION_ALGORITHM_EVENT{
+                           conn_handle=0x0000,
+                           used_ch_algorithm=0x01
+                         }
+
+
++7094 ms
+Preliminary Verdict:     PASS
+
+
+
++7094 ms
+Verdict Description:     Connection setup successfully.
+
+
+
++7094 ms
+Preliminary Verdict:     PASS
+
+
+
++7156 ms
+Receive Event:           ATT?ATT_EXCHANGE_MTU_REQ{
+                           lcid=0x1205,
+                           requestedMtu=0x00FB
+                         }
+
+
++7578 ms
+Preliminary Verdict:     PASS
+
+
+
++7578 ms
+Pass:                    Tester successfully initiated connection.
+
+
+
++7578 ms
+Verdict Description:     Tester successfully initiated connection.
+
+
+
++7781 ms
+Receive Event:           HCI?HCI_LE_PHY_UPDATE_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle0x0000,
+                           tx_phy=0x02,
+                           rx_phy=0x02
+                         }
+
+
++7844 ms
+Receive Event:           HCI?HCI_LE_DATA_LENGTH_CHANGE_EVENT{
+                           conn_handle=0x0000
+                         }
+
+
++9594 ms
+Send Event:              SEC!SEC_LE_AUTHENTICATE_REQ{
+                           peerAddress=0xD7B81B0B51C3,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           securityMode=1,
+                           securityLevel=0,
+                           paringMode=PAIRING_MODE_LE_SECURE_CONNECTION,
+                           bonding=BONDING,
+                           minimum_encKeySize=7
+                         }
+
+
++9594 ms
+Send Event:              ATT!ATT_EXCHANGE_MTU_RSP{
+                           lcid=0x1205,
+                           resultingMtu=0x0017
+                         }
+
+
++9656 ms
+Receive Event:           SEC?SEC_LE_SC_PUBLIC_KEY_GENERATION_REQUEST_IND
+
+
++9656 ms
+Send Event:              SEC!SEC_LESC_PUBLIC_KEY{
+                           PublicKey.X=0x7FA9B908A214C24A77458986DE53210DABB45C89A9A001EE4E6D741071CE89AC,
+                           publicKey.Y=0xD5B4ADA8D212900CFDDDFA0527190588DE090AB877267AD8009D3AC6669949B1
+                         }
+
+
++9781 ms
+Receive Event:           HCI?HCI_LE_RANDOM_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           randomNumber=0x66B0D0AC81B2D956
+                         }
+
+
++9906 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xE4853CB00AE1A4707E96EF40BA006335
+                         }
+
+
++9906 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x58A798977470E713C8D0085854ED4702
+                         }
+
+
++9906 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xCBA380E9522B7416455212C27257E803
+                         }
+
+
++9922 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x0C479725B15034B0238C83BF2D024004
+                         }
+
+
++9922 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xBCABA7A34152F0917F4C8C1BEA3C0CE5
+                         }
+
+
++9922 ms
+Receive Event:           SEC?SEC_LE_SC_DH_KEY_GENERATION_REQUEST_IND{
+                           remote_public_key=0xA79C4D621414931B2F40B8E082C77626DAB7E19CB4F7A81528DEEB3D79177636D3E7F47CA22A7FFE6431472D84D68AEA37BE22C6A10508BBE91668DA17408F5C
+                         }
+
+
++9922 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xF4A47323042E6C1B57DA6399032186F9
+                         }
+
+
++9922 ms
+Send Event:              SEC!SEC_LESC_DHKEY{
+                           DHKEY=0x1B7B371048F685719A299DE73093B6D9232D817AD3D9183D36D0D0439AEA0FBD
+                         }
+
+
++9922 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x801C7681194553280EFA863021E2EEF4
+                         }
+
+
++9922 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x483402AF0E3506AF9EBD81795C4F22E1
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x3813E8000D37C1EEF048C1393DBC459D
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xF4CA4C4EA8744F0322D7429FD35D0DB6
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x6B98D99A7704D910EF3F582117F9100B
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xA038D5AF2D36BB809CF500BD2790100C
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x54A0DDFD667FDB9F1C04DBC68F7EDAB9
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xC428980C0C9337767768147BC82AD484
+                         }
+
+
++9937 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xF4CA4C4EA8744F0322D7429FD35D0DB6
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xA2841C9D17E2586E52F445D2C08B0110
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x78C6BFAD08525D0F0CBC416D81850D11
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x361F0664E122B43DF13EA0475BA84E77
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x4B9D827BBE80AFDE7AF7BBCD1C7DB625
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x7DB1D6BC4562C83C63BADA974D2FFCF9
+                         }
+
+
++9953 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x81E5E8766DC26C0097DE07A0542F2015
+                         }
+
+
++9969 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xF6EE05D2899B4D2B66A0F1D45B2F3E16
+                         }
+
+
++9969 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x60065BED9452C453F88CC7DEFE061F17
+                         }
+
+
++9969 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x24E5DE32887568D9CECEF9DE65106725
+                         }
+
+
++9969 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x905CAFD1D434661729DAD6B1DB42802F
+                         }
+
+
++10094 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x7DB1D6BC4562C83C63BADA974D2FFCF9
+                         }
+
+
++10094 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x8A2E59DD209E1C507B9FBCD2C7E90B1B
+                         }
+
+
++10094 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x8271A592485F9C4A567D79A9814A361C
+                         }
+
+
++10109 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x29EEED538B9A0B51DC3E17B31869D41D
+                         }
+
+
++10109 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0x8D4771C170D22792993E16BA490EA6B7
+                         }
+
+
++10109 ms
+Receive Event:           HCI?HCI_LE_ENCRYPT_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           encryptedData=0xFCDB03469DA90A36A8CAD9EE8509A544
+                         }
+
+
++10344 ms
+Receive Event:           HCI?HCI_ENCRYPTION_CHANGE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x0000,
+                           encryptionEnable=LinklevelencryptionisOnwithE0forBR_EDRorAES-CCMforLE
+                         }
+
+
++10406 ms
+Receive Event:           SEC?SEC_LE_KEY_NOTIFICATION_IND{
+                           peerAddr=0xD7B81B0B51C3,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           keyDist=0x04,
+                           encryptionKeySize=0x10,
+                           ltk=0xC428980C0C9337767768147BC82AD484,
+                           eDiv=0x0000,
+                           randValue=0x0000000000000000,
+                           ,
+                           csrk=0x93FAA0FF88D9D6231A8C92F042C15819
+                         }
+
+
++10406 ms
+Verdict Description:     encryptionKeySize = 0x10,ltk = 0xC428980C0C9337767768147BC82AD484,eDiv = 0x0000,randValue = 0x0000000000000000
+
+
+
++10406 ms
+Receive Event:           SEC?SEC_LE_KEY_NOTIFICATION_IND{
+                           peerAddr=0xD7B81B0B51C3,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           keyDist=0x04,
+                           encryptionKeySize=0x10,
+                           ltk=0xC428980C0C9337767768147BC82AD484,
+                           eDiv=0x0000,
+                           randValue=0x0000000000000000,
+                           ,
+                           csrk=0x93FAA0FF88D9D6231A8C92F042C15819
+                         }
+
+
++10406 ms
+Verdict Description:     encryptionKeySize = 0x10,ltk = 0xC428980C0C9337767768147BC82AD484,eDiv = 0x0000,randValue = 0x0000000000000000
+
+
+
++10406 ms
+Receive Event:           SEC?SEC_LE_KEY_DISTRIBUTION_IND{
+                           peerAddr=0xD7B81B0B51C3,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           keyDist=0x02,
+                           encryptionKeySize=0x10
+                         }
+
+
++10406 ms
+Send Event:              SEC?SEC_LE_KEY_DISTRIBUTION_RSP{
+                           peerAddr=0xD7B81B0B51C3,
+                           keyDist=0x02,
+                           irk=0x39B64D80,
+                           idAddress=0xC007E81C28DF,
+                           idAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS
+                         }
+
+
++10406 ms
+Receive Event:           SEC?SEC_LE_AUTHENTICATE_CFM{
+                           peerAddr=0xD7B81B0B51C3
+                         }
+
+
++10406 ms
+Verdict Description:     Pairing process is done. Access is granted.
+
+
+
++10406 ms
+Verdict Description:     LE Security procedures completed successfully.
+
+
+
++10406 ms
+Send Event:              ATT!ATT_FIND_BY_TYPE_VALUE_REQ{
+                           lcid=0x1205,
+                           startingHandle=0x0001,
+                           endingHandle=0xFFFF,
+                           attributeType=0x2800,
+                           length=0x0002,
+                           4618
+                         }
+
+
++10531 ms
+Receive Event:           ATT?ATT_FIND_BY_TYPE_VALUE_RSP{
+                           lcid=0x1205,
+                           HandleRange={
+                             				{
+                               foundAttributeHandle=0x00A7,
+                               endFoundHandle=0x00B1
+					
+                             }
+                           }
+                         }
+
+
++10672 ms
+Receive Event:           ATT?ATT_FIND_BY_TYPE_VALUE_CFM{
+                           lcid=1205,
+                           result=0x0000,
+                           errorHandle=0x0000,
+                           HandleRanges={
+                             				{
+                               foundAttributeHandle=0x00A7,
+                               endFoundHandle=0x00B1,
+                               
+					
+                             }
+                           }
+                         }
+
+
++10672 ms
+Preliminary Verdict:     PASS
+
+
+
++10672 ms
+Verdict Description:     Discover Primary Service by Service UUID Request completed successfully.
+
+
+
++10672 ms
+Pass:                    The IUT successfully returned the UUID for Coordinated Set Identification
+
+
+
++10672 ms
+Verdict Description:     The IUT successfully returned the UUID for Coordinated Set Identification
+
+
+
++10672 ms
+Send Event:              ATT!ATT_READ_BY_TYPE_REQ{
+                           lcid=0x1205,
+                           startingHandle=0x00A7,
+                           endingHandle=0x00B1,
+                           attributeTypeSize=0x02,
+                           attributeType=0x2803
+                         }
+
+
++10781 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_IND{
+                           lcid=0x1205,
+                           length=0x0010,
+                           attributeTypeSize=0x02,
+                           attributeType=0x2803,
+                           ElementCount=02,
+                           AttributeSize=07,
+                           Handle=00A8,
+                           AttrValue=2B8400A902,
+                           Handle=00AA,
+                           AttrValue=2B8500AB12
+                         }
+
+
++10781 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_RSP{
+                           				{
+                             handle=0x00A8
+					value{
+                               Properties=0x02,
+                               Handle=0x00A9,
+                               UUID=0x2B84
+                             }
+
+                           }
+				{
+                             handle=0x00AA
+					value{
+                               Properties=0x12,
+                               Handle=0x00AB,
+                               UUID=0x2B85
+                             }
+
+                           }
+
+                         }
+
+
++10906 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_IND{
+                           lcid=0x1205,
+                           length=0x0010,
+                           attributeTypeSize=0x02,
+                           attributeType=0x2803,
+                           ElementCount=02,
+                           AttributeSize=07,
+                           Handle=00AD,
+                           AttrValue=2B8600AE1A,
+                           Handle=00B0,
+                           AttrValue=2B8700B102
+                         }
+
+
++10906 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_RSP{
+                           				{
+                             handle=0x00AD
+					value{
+                               Properties=0x1A,
+                               Handle=0x00AE,
+                               UUID=0x2B86
+                             }
+
+                           }
+				{
+                             handle=0x00B0
+					value{
+                               Properties=0x02,
+                               Handle=0x00B1,
+                               UUID=0x2B87
+                             }
+
+                           }
+
+                         }
+
+
++11031 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_CFM{
+                           lcid=0x1205,
+                           attributeType=0x2803,
+                           attributeTypeSize=0x02,
+                           result=0x0000,
+                           errorHandle=0x0000
+                         }
+
+
++11031 ms
+Receive Event:           ATT?ATT_READ_BY_TYPE_CFM{
+                           				{
+                             handle=0x00A8
+					value{
+                               Properties=0x02,
+                               Handle=0x00A9,
+                               UUID=0x2B84
+                             }
+
+                           }
+				{
+                             handle=0x00AA
+					value{
+                               Properties=0x12,
+                               Handle=0x00AB,
+                               UUID=0x2B85
+                             }
+
+                           }
+				{
+                             handle=0x00AD
+					value{
+                               Properties=0x1A,
+                               Handle=0x00AE,
+                               UUID=0x2B86
+                             }
+
+                           }
+				{
+                             handle=0x00B0
+					value{
+                               Properties=0x02,
+                               Handle=0x00B1,
+                               UUID=0x2B87
+                             }
+
+                           }
+
+                         }
+
+
++11031 ms
+Preliminary Verdict:     PASS
+
+
+
++11031 ms
+Verdict Description:     Discover All Characteristics of Service Request completed successfully.
+
+
+
++11031 ms
+Send Event:              ATT!ATT_FIND_INFO_REQ{
+                           lcid=0x1205,
+                           startingHandle=0x00AC,
+                           endingHandle=0x00AC
+                         }
+
+
++11156 ms
+Receive Event:           ATT?ATT_FIND_INFO_RSP{
+                           				{
+                             handle=0x00AC,
+                             uuid=0x2902
+					
+                           }
+                         }
+
+
++11156 ms
+Receive Event:           ATT?ATT_FIND_INFO_CFM{
+                           				{
+                             handle=0x00AC,
+                             uuid=0x2902,
+                             
+					
+                           }
+                         }
+
+
++11156 ms
+Preliminary Verdict:     PASS
+
+
+
++11156 ms
+Verdict Description:     Discover All Characteristic Descriptors Request completed successfully.
+
+
+
++11156 ms
+Send Event:              ATT!ATT_FIND_INFO_REQ{
+                           lcid=0x1205,
+                           startingHandle=0x00AF,
+                           endingHandle=0x00AF
+                         }
+
+
++11281 ms
+Receive Event:           ATT?ATT_FIND_INFO_RSP{
+                           				{
+                             handle=0x00AF,
+                             uuid=0x2902
+					
+                           }
+                         }
+
+
++11281 ms
+Receive Event:           ATT?ATT_FIND_INFO_CFM{
+                           				{
+                             handle=0x00AF,
+                             uuid=0x2902,
+                             
+					
+                           }
+                         }
+
+
++11281 ms
+Preliminary Verdict:     PASS
+
+
+
++11281 ms
+Verdict Description:     Discover All Characteristic Descriptors Request completed successfully.
+
+
+
++11281 ms
+Verdict Description:     Search property(0x02)
+
+
+
++11281 ms
+Verdict Description:     GGIT ValueLength 'Skip' or 'SkipRead' is used, skipping Read steps
+
+
+
++11281 ms
+Verdict Description:     GGIT ValueLength 'Skip' or 'SkipWrite' is used, skipping Write steps
+
+
+
++12594 ms
+Send Event:              HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD7B81B0B51C3,
+                           addr_type=0x01,
+                           conn_handle=0x0000
+                         }
+
+
++12594 ms
+Send Event:              HCI!HCI_DISCONNECT{
+                           connectionHandle=0x0000,
+                           reason=HCI_REMOTE_USER_TERMINATED_CONNECTION
+                         }
+
+
++12594 ms
+Receive Event:           HCI?HCI_DISCONNECT_STATUS_EVENT{
+                           status=HCI_OK
+                         }
+
+
++12812 ms
+Receive Event:           ATT?ATT_DISCONNECT_IND{
+                           lcid=0x1205
+                         }
+
+
++12812 ms
+Receive Event:           HCI?HCI_DISCONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x0000,
+                           reason=HCI_CONNECTION_TERMINATED_BY_LOCAL_HOST
+                         }
+
+
++12812 ms
+Verdict Description:     Received HCI disconnection event. Handle = 0x0000
+
+
+
++12812 ms
+Verdict Description:     Connection terminated successfully.
+
+
+
++12812 ms
+Send Event:              HCI!HCI_RESET
+
+
++12890 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++13906 ms
+Receive Event:           HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+
+
++15437 ms
+Final Verdict:           PASS
+
+
+
++15437 ms
+Encrypted Verdict:       A1#ZWY4MzQ5MDg3MmQwNTIxOGQzMzQ5YjY2ODA5M2MzNjQ5ZDY4NmY0Yjc2MzIzM2VkNTUyNTFhNGU4Mjg1MjI0NA==#xxOSHMLQTgwqy/6CduW2ftB1O98DPvQo4M3svBJKdCaxxvZ75C2K9CzmdluiOxz7
+
+
+
++15437 ms
+Test Case Ended:         CSIS/SR/SGGIT/CHA/BV-01-C
+
+</LOG>
+  <SUMMARY>Test case : CSIS/SR/SGGIT/CHA/BV-01-C started
+Final Verdict:PASS
+CSIS/SR/SGGIT/CHA/BV-01-C finished
+</SUMMARY>
+</ARCHIVE>
