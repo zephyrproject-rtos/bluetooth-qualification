@@ -1,0 +1,39 @@
+*** Booting Zephyr OS build v4.0.0-3953-g35abb312849e ***
+[00:00:00.387,207] <dbg> bttester: tester_init: Initializing tester
+[00:00:41.339,691] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:41.345,703] <inf> bt_hci_core: HW Platform: Nordic Semiconductor (0x0002)
+[00:00:41.345,733] <inf> bt_hci_core: HW Variant: nRF52x (0x0002)
+[00:00:41.345,764] <inf> bt_hci_core: Firmware: Standard Bluetooth controller (0x00) Version 4.0 Build 99
+[00:00:41.346,710] <inf> bt_hci_core: Identity: DC:E7:76:C4:1F:70 (random)
+[00:00:41.346,771] <inf> bt_hci_core: HCI: version 5.4 (0x0d) revision 0x0000, manufacturer 0x05f1
+[00:00:41.346,801] <inf> bt_hci_core: LMP: version 5.4 (0x0d) subver 0xffff
+[00:00:41.346,801] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:41.367,523] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:41.367,553] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:41.393,737] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:41.393,768] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:41.425,415] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x04 index 0x00
+[00:00:41.425,445] <wrn> bttester_mesh: Loading default comp data
+[00:00:41.425,689] <wrn> bt_mesh_access: Unused space in relation list: 2
+[00:00:41.853,332] <dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x04 index 0x00 status 0x00
+[00:00:41.894,805] <dbg> bttester: cmd_handler: cmd service 0x01 opcode 0x03 index 0x00
+[00:00:57.909,179] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x02 index 0x00
+[00:00:57.909,210] <dbg> bttester_mesh: config_prov: 
+[00:00:57.909,240] <dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x02 index 0x00 status 0x00
+[00:00:57.935,913] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x78 index 0x00
+[00:00:57.935,974] <dbg> bttester_mesh: start: 
+[00:00:57.936,065] <inf> bt_mesh_provisionee: Device UUID: df6b37c1-d923-41a7-957f-f1562648eee6
+[00:00:57.937,713] <inf> bt_mesh_provisionee: Device UUID: df6b37c1-d923-41a7-957f-f1562648eee6
+[00:00:57.937,744] <dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x78 index 0x00 status 0x00
+[00:00:58.264,038] <dbg> bttester_gap: le_connected: C0:07:E8:1C:28:DF (public): 0x00
+[00:00:58.264,068] <dbg> bttester: tester_event: service 0x01 opcode 0x82
+[00:00:58.265,625] <dbg> bttester: tester_event: service 0x01 opcode 0x80
+ASSERTION FAIL [err == 0] @ WEST_TOPDIR/zephyr/subsys/bluetooth/host/hci_core.c:435
+	Controller unresponsive, command opcode 0x2035 timeout with err -11
+[00:01:08.266,906] <err> os: r0/a1:  0x00000003  r1/a2:  0x00000000  r2/a3:  0x00000002
+[00:01:08.266,906] <err> os: r3/a4:  0x00000003 r12/ip:  0x20012d6c r14/lr:  0x000166e5
+[00:01:08.266,937] <err> os:  xpsr:  0x01000000
+[00:01:08.266,937] <err> os: Faulting instruction address (r15/pc): 0x000166f4
+[00:01:08.266,967] <err> os: >>> ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+[00:01:08.267,028] <err> os: Current thread: 0x200074d8 (BT MESH WQ)
+[00:01:14.361,694] <err> os: Halting system
