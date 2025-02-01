@@ -1,55 +1,19 @@
 # AutoPTS report
 
-    Start time: 2025_01_25_01_53_35
+    Start time: 2025_02_01_01_58_45
 
-    End time: 2025_01_25_16_23_12
+    End time: 2025_02_01_16_46_57
 
     PTS version: 8.7.6.3
     
+    Test Group/Profile Summary:
     
-        <div>
-            <h3>Test Group/Profile Summary</h3>
-            <table border="1" style="border-collapse: collapse; text-align: center; width: 35em">
-                <thead>
-                    <tr>
-                        <th style="width: 20%">Suite</th>
-                        <th style="width: 20%">Total</th>
-                        <th style="width: 20%">Pass</th>
-                        <th style="width: 20%">Fail</th>
-                        <th style="width: 20%">Pass Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-            <tr>
-                <td>DFUM</td>
-                <td>86</td>
-                <td>81</td>
-                <td>5</td>
-                <td>94.19 %</td>
-            </tr>
-            
-            <tr>
-                <td>MBTM</td>
-                <td>48</td>
-                <td>47</td>
-                <td>1</td>
-                <td>97.92 %</td>
-            </tr>
-            
-            <tr>
-                <td>MESH</td>
-                <td>477</td>
-                <td>410</td>
-                <td>67</td>
-                <td>85.95 %</td>
-            </tr>
-            
-                </tbody>
-            </table>
-        </div>
-        
+    |  Suite  | Total | Pass | Fail | Pass Rate|
+|---------|-------|------|------|----------|
+|DFUM     |86     |81    |5     |  94.19 % |
+|MBTM     |48     |47    |1     |  97.92 % |
+|MESH     |477    |411   |66    |  86.16 % |
 
     Repositories:
 
-	zephyr: 35abb312849efbd496542d1c6805aa2b35ca0db6 [v4.0.0-3953-g35abb312849]
+	zephyr: f19e5bc577e29b7b889a6a1e8a7ab0f1c58114cf [v4.0.0-4398-gf19e5bc577e]
