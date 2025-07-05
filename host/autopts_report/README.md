@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2025_06_27_19_04_19
+    Start time: 2025_07_04_19_10_42
 
-    End time: 2025_06_28_01_48_50
+    End time: 2025_07_05_02_39_13
 
     PTS version: 8.9.1.6
 
@@ -10,7 +10,7 @@
 |  Suite  | Total | Pass | Fail | Pass Rate|
 |---------|-------|------|------|----------|
 |DIS      |8      |8     |0     | 100.00 % |
-|GAP      |162    |153   |9     |  94.44 % |
+|GAP      |162    |152   |10    |  93.83 % |
 |GATT     |164    |160   |4     |  97.56 % |
 |L2CAP    |99     |98    |1     |  98.99 % |
 |OTS      |50     |45    |5     |  90.00 % |
@@ -18,4 +18,4 @@
 
     Repositories:
 
-	zephyr: 6c68584046046e42e5c98efecb12e2ea6bad2d27 [v4.1.0-7170-g6c685840460]
+	zephyr: fdd02c5105d2a40cf6410cf89ccd22c43a48399e [v4.2.0-rc1-129-gfdd02c5105d]
