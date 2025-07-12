@@ -1,0 +1,45 @@
+*** Booting Zephyr OS build v4.2.0-rc2-118-g970c715ef473 ***
+[00:00:00.397,186] <inf> fs_nvs: 8 Sectors of 4096 bytes
+[00:00:00.397,186] <inf> fs_nvs: alloc wra: 0, e58
+[00:00:00.397,216] <inf> fs_nvs: data wra: 0, 2a0
+WARNING: Using a potentially insecure PSA ITS encryption key provider.
+[00:00:00.397,277] <wrn> secure_storage: Using a potentially insecure PSA ITS encryption key provider.
+[00:00:00.397,308] <dbg> bttester: tester_init: Initializing tester
+[00:00:44.037,841] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:44.043,945] <wrn> bt_hci_core: Num of Controller's ISO packets != ISO bt_conn_tx contexts(12 != 1)
+[00:00:44.045,135] <inf> bt_hci_core: HW Platform: Nordic Semiconductor (0x0002)
+[00:00:44.045,135] <inf> bt_hci_core: HW Variant: nRF52x (0x0002)
+[00:00:44.045,166] <inf> bt_hci_core: Firmware: Standard Bluetooth controller (0x00) Version 4.2 Build 0
+[00:00:44.045,593] <inf> bt_hci_core: No ID address. App must call settings_load()
+[00:00:44.045,593] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:44.080,322] <dbg> bttester: cmd_handler: cmd service 0x01 opcode 0x01 index 0xff
+[00:00:44.165,557] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:44.165,588] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:44.186,798] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x01 index 0xff
+[00:00:44.197,601] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x04 index 0x00
+[00:00:44.197,631] <wrn> bttester_mesh: Loading default comp data
+[00:00:44.197,814] <wrn> bt_mesh_access: Unused space in relation list: 5
+[00:00:44.640,228] <dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x04 index 0x00 status 0x00
+[00:00:44.718,688] <dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff
+[00:00:44.718,688] <dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00
+[00:00:44.771,759] <dbg> bttester: cmd_handler: cmd service 0x05 opcode 0x01 index 0xff
+[00:00:44.771,789] <dbg> bttester: tester_rsp_with_index: service 0x05 opcode 0x01 index 0xff status 0x02
+[00:00:44.817,169] <dbg> bttester: cmd_handler: cmd service 0x01 opcode 0x03 index 0x00
+[00:00:48.926,818] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x02 index 0x00
+[00:00:48.926,849] <dbg> bttester_mesh: config_prov: 
+[00:00:48.926,879] <dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x02 index 0x00 status 0x00
+[00:00:48.976,135] <dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x78 index 0x00
+[00:00:48.976,165] <dbg> bttester_mesh: start: 
+[00:00:48.976,196] <inf> bttester_mesh: Loading stored settings
+
+[00:00:48.980,590] <err> os: ***** MPU FAULT *****
+[00:00:48.980,621] <err> os:   Stacking error (context area might be not valid)
+[00:00:48.980,621] <err> os:   Data Access Violation
+[00:00:48.980,621] <err> os:   MMFAR Address: 0x20016f38
+[00:00:48.980,682] <err> os: r0/a1:  0xd7d7de2f  r1/a2:  0x6800f086  r2/a3:  0x37fc6cb9
+[00:00:48.980,682] <err> os: r3/a4:  0x720a1954 r12/ip:  0x3b1bba16 r14/lr:  0x8b100c15
+[00:00:48.980,682] <err> os:  xpsr:  0x3908ee00
+[00:00:48.980,712] <err> os: Faulting instruction address (r15/pc): 0xfd5f1ff6
+[00:00:48.980,743] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:48.980,773] <err> os: Current thread: 0x20008f80 (unknown)
+[00:01:00.397,796] <err> os: Halting system
