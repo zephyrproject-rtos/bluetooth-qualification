@@ -1,0 +1,16 @@
+WARNING: Using a test - not safe - entropy source
+uart connected to pseudotty: /dev/pts/11
+*** Booting Zephyr OS build v4.2.0-1030-g2b42a1d81d98 ***
+> 2025/08/03 14:18:02.327818  length=5 from=0 to=4
+ 00 80 ff 00 00                                   .....
+--
+< 2025/08/03 14:18:02.329533  length=6 from=0 to=5
+ 00 03 ff 01 00 01                                ......
+--
+ASSERTION FAIL [err == 0] @ WEST_TOPDIR/zephyr/subsys/bluetooth/host/hci_core.c:504
+	Controller unresponsive, command opcode 0x1003 timeout with err -11
+@ WEST_TOPDIR/zephyr/subsys/bluetooth/host/hci_core.c:504
+[00:00:10.040,000] [1;31m<err> os: >>> ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0[0m
+[00:00:10.040,000] [1;31m<err> os: Current thread: 0x80ddb80 (unknown)[0m
+[00:00:10.040,000] [1;31m<err> os: Halting system[0m
+Exiting due to fatal error
