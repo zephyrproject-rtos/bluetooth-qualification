@@ -1,16 +1,16 @@
 # AutoPTS report
 
-    Start time: 2025_09_19_19_07_12
+    Start time: 2025_09_26_20_39_45
 
-    End time: 2025_09_20_00_29_31
+    End time: 2025_09_27_01_49_57
 
-    PTS version: 8.10.1.2
+    PTS version: 8.10.2.3
 
     Test Group/Profile Summary: 
 |  Suite  | Total | Pass | Fail | Pass Rate|
 |---------|-------|------|------|----------|
 |DIS      |8      |8     |0     | 100.00 % |
-|GAP      |162    |156   |6     |  96.30 % |
+|GAP      |162    |158   |4     |  97.53 % |
 |GATT     |164    |161   |3     |  98.17 % |
 |L2CAP    |99     |98    |1     |  98.99 % |
 |OTS      |50     |45    |5     |  90.00 % |
@@ -18,4 +18,4 @@
 
     Repositories:
 
-	zephyr: d494f86ea40ef470ddaa2bb15ae83234345e7216 [v4.2.0-4064-gd494f86ea40]
+	zephyr: f23b1f59da7cbe1928fbd4e66c7b5fdbe5729eb1 [v4.2.0-4508-gf23b1f59da7]
