@@ -1,18 +1,18 @@
 # AutoPTS report
 
-    Start time: 2025_09_20_00_39_04
+    Start time: 2025_09_27_01_59_07
 
-    End time: 2025_09_20_14_05_32
+    End time: 2025_09_27_15_26_09
 
-    PTS version: 8.10.1.2
+    PTS version: 8.10.2.3
 
     Test Group/Profile Summary: 
 |  Suite  | Total | Pass | Fail | Pass Rate|
 |---------|-------|------|------|----------|
-|DFUM     |86     |85    |1     |  98.84 % |
+|DFUM     |86     |86    |0     | 100.00 % |
 |MBTM     |48     |44    |4     |  91.67 % |
-|MESH     |477    |411   |66    |  86.16 % |
+|MESH     |477    |419   |58    |  87.84 % |
 
     Repositories:
 
-	zephyr: d494f86ea40ef470ddaa2bb15ae83234345e7216 [v4.2.0-4064-gd494f86ea40]
+	zephyr: f23b1f59da7cbe1928fbd4e66c7b5fdbe5729eb1 [v4.2.0-4508-gf23b1f59da7]
