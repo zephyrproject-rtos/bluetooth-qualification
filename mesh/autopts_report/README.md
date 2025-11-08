@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2025_11_01_00_08_02
+    Start time: 2025_11_08_00_02_55
 
-    End time: 2025_11_01_11_23_34
+    End time: 2025_11_08_11_20_46
 
     PTS version: 8.10.2.3
 
@@ -11,8 +11,8 @@
 |---------|-------|------|------|----------|
 |DFUM     |86     |86    |0     | 100.00 % |
 |MBTM     |48     |43    |5     |  89.58 % |
-|MESH     |477    |420   |57    |  88.05 % |
+|MESH     |477    |426   |51    |  89.31 % |
 
     Repositories:
 
-	zephyr: 91b9c3aad88231dcc82f94c383c2d952c564622d [v4.3.0-rc1-184-g91b9c3aad88]
+	zephyr: 9da1b3cba1a2a8a448c8650fb30b38b570a9b9de [v4.3.0-rc2-152-g9da1b3cba1a]
