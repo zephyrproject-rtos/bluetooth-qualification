@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2025_11_14_23_48_05
+    Start time: 2025_11_22_00_49_52
 
-    End time: 2025_11_15_11_10_22
+    End time: 2025_11_22_11_47_38
 
     PTS version: 8.10.2.3
 
@@ -10,9 +10,9 @@
 |  Suite  | Total | Pass | Fail | Pass Rate|
 |---------|-------|------|------|----------|
 |DFUM     |86     |86    |0     | 100.00 % |
-|MBTM     |48     |42    |6     |  87.50 % |
+|MBTM     |48     |45    |3     |  93.75 % |
 |MESH     |477    |426   |51    |  89.31 % |
 
     Repositories:
 
-	zephyr: 9c1fbc8a86ad0f57190b6b84dd19bd88a189dc49 [v4.3.0-390-g9c1fbc8a86a]
+	zephyr: 9463d9a51d9cb1094bf98ef437a39850a7b5705d [v4.3.0-912-g9463d9a51d9]
