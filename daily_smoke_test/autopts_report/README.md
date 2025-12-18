@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2025_12_17_01_07_18
+    Start time: 2025_12_18_01_07_38
 
-    End time: 2025_12_17_01_38_39
+    End time: 2025_12_18_01_43_16
 
     PTS version: 8.11.0.4
 
@@ -27,7 +27,7 @@
 |HAS      |1      |1     |0     | 100.00 % |
 |IAS      |1      |1     |0     | 100.00 % |
 |L2CAP    |2      |2     |0     | 100.00 % |
-|MBTM     |2      |2     |0     | 100.00 % |
+|MBTM     |2      |1     |1     |  50.00 % |
 |MCP      |1      |1     |0     | 100.00 % |
 |MESH     |3      |3     |0     | 100.00 % |
 |MICP     |1      |1     |0     | 100.00 % |
@@ -44,4 +44,4 @@
 
     Repositories:
 
-	zephyr: e02a1b742ae88c1c617722efde2d8a103fceae3d [v4.3.0-2497-ge02a1b742ae]
+	zephyr: 29059ec3d6aaef314dbc598485d5d6de6f35ae5b [v4.3.0-2585-g29059ec3d6a]
