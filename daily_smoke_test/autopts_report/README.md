@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2025_12_23_01_07_26
+    Start time: 2025_12_24_01_07_30
 
-    End time: 2025_12_23_01_39_49
+    End time: 2025_12_24_01_38_42
 
     PTS version: 8.11.0.4
 
@@ -44,4 +44,4 @@
 
     Repositories:
 
-	zephyr: 348ae31ccce003257fc5340cbaba0bf25f9df96c [v4.3.0-2814-g348ae31ccce]
+	zephyr: e93279e773f95010c495aced866b62baeb0fe1b8 [v4.3.0-2889-ge93279e773f]
