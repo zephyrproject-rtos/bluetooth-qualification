@@ -1,10 +1,10 @@
 # AutoPTS report
 
-    Start time: 2026_01_07_01_07_37
+    Start time: 2026_01_08_01_04_18
 
-    End time: 2026_01_07_01_40_20
+    End time: 2026_01_08_01_36_40
 
-    PTS version: 8.11.0.4
+    PTS version: 8.11.1.6
 
     Test Group/Profile Summary: 
 |  Suite  | Total | Pass | Fail | Pass Rate|
@@ -44,4 +44,4 @@
 
     Repositories:
 
-	zephyr: 1c7ce910a82010f035c86b3f4e450ddb2003a671 [v4.3.0-3233-g1c7ce910a82]
+	zephyr: f931c5a44f65946e6ff56fa65334908f2b402122 [v4.3.0-3347-gf931c5a44f6]
