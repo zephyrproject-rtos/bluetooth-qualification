@@ -1,2 +1,2 @@
 # bluetooth-qualification
-Private repository with Bluetooth Qualification evidence
+Repository with Bluetooth Qualification evidence
