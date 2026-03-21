@@ -1,0 +1,50 @@
+WARNING: Using a test - not safe - entropy source
+uart connected to pseudotty: /dev/pts/2
+*** Booting Zephyr OS build v4.3.0-9312-g4a05d1ed7d7c ***
+[00:00:00.000,000] [0m<dbg> bttester: tester_init: Initializing tester[0m
+[00:00:00.510,000] [0m<dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff[0m
+[00:00:00.690,000] [1;33m<wrn> bt_hci_core: Num of Controller's ACL packets != ACL bt_conn_tx contexts (3 != 4)[0m
+[00:00:00.690,000] [1;33m<wrn> bt_hci_core: Num of Controller's ISO packets != ISO bt_conn_tx contexts(3 != 4)[0m
+[00:00:00.870,000] [0m<inf> bt_hci_core: HCI transport: HCI User Channel[0m
+[00:00:00.870,000] [0m<inf> bt_hci_core: Identity: D5:B6:CC:31:DB:3B (random)[0m
+[00:00:00.870,000] [0m<inf> bt_hci_core: HCI: version 6.1 (0x0f) revision 0x3069, manufacturer 0x0059[0m
+[00:00:00.870,000] [0m<inf> bt_hci_core: LMP: version 6.1 (0x0f) subver 0x3069[0m
+[00:00:00.870,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:00.870,000] [0m<dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00[0m
+[00:00:00.880,000] [0m<dbg> bttester: cmd_handler: cmd service 0x01 opcode 0x01 index 0xff[0m
+[00:00:00.880,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:00.920,000] [0m<dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff[0m
+[00:00:00.920,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:00.920,000] [0m<dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00[0m
+[00:00:00.930,000] [0m<dbg> bttester: cmd_handler: cmd service 0x02 opcode 0x01 index 0xff[0m
+[00:00:00.930,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:00.980,000] [0m<dbg> bttester: cmd_handler: cmd service 0x00 opcode 0x03 index 0xff[0m
+[00:00:00.980,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:00.980,000] [0m<dbg> bttester: tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00[0m
+[00:00:01.020,000] [0m<dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x01 index 0xff[0m
+[00:00:01.020,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:01.050,000] [0m<dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x04 index 0x00[0m
+[00:00:01.050,000] [1;33m<wrn> bttester_mesh: Loading default comp data[0m
+[00:00:01.050,000] [1;33m<wrn> bt_mesh_access: Unused space in relation list: 2[0m
+[00:00:01.050,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:01.050,000] [0m<dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x04 index 0x00 status 0x00[0m
+[00:00:01.100,000] [0m<dbg> bttester: cmd_handler: cmd service 0x01 opcode 0x03 index 0x00[0m
+[00:00:01.100,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:03.250,000] [0m<dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x02 index 0x00[0m
+[00:00:03.250,000] [0m<dbg> bttester_mesh: config_prov: [0m
+[00:00:03.250,000] [0m<dbg> bttester: cmd_handler: Command returns status 0[0m
+[00:00:03.250,000] [0m<dbg> bttester: tester_rsp_with_index: service 0x04 opcode 0x02 index 0x00 status 0x00[0m
+[00:00:03.260,000] [0m<dbg> bttester: cmd_handler: cmd service 0x04 opcode 0x78 index 0x00[0m
+[00:00:03.260,000] [0m<dbg> bttester_mesh: start: [0m
+[00:00:03.260,000] [0m<inf> bt_mesh_provisionee: Device UUID: 6934e83d-0c3f-45c4-858e-88b0c60e34ca[0m
+ASSERTION FAIL [err == 0] @ WEST_TOPDIR/zephyr/subsys/bluetooth/host/hci_core.c:483
+	Controller unresponsive, command opcode 0x2036 timeout with err -11
+@ WEST_TOPDIR/zephyr/subsys/bluetooth/host/hci_core.c:483
+[00:00:13.270,000] [1;31m<err> os: >>> ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0[0m
+[00:00:13.270,000] [1;31m<err> os: Current thread: 0x83a6060 (unknown)[0m
+[00:00:13.270,000] [1;31m<err> os: Halting system[0m
+Exiting due to fatal error
+==3834315==LeakSanitizer has encountered a fatal error.
+==3834315==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==3834315==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+2026/03/21 05:35:26 socat[3834320] W cannot restore terminal settings on fd 5: Input/output error
