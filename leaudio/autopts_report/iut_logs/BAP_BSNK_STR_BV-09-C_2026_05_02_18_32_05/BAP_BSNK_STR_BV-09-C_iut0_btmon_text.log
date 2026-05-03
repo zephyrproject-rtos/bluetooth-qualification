@@ -1,0 +1,934 @@
+Bluetooth monitor ver 5.72
+= Note: Linux version 6.14.0-36-generic (x86_64)                       0.015134
+= Note: Bluetooth subsystem version 2.22                               0.015136
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci1)              [hci1] 0.015137
+= New Index: 48:5F:99:8E:E0:64 (Primary,USB,hci0)               [hci0] 0.015137
+= Open Index: 00:00:00:00:00:00                                 [hci1] 0.129107
+= Index Info: 00:00:00:00:00:00 (Nordic Semiconductor ASA)      [hci1] 0.129120
+@ USER Open: main (privileged) version 2.22            {0x0001} [hci1] 0.129129
+< HCI Command: Reset (0x03|0x0003) plen 0                    #1 [hci1] 0.130527
+> HCI Event: Command Complete (0x0e) plen 4                  #2 [hci1] 0.131015
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Supported... (0x04|0x0003) plen 0  #3 [hci1] 0.148936
+> HCI Event: Command Complete (0x0e) plen 12                 #4 [hci1] 0.149486
+      Read Local Supported Features (0x04|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0x00 0x00 0x00 0x00 0x60 0x00 0x00 0x00
+          BR/EDR Not Supported
+          LE Supported (Controller)
+< HCI Command: Read Local Version In.. (0x04|0x0001) plen 0  #5 [hci1] 0.168650
+> HCI Event: Command Complete (0x0e) plen 12                 #6 [hci1] 0.169151
+      Read Local Version Information (0x04|0x0001) ncmd 1
+        Status: Success (0x00)
+        HCI version: Reserved (0x0f) - Revision 12393 (0x3069)
+        LMP version: Reserved (0x0f) - Subversion 12393 (0x3069)
+        Manufacturer: Nordic Semiconductor ASA (89)
+< HCI Command: Read Local Supported... (0x04|0x0002) plen 0  #7 [hci1] 0.188553
+> HCI Event: Command Complete (0x0e) plen 68                 #8 [hci1] 0.189675
+      Read Local Supported Commands (0x04|0x0002) ncmd 1
+        Status: Success (0x00)
+        Commands: 119 entries
+          Disconnect (Octet 0 - Bit 5)
+          Read Remote Version Information (Octet 2 - Bit 7)
+          Set Event Mask (Octet 5 - Bit 6)
+          Reset (Octet 5 - Bit 7)
+          Read Connection Accept Timeout (Octet 7 - Bit 2)
+          Write Connection Accept Timeout (Octet 7 - Bit 3)
+          Read Transmit Power Level (Octet 10 - Bit 2)
+          Set Controller To Host Flow Control (Octet 10 - Bit 5)
+          Host Buffer Size (Octet 10 - Bit 6)
+          Host Number of Completed Packets (Octet 10 - Bit 7)
+          Read Local Version Information (Octet 14 - Bit 3)
+          Read Local Supported Features (Octet 14 - Bit 5)
+          Read BD ADDR (Octet 15 - Bit 1)
+          Read RSSI (Octet 15 - Bit 5)
+          Set Event Mask Page 2 (Octet 22 - Bit 2)
+          LE Set Event Mask (Octet 25 - Bit 0)
+          LE Read Buffer Size (Octet 25 - Bit 1)
+          LE Read Local Supported Features (Octet 25 - Bit 2)
+          LE Set Random Address (Octet 25 - Bit 4)
+          LE Set Advertising Parameters (Octet 25 - Bit 5)
+          LE Read Advertising Channel TX Power (Octet 25 - Bit 6)
+          LE Set Advertising Data (Octet 25 - Bit 7)
+          LE Set Scan Response Data (Octet 26 - Bit 0)
+          LE Set Advertise Enable (Octet 26 - Bit 1)
+          LE Set Scan Parameters (Octet 26 - Bit 2)
+          LE Set Scan Enable (Octet 26 - Bit 3)
+          LE Create Connection (Octet 26 - Bit 4)
+          LE Create Connection Cancel (Octet 26 - Bit 5)
+          LE Read Accept List Size (Octet 26 - Bit 6)
+          LE Clear Accept List (Octet 26 - Bit 7)
+          LE Add Device To Accept List (Octet 27 - Bit 0)
+          LE Remove Device From Accept List (Octet 27 - Bit 1)
+          LE Connection Update (Octet 27 - Bit 2)
+          LE Set Host Channel Classification (Octet 27 - Bit 3)
+          LE Read Channel Map (Octet 27 - Bit 4)
+          LE Read Remote Used Features (Octet 27 - Bit 5)
+          LE Encrypt (Octet 27 - Bit 6)
+          LE Rand (Octet 27 - Bit 7)
+          LE Start Encryption (Octet 28 - Bit 0)
+          LE Long Term Key Request Reply (Octet 28 - Bit 1)
+          LE Long Term Key Request Neg Reply (Octet 28 - Bit 2)
+          LE Read Supported States (Octet 28 - Bit 3)
+          LE Receiver Test (Octet 28 - Bit 4)
+          LE Transmitter Test (Octet 28 - Bit 5)
+          LE Test End (Octet 28 - Bit 6)
+          Read Authenticated Payload Timeout (Octet 32 - Bit 4)
+          Write Authenticated Payload Timeout (Octet 32 - Bit 5)
+          LE Set Data Length (Octet 33 - Bit 6)
+          LE Read Suggested Default Data Length (Octet 33 - Bit 7)
+          LE Write Suggested Default Data Length (Octet 34 - Bit 0)
+          LE Add Device To Resolving List (Octet 34 - Bit 3)
+          LE Remove Device From Resolving List (Octet 34 - Bit 4)
+          LE Clear Resolving List (Octet 34 - Bit 5)
+          LE Read Resolving List Size (Octet 34 - Bit 6)
+          LE Set Address Resolution Enable (Octet 35 - Bit 1)
+          LE Set Resolvable Private Address Timeout (Octet 35 - Bit 2)
+          LE Read Maximum Data Length (Octet 35 - Bit 3)
+          LE Read PHY (Octet 35 - Bit 4)
+          LE Set Default PHY (Octet 35 - Bit 5)
+          LE Set PHY (Octet 35 - Bit 6)
+          LE Enhanced Receiver Test (Octet 35 - Bit 7)
+          LE Enhanced Transmitter Test (Octet 36 - Bit 0)
+          LE Set Advertising Set Random Address (Octet 36 - Bit 1)
+          LE Set Extended Advertising Parameters (Octet 36 - Bit 2)
+          LE Set Extended Advertising Data (Octet 36 - Bit 3)
+          LE Set Extended Scan Response Data (Octet 36 - Bit 4)
+          LE Set Extended Advertising Enable (Octet 36 - Bit 5)
+          LE Read Maximum Advertising Data Length (Octet 36 - Bit 6)
+          LE Read Number of Supported Advertising Sets (Octet 36 - Bit 7)
+          LE Remove Advertising Set (Octet 37 - Bit 0)
+          LE Clear Advertising Sets (Octet 37 - Bit 1)
+          LE Set Periodic Advertising Parameters (Octet 37 - Bit 2)
+          LE Set Periodic Advertising Data (Octet 37 - Bit 3)
+          LE Set Periodic Advertising Enable (Octet 37 - Bit 4)
+          LE Set Extended Scan Parameters (Octet 37 - Bit 5)
+          LE Set Extended Scan Enable (Octet 37 - Bit 6)
+          LE Extended Create Connection (Octet 37 - Bit 7)
+          LE Periodic Advertising Create Sync (Octet 38 - Bit 0)
+          LE Periodic Advertising Create Sync Cancel (Octet 38 - Bit 1)
+          LE Periodic Advertising Terminate Sync (Octet 38 - Bit 2)
+          LE Add Device To Periodic Advertiser List (Octet 38 - Bit 3)
+          LE Remove Device From Periodic Advertiser List (Octet 38 - Bit 4)
+          LE Clear Periodic Advertiser List (Octet 38 - Bit 5)
+          LE Read Periodic Advertiser List Size (Octet 38 - Bit 6)
+          LE Read Transmit Power (Octet 38 - Bit 7)
+          LE Read RF Path Compensation (Octet 39 - Bit 0)
+          LE Write RF Path Compensation (Octet 39 - Bit 1)
+          LE Set Privacy Mode (Octet 39 - Bit 2)
+          LE Periodic Advertising Receive Enable (Octet 40 - Bit 5)
+          LE Periodic Advertising Sync Transfer (Octet 40 - Bit 6)
+          LE Periodic Advertising Set Info Transfer (Octet 40 - Bit 7)
+          LE Periodic Advertising Sync Transfer Parameters (Octet 41 - Bit 0)
+          LE Set Default Periodic Advertisng Sync Transfer Parameters (Octet 41 - Bit 1)
+          LE Read Buffer v2 (Octet 41 - Bit 5)
+          LE Read ISO TX Sync (Octet 41 - Bit 6)
+          LE Set Connected Isochronous Group Parameters (Octet 41 - Bit 7)
+          LE Set Connected Isochronous Group Parameters Test (Octet 42 - Bit 0)
+          LE Create Connected Isochronous Stream (Octet 42 - Bit 1)
+          LE Remove Connected Isochronous Group (Octet 42 - Bit 2)
+          LE Accept Connected Isochronous Stream Request (Octet 42 - Bit 3)
+          LE Reject Connected Isochronous Stream Request (Octet 42 - Bit 4)
+          LE Create Broadcast Isochronous Group (Octet 42 - Bit 5)
+          LE Create Broadcast Isochronous Group Test (Octet 42 - Bit 6)
+          LE Terminate Broadcast Isochronous Group (Octet 42 - Bit 7)
+          LE Broadcast Isochronous Group Create Sync (Octet 43 - Bit 0)
+          LE Broadcast Isochronous Group Terminate Sync (Octet 43 - Bit 1)
+          LE Request Peer SCA (Octet 43 - Bit 2)
+          LE Setup Isochronous Data Path (Octet 43 - Bit 3)
+          LE Remove Isochronous Data Path (Octet 43 - Bit 4)
+          LE Isochronous Transmit Test (Octet 43 - Bit 5)
+          LE Isochronous Receive Test (Octet 43 - Bit 6)
+          LE Isochronous Read Test Counters (Octet 43 - Bit 7)
+          LE Isochronous Read Test Counters (Octet 44 - Bit 0)
+          LE Set Host Feature (Octet 44 - Bit 1)
+          Octet 44 - Bit 2 
+          Octet 45 - Bit 6 
+          Octet 46 - Bit 0 
+          Octet 46 - Bit 1 
+          Octet 46 - Bit 2 
+< HCI Command: Host Buffer Size (0x03|0x0033) plen 7         #9 [hci1] 0.208517
+        ACL MTU: 255  ACL max packet: 16
+        SCO MTU: 0    SCO max packet: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #10 [hci1] 0.209051
+      Host Buffer Size (0x03|0x0033) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Controller To Ho.. (0x03|0x0031) plen 1  #11 [hci1] 0.228574
+        Flow control: ACL Data Packets (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #12 [hci1] 0.229018
+      Set Controller To Host Flow Control (0x03|0x0031) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Local Suppor.. (0x08|0x0003) plen 0  #13 [hci1] 0.248550
+> HCI Event: Command Complete (0x0e) plen 12                #14 [hci1] 0.249056
+      LE Read Local Supported Features (0x08|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0xfd 0x79 0x00 0xf7 0x30 0x01 0x00 0x00
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Ping
+          LE Data Packet Length Extension
+          LL Privacy
+          Extended Scanner Filter Policies
+          LE 2M PHY
+          LE Coded PHY
+          LE Extended Advertising
+          LE Periodic Advertising
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Periodic Advertising ADI support
+          Connection Subrating
+          Unknown features (0x0000010000000000)
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #15 [hci1] 0.268547
+        Bit Number: 32
+          Connected Isochronous Stream (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #16 [hci1] 0.268963
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Buffer v2 (0x08|0x0060) plen 0       #17 [hci1] 0.288538
+> HCI Event: Command Complete (0x0e) plen 10                #18 [hci1] 0.288988
+      LE Read Buffer v2 (0x08|0x0060) ncmd 1
+        Status: Success (0x00)
+        ACL MTU: 27
+        ACL max packet: 3
+        ISO MTU: 318
+        ISO max packet: 3
+< HCI Command: LE Read Maximum Adve.. (0x08|0x003a) plen 0  #19 [hci1] 0.308642
+> HCI Event: Command Complete (0x0e) plen 6                 #20 [hci1] 0.309076
+      LE Read Maximum Advertising Data Length (0x08|0x003a) ncmd 1
+        Status: Success (0x00)
+        Max length: 1650
+< HCI Command: LE Read Supported St.. (0x08|0x001c) plen 0  #21 [hci1] 0.328611
+> HCI Event: Command Complete (0x0e) plen 12                #22 [hci1] 0.329139
+      LE Read Supported States (0x08|0x001c) ncmd 1
+        Status: Success (0x00)
+        States: 0x000003ff3e0306ff
+          Non-connectable Advertising State
+          Scannable Advertising State
+          Connectable Advertising State
+          High Duty Cycle Directed Advertising State
+          Passive Scanning State
+          Active Scanning State
+          Initiating State
+            and Connection State (Central Role)
+          Connection State (Peripheral Role)
+          Scannable Advertising State
+            and Passive Scanning State
+          Connectable Advertising State
+            and Passive Scanning State
+          Non-connectable Advertising State
+            and Initiating State
+          Scannable Advertising State
+            and Initiating State
+          Active Scanning State
+            and Connection State (Central Role)
+          Passive Scanning State
+            and Connection State (Peripheral Role)
+          Active Scanning State
+            and Connection State (Peripheral Role)
+          Initiating State
+            and Connection State (Central Role)
+            and Central Role & Central Role
+          Low Duty Cycle Directed Advertising State
+          Connectable Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Initiating State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+< HCI Command: LE Read Maximum Data.. (0x08|0x002f) plen 0  #23 [hci1] 0.348613
+> HCI Event: Command Complete (0x0e) plen 12                #24 [hci1] 0.349076
+      LE Read Maximum Data Length (0x08|0x002f) ncmd 1
+        Status: Success (0x00)
+        Max TX octets: 251
+        Max TX time: 2704
+        Max RX octets: 251
+        Max RX time: 2704
+< HCI Command: LE Write Suggested D.. (0x08|0x0024) plen 4  #25 [hci1] 0.368620
+        TX octets: 251
+        TX time: 2704
+> HCI Event: Command Complete (0x0e) plen 4                 #26 [hci1] 0.369108
+      LE Write Suggested Default Data Length (0x08|0x0024) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Resolving Li.. (0x08|0x002a) plen 0  #27 [hci1] 0.388556
+> HCI Event: Command Complete (0x0e) plen 5                 #28 [hci1] 0.389012
+      LE Read Resolving List Size (0x08|0x002a) ncmd 1
+        Status: Success (0x00)
+        Size: 8
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8       #29 [hci1] 0.408536
+        Mask: 0x000002023f87fa5e
+          LE Advertising Report
+          LE Connection Update Complete
+          LE Read Remote Used Features Complete
+          LE Long Term Key Request
+          LE Data Length Change
+          LE Enhanced Connection Complete
+          LE PHY Update Complete
+          LE Extended Advertising Report
+          LE Periodic Advertising Sync Established
+          LE Periodic Advertising Report
+          LE Periodic Advertising Sync Lost
+          LE Extended Scan Timeout
+          LE Extended Advertising Set Terminated
+          LE Scan Request Received
+          LE Periodic Advertising Sync Transfer Rvc
+          LE CIS Established
+          LE CIS Request
+          LE Create BIG Complete
+          LE Terminate BIG Complete
+          LE BIG Sync Estabilished Complete
+          LE BIG Sync Lost
+          LE BIG Info Advertising Report
+          Unknown mask (0x0000020000000000)
+> HCI Event: Command Complete (0x0e) plen 4                 #30 [hci1] 0.409022
+      LE Set Event Mask (0x08|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8          #31 [hci1] 0.428506
+        Mask: 0x2000800002008890
+          Disconnection Complete
+          Encryption Change
+          Read Remote Version Information Complete
+          Hardware Error
+          Data Buffer Overflow
+          Encryption Key Refresh Complete
+          LE Meta
+> HCI Event: Command Complete (0x0e) plen 4                 #32 [hci1] 0.429059
+      Set Event Mask (0x03|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0            #33 [hci1] 0.448537
+> HCI Event: Command Complete (0x0e) plen 10                #34 [hci1] 0.449051
+      Read BD ADDR (0x04|0x0009) ncmd 1
+        Status: Success (0x00)
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #35 [hci1] 0.468553
+        Address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #36 [hci1] 0.469033
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #37 [hci1] 4.098595
+        Address: 26:66:F9:08:61:8E (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #38 [hci1] 4.099073
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0041) plen 8  #39 [hci1] 4.108645
+        Own address type: Random (0x01)
+        Filter policy: Accept all advertisement (0x00)
+        PHYs: 0x01
+        Entry 0: LE 1M
+          Type: Active (0x01)
+          Interval: 60.000 msec (0x0060)
+          Window: 30.000 msec (0x0030)
+> HCI Event: Command Complete (0x0e) plen 4                 #40 [hci1] 4.109193
+      LE Set Extended Scan Parameters (0x08|0x0041) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0042) plen 6  #41 [hci1] 4.128621
+        Extended scan: Enabled (0x01)
+        Filter duplicates: Enabled (0x01)
+        Duration: 0 msec (0x0000)
+        Period: 0.00 sec (0x0000)
+> HCI Event: Command Complete (0x0e) plen 4                 #42 [hci1] 4.129190
+      LE Set Extended Scan Enable (0x08|0x0042) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                   #43 [hci1] 5.596601
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0000
+            Props: 0x0000
+            Data status: [0;32mComplete[0m
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: LE 1M
+          SID: 0x00
+          TX power: 127 dBm
+          RSSI: -23 dBm (0xe9)
+          Periodic advertising interval: 750.00 msec (0x0258)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        06 16 52 18 92 67 2d 0d 09 50 54 53 2d 42 41 50  ..R..g-..PTS-BAP
+        2d 42 31 31 41                                   -B11A           
+        Service Data: Broadcast Audio Announcement (0x1852)
+        Broadcast ID: 2975634 (0x2d6792)
+        Name (complete): PTS-BAP-B11A
+< HCI Command: LE Set Extended Scan.. (0x08|0x0042) plen 6  #44 [hci1] 5.699088
+        Extended scan: Disabled (0x00)
+        Filter duplicates: Disabled (0x00)
+        Duration: 0 msec (0x0000)
+        Period: 0.00 sec (0x0000)
+> HCI Event: Command Complete (0x0e) plen 4                 #45 [hci1] 5.701605
+      LE Set Extended Scan Enable (0x08|0x0042) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Periodic Adverti.. (0x08|0x0044) plen 14  #46 [hci1] 5.728677
+        Options: 0x0000
+        Use advertising SID, Advertiser Address Type and address
+        Reporting initially enabled
+        SID: 0x00
+        Adv address type: Public (0x00)
+        Adv address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Skip: 0x0005
+        Sync timeout: 1000 msec (0x0064)
+        Sync CTE type: 0x0000
+> HCI Event: Command Status (0x0f) plen 4                   #47 [hci1] 5.729324
+      LE Periodic Advertising Create Sync (0x08|0x0044) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #48 [hci1] 5.748607
+        Address: 0B:F7:6D:E2:CB:94 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #49 [hci1] 5.749152
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0041) plen 13  #50 [hci1] 5.768625
+        Own address type: Random (0x01)
+        Filter policy: Accept all advertisement (0x00)
+        PHYs: 0x05
+        Entry 0: LE 1M
+          Type: Passive (0x00)
+          Interval: 60.000 msec (0x0060)
+          Window: 30.000 msec (0x0030)
+        Entry 1: LE Coded
+          Type: Passive (0x00)
+          Interval: 60.000 msec (0x0060)
+          Window: 30.000 msec (0x0030)
+> HCI Event: Command Complete (0x0e) plen 4                 #51 [hci1] 5.769213
+      LE Set Extended Scan Parameters (0x08|0x0041) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0042) plen 6  #52 [hci1] 5.788622
+        Extended scan: Enabled (0x01)
+        Filter duplicates: Enabled (0x01)
+        Duration: 0 msec (0x0000)
+        Period: 0.00 sec (0x0000)
+> HCI Event: Command Complete (0x0e) plen 4                 #53 [hci1] 5.789185
+      LE Set Extended Scan Enable (0x08|0x0042) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                   #54 [hci1] 6.352448
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0000
+            Props: 0x0000
+            Data status: [0;32mComplete[0m
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: LE 1M
+          SID: 0x00
+          TX power: 127 dBm
+          RSSI: -23 dBm (0xe9)
+          Periodic advertising interval: 750.00 msec (0x0258)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        06 16 52 18 92 67 2d 0d 09 50 54 53 2d 42 41 50  ..R..g-..PTS-BAP
+        2d 42 31 31 41                                   -B11A           
+        Service Data: Broadcast Audio Announcement (0x1852)
+        Broadcast ID: 2975634 (0x2d6792)
+        Name (complete): PTS-BAP-B11A
+> HCI Event: LE Meta Event (0x3e) plen 16                   #55 [hci1] 7.080118
+      LE Periodic Advertising Sync Established (0x0e)
+        Status: Success (0x00)
+        Sync handle: 290
+        Advertising SID: 0x00
+        Advertiser address type: Public (0x00)
+        Advertiser address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Advertiser PHY: LE 1M (0x01)
+        Periodic advertising interval: 750.00 msec (0x0258)
+        Advertiser clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 48                   #56 [hci1] 7.080696
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -24 dBm (0xe8)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                   #57 [hci1] 7.080909
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+< HCI Command: LE Set Extended Scan.. (0x08|0x0042) plen 6  #58 [hci1] 7.089051
+        Extended scan: Disabled (0x00)
+        Filter duplicates: Disabled (0x00)
+        Duration: 0 msec (0x0000)
+        Period: 0.00 sec (0x0000)
+> HCI Event: Command Complete (0x0e) plen 4                 #59 [hci1] 7.090469
+      LE Set Extended Scan Enable (0x08|0x0042) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Broadcast Isochr.. (0x08|0x006b) plen 25  #60 [hci1] 7.159248
+        BIG Handle: 0x00
+        BIG Sync Handle: 0x0122
+        Encryption: Unencrypted (0x00)
+        Broadcast Code: 00000000000000000000000000000000
+        Maximum Number Subevents: 0x00
+        Timeout: 100 ms (0x000a)
+        Number of BIS: 1
+        BIS ID: 0x01
+> HCI Event: Command Status (0x0f) plen 4                   #61 [hci1] 7.160060
+      LE Broadcast Isochronous Group Create Sync (0x08|0x006b) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 48                   #62 [hci1] 7.830426
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -24 dBm (0xe8)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                   #63 [hci1] 7.830716
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+> HCI Event: LE Meta Event (0x3e) plen 17                   #64 [hci1] 7.833071
+      LE Broadcast Isochronous Group Sync Estabilished (0x1d)
+        Status: Success (0x00)
+        BIG Handle: 0x00
+        Transport Latency: 18423 us (0x0047f7)
+        NSE: 5
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        ISO Interval: 7.50 msec (0x0006)
+        Connection Handle #0: 194
+< HCI Command: LE Setup Isochronou.. (0x08|0x006e) plen 13  #65 [hci1] 7.850530
+        Handle: 194
+        Data Path Direction: Output (Controller to Host) (0x01)
+        Data Path: HCI (0x00)
+        Coding Format: Transparent (0x03)
+        Company Codec ID: Ericsson Technology Licensing (0)
+        Vendor Codec ID: 0
+        Controller Delay: 0 us (0x000000)
+        Codec Configuration Length: 0
+        Codec Configuration: 
+> HCI Event: Command Complete (0x0e) plen 6                 #66 [hci1] 7.851189
+      LE Setup Isochronous Data Path (0x08|0x006e) ncmd 1
+        Status: Success (0x00)
+        Handle: 194
+> HCI Event: LE Meta Event (0x3e) plen 48                   #67 [hci1] 8.580385
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -33 dBm (0xdf)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                   #68 [hci1] 8.580658
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #69 [hci1] 8.974286
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #70 [hci1] 8.981843
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #71 [hci1] 8.989045
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #72 [hci1] 9.004292
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #73 [hci1] 9.011811
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #74 [hci1] 9.019320
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #75 [hci1] 9.026793
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #76 [hci1] 9.034366
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #77 [hci1] 9.041780
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #78 [hci1] 9.049305
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #79 [hci1] 9.056802
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #80 [hci1] 9.064331
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #81 [hci1] 9.071830
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #82 [hci1] 9.079271
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #83 [hci1] 9.094322
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #84 [hci1] 9.101861
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #85 [hci1] 9.109316
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #86 [hci1] 9.116801
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #87 [hci1] 9.124327
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #88 [hci1] 9.131799
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #89 [hci1] 9.139328
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #90 [hci1] 9.146820
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #91 [hci1] 9.154309
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #92 [hci1] 9.161769
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #93 [hci1] 9.169271
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #94 [hci1] 9.184356
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #95 [hci1] 9.191777
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #96 [hci1] 9.199339
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #97 [hci1] 9.206799
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #98 [hci1] 9.214342
+> ISO Data RX: Handle 194 flags 0x06 dlen 105               #99 [hci1] 9.221781
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #100 [hci1] 9.229402
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #101 [hci1] 9.236781
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #102 [hci1] 9.244369
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #103 [hci1] 9.251808
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #104 [hci1] 9.259204
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #105 [hci1] 9.274303
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #106 [hci1] 9.281835
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #107 [hci1] 9.289346
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #108 [hci1] 9.296858
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #109 [hci1] 9.304387
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #110 [hci1] 9.311780
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #111 [hci1] 9.319306
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #112 [hci1] 9.326773
+> HCI Event: LE Meta Event (0x3e) plen 48                  #113 [hci1] 9.330394
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -24 dBm (0xe8)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                  #114 [hci1] 9.330627
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #115 [hci1] 9.334339
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #116 [hci1] 9.341873
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #117 [hci1] 9.349339
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #118 [hci1] 9.356715
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #119 [hci1] 9.371797
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #120 [hci1] 9.379447
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #121 [hci1] 9.386739
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #122 [hci1] 9.394273
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #123 [hci1] 9.401802
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #124 [hci1] 9.409316
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #125 [hci1] 9.416846
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #126 [hci1] 9.424367
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #127 [hci1] 9.431800
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #128 [hci1] 9.439336
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #129 [hci1] 9.446682
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #130 [hci1] 9.461766
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #131 [hci1] 9.469319
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #132 [hci1] 9.476788
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #133 [hci1] 9.484341
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #134 [hci1] 9.491822
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #135 [hci1] 9.499316
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #136 [hci1] 9.506773
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #137 [hci1] 9.514368
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #138 [hci1] 9.521827
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #139 [hci1] 9.529327
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #140 [hci1] 9.536707
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #141 [hci1] 9.551788
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #142 [hci1] 9.559302
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #143 [hci1] 9.566814
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #144 [hci1] 9.574316
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #145 [hci1] 9.581786
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #146 [hci1] 9.589296
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #147 [hci1] 9.596789
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #148 [hci1] 9.604340
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #149 [hci1] 9.611799
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #150 [hci1] 9.619315
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #151 [hci1] 9.626797
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #152 [hci1] 9.634267
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #153 [hci1] 9.649344
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #154 [hci1] 9.656720
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #155 [hci1] 9.664307
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #156 [hci1] 9.671789
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #157 [hci1] 9.679324
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #158 [hci1] 9.686784
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #159 [hci1] 9.694317
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #160 [hci1] 9.701783
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #161 [hci1] 9.709303
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #162 [hci1] 9.716893
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #163 [hci1] 9.724181
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #164 [hci1] 9.739326
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #165 [hci1] 9.746754
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #166 [hci1] 9.754352
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #167 [hci1] 9.761776
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #168 [hci1] 9.769348
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #169 [hci1] 9.776786
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #170 [hci1] 9.784311
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #171 [hci1] 9.791809
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #172 [hci1] 9.799334
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #173 [hci1] 9.806809
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #174 [hci1] 9.814276
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #175 [hci1] 9.829383
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #176 [hci1] 9.836870
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #177 [hci1] 9.844324
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #178 [hci1] 9.851788
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #179 [hci1] 9.859327
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #180 [hci1] 9.866781
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #181 [hci1] 9.874344
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #182 [hci1] 9.881769
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #183 [hci1] 9.889340
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #184 [hci1] 9.896861
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #185 [hci1] 9.904332
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #186 [hci1] 9.911692
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #187 [hci1] 9.926804
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #188 [hci1] 9.934317
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #189 [hci1] 9.941778
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #190 [hci1] 9.949382
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #191 [hci1] 9.956777
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #192 [hci1] 9.964324
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #193 [hci1] 9.971770
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #194 [hci1] 9.979326
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #195 [hci1] 9.986789
+> ISO Data RX: Handle 194 flags 0x06 dlen 105              #196 [hci1] 9.994310
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #197 [hci1] 10.001686
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #198 [hci1] 10.016798
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #199 [hci1] 10.024332
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #200 [hci1] 10.031785
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #201 [hci1] 10.039279
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #202 [hci1] 10.046742
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #203 [hci1] 10.054342
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #204 [hci1] 10.061781
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #205 [hci1] 10.069255
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #206 [hci1] 10.076729
+> HCI Event: LE Meta Event (0x3e) plen 48                 #207 [hci1] 10.080308
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -33 dBm (0xdf)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                 #208 [hci1] 10.080571
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #209 [hci1] 10.084345
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #210 [hci1] 10.091724
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #211 [hci1] 10.106756
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #212 [hci1] 10.114527
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #213 [hci1] 10.121878
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #214 [hci1] 10.129367
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #215 [hci1] 10.136763
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #216 [hci1] 10.144321
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #217 [hci1] 10.151780
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #218 [hci1] 10.159351
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #219 [hci1] 10.166771
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #220 [hci1] 10.174312
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #221 [hci1] 10.181779
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #222 [hci1] 10.189207
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #223 [hci1] 10.204264
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #224 [hci1] 10.211802
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #225 [hci1] 10.219332
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #226 [hci1] 10.226748
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #227 [hci1] 10.234353
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #228 [hci1] 10.241820
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #229 [hci1] 10.249327
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #230 [hci1] 10.256840
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #231 [hci1] 10.264301
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #232 [hci1] 10.271772
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #233 [hci1] 10.279305
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #234 [hci1] 10.294317
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #235 [hci1] 10.301766
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #236 [hci1] 10.309338
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #237 [hci1] 10.316735
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #238 [hci1] 10.324281
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #239 [hci1] 10.331749
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #240 [hci1] 10.339340
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #241 [hci1] 10.346745
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #242 [hci1] 10.354394
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #243 [hci1] 10.361747
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #244 [hci1] 10.369173
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #245 [hci1] 10.384334
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #246 [hci1] 10.391794
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #247 [hci1] 10.399287
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #248 [hci1] 10.406811
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #249 [hci1] 10.414289
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #250 [hci1] 10.421768
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #251 [hci1] 10.429288
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #252 [hci1] 10.436753
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #253 [hci1] 10.444343
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #254 [hci1] 10.451764
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #255 [hci1] 10.459307
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #256 [hci1] 10.466791
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #257 [hci1] 10.481808
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #258 [hci1] 10.489279
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #259 [hci1] 10.496769
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #260 [hci1] 10.504331
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #261 [hci1] 10.511757
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #262 [hci1] 10.519352
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #263 [hci1] 10.526781
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #264 [hci1] 10.534321
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #265 [hci1] 10.541767
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #266 [hci1] 10.549322
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #267 [hci1] 10.556732
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #268 [hci1] 10.571744
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #269 [hci1] 10.579317
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #270 [hci1] 10.586768
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #271 [hci1] 10.594291
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #272 [hci1] 10.601814
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #273 [hci1] 10.609288
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #274 [hci1] 10.616758
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #275 [hci1] 10.624323
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #276 [hci1] 10.631757
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #277 [hci1] 10.639276
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #278 [hci1] 10.646714
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #279 [hci1] 10.661785
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #280 [hci1] 10.669327
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #281 [hci1] 10.676776
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #282 [hci1] 10.684278
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #283 [hci1] 10.691749
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #284 [hci1] 10.699341
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #285 [hci1] 10.706741
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #286 [hci1] 10.714274
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #287 [hci1] 10.721705
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #288 [hci1] 10.729345
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #289 [hci1] 10.736664
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #290 [hci1] 10.751776
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #291 [hci1] 10.759294
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #292 [hci1] 10.766742
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #293 [hci1] 10.774300
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #294 [hci1] 10.781801
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #295 [hci1] 10.789283
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #296 [hci1] 10.796807
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #297 [hci1] 10.804317
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #298 [hci1] 10.811830
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #299 [hci1] 10.819340
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #300 [hci1] 10.826761
+> HCI Event: LE Meta Event (0x3e) plen 48                 #301 [hci1] 10.830361
+      LE Periodic Advertising Report (0x0f)
+        Sync handle: 290
+        TX power: 127 dbm (0x7f)
+        RSSI: -23 dBm (0xe9)
+        CTE Type: No Constant Tone Extension (0xff)
+        Data status: [0;32mComplete[0m
+        Data length: 0x28
+        27 16 51 18 40 9c 00 01 01 06 00 00 00 00 0a 02  '.Q.@...........
+        01 07 02 02 00 03 04 61 00 06 03 02 04 00 01 09  .......a........
+        01 06 05 03 01 00 00 00                          ........        
+> HCI Event: LE Meta Event (0x3e) plen 20                 #302 [hci1] 10.830575
+      LE Broadcast Isochronous Group Info Advertising Report (0x22)
+        Sync Handle: 0x0122
+        Number BIS: 1
+        NSE: 5
+        ISO Interval: 7.50 msec (0x0006)
+        BN: 1
+        PTO: 1
+        IRC: 5
+        Maximum PDU: 97
+        SDU Interval: 8163 us (0x001fe3)
+        Maximum SDU: 97
+        PHY: LE 2M (0x02)
+        Framing: Framed (0x01)
+        Encryption: 0x00
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #303 [hci1] 10.834232
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #304 [hci1] 10.849297
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #305 [hci1] 10.856818
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #306 [hci1] 10.864300
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #307 [hci1] 10.871753
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #308 [hci1] 10.879313
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #309 [hci1] 10.886764
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #310 [hci1] 10.894324
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #311 [hci1] 10.901758
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #312 [hci1] 10.909337
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #313 [hci1] 10.916800
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #314 [hci1] 10.924175
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #315 [hci1] 10.939287
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #316 [hci1] 10.946753
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #317 [hci1] 10.954271
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #318 [hci1] 10.961790
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #319 [hci1] 10.969303
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #320 [hci1] 10.976754
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #321 [hci1] 10.984284
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #322 [hci1] 10.991794
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #323 [hci1] 10.999286
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #324 [hci1] 11.006762
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #325 [hci1] 11.014171
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #326 [hci1] 11.029283
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #327 [hci1] 11.036810
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #328 [hci1] 11.044282
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #329 [hci1] 11.051790
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #330 [hci1] 11.059223
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #331 [hci1] 11.066757
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #332 [hci1] 11.074283
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #333 [hci1] 11.081769
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #334 [hci1] 11.089287
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #335 [hci1] 11.096771
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #336 [hci1] 11.104229
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #337 [hci1] 11.111711
+> ISO Data RX: Handle 194 flags 0x06 dlen 105             #338 [hci1] 11.126759
