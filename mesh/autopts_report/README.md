@@ -1,8 +1,8 @@
 # AutoPTS report
 
-    Start time: 2026_05_23_00_35_48
+    Start time: 2026_05_30_00_23_57
 
-    End time: 2026_05_23_11_28_11
+    End time: 2026_05_30_11_40_22
 
     PTS version: 8.13.0.4
 
@@ -12,9 +12,9 @@
 |DFUM     |86     |86    |0     | 100.00 % |
 |IOPT     |3      |2     |1     |  66.67 % |
 |MBTM     |48     |46    |2     |  95.83 % |
-|MESH     |477    |423   |54    |  88.68 % |
-|Total    |614    |557   |57    |  90.72 % |
+|MESH     |477    |419   |58    |  87.84 % |
+|Total    |614    |553   |61    |  90.07 % |
 
     Repositories:
 
-	zephyr: 07e34e68d34083eb2ae891fa3b41a004841d4339 [v4.4.0-3337-g07e34e68d34]
+	zephyr: fe01b66f8d9e7f35fd090ce1769acf6ce580af07 [v4.4.0-3826-gfe01b66f8d9]
