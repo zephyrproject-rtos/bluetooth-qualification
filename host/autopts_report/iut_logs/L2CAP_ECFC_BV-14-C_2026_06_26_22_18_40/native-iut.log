@@ -1,0 +1,43 @@
+WARNING: Using a test - not safe - entropy source
+uart connected to pseudotty: /dev/pts/5
+*** Booting Zephyr OS build v4.4.0-6418-g2382b45a66bf ***
+[00:00:00.000,000] [0m<dbg> bttester.tester_init: Initializing tester[0m
+[00:00:00.110,000] [0m<dbg> bttester.cmd_handler: cmd service 0x00 opcode 0x03 index 0xff[0m
+[00:00:00.290,000] [1;33m<wrn> bt_hci_core: Num of Controller's ISO packets != ISO bt_conn_tx contexts(3 != 4)[0m
+[00:00:00.470,000] [0m<inf> bt_hci_core: HCI transport: HCI User Channel[0m
+[00:00:00.470,000] [0m<inf> bt_hci_core: Identity: D5:B6:CC:31:DB:3B (random)[0m
+[00:00:00.470,000] [0m<inf> bt_hci_core: HCI: version 6.1 (0x0f) revision 0x3069, manufacturer 0x0059[0m
+[00:00:00.470,000] [0m<inf> bt_hci_core: LMP: version 6.1 (0x0f) subver 0x3069[0m
+[00:00:00.470,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.470,000] [0m<dbg> bttester.tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00[0m
+[00:00:00.480,000] [0m<dbg> bttester.cmd_handler: cmd service 0x01 opcode 0x01 index 0xff[0m
+[00:00:00.480,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.530,000] [0m<dbg> bttester.cmd_handler: cmd service 0x00 opcode 0x03 index 0xff[0m
+[00:00:00.530,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.530,000] [0m<dbg> bttester.tester_rsp_with_index: service 0x00 opcode 0x03 index 0xff status 0x00[0m
+[00:00:00.570,000] [0m<dbg> bttester.cmd_handler: cmd service 0x03 opcode 0x01 index 0xff[0m
+[00:00:00.570,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.610,000] [0m<dbg> bttester.cmd_handler: cmd service 0x01 opcode 0x03 index 0x00[0m
+[00:00:00.610,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.730,000] [0m<dbg> bttester.cmd_handler: cmd service 0x03 opcode 0x05 index 0x00[0m
+[00:00:00.730,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:00.730,000] [0m<dbg> bttester.tester_rsp_with_index: service 0x03 opcode 0x05 index 0x00 status 0x00[0m
+[00:00:02.740,000] [0m<dbg> bttester.cmd_handler: cmd service 0x01 opcode 0x0e index 0x00[0m
+[00:00:02.750,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:02.750,000] [0m<dbg> bttester.tester_rsp_with_index: service 0x01 opcode 0x0e index 0x00 status 0x00[0m
+[00:00:02.810,000] [0m<dbg> bttester_gap.le_connected: DF:A9:FF:F6:B1:1A (public): 0x00[0m
+[00:00:02.810,000] [0m<dbg> bttester.tester_event: service 0x01 opcode 0x82[0m
+[00:00:04.770,000] [0m<dbg> bttester.cmd_handler: cmd service 0x03 opcode 0x02 index 0x00[0m
+[00:00:04.770,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+[00:00:04.850,000] [0m<dbg> bttester.tester_event: service 0x03 opcode 0x82[0m
+[00:00:04.850,000] [0m<dbg> bttester.tester_event: service 0x03 opcode 0x82[0m
+[00:00:20.010,000] [0m<dbg> bttester_gap.le_disconnected: DF:A9:FF:F6:B1:1A (public): 0x08[0m
+[00:00:20.010,000] [0m<dbg> bttester.tester_event: service 0x01 opcode 0x83[0m
+[00:00:21.240,000] [0m<dbg> bttester.cmd_handler: cmd service 0x01 opcode 0x05 index 0x00[0m
+[00:00:21.250,000] [0m<dbg> bttester.cmd_handler: Command returns status 0[0m
+
+Stopped at 22.270s
+2026/06/26 22:19:03 socat[4168551] E read(5, 0x6351e5484000, 8192): Input/output error
+==4168548==LeakSanitizer has encountered a fatal error.
+==4168548==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==4168548==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)

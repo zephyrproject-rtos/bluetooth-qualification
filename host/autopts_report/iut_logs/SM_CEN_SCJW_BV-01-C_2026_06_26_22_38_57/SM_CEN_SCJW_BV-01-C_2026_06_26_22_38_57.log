@@ -1,0 +1,1754 @@
+2026-06-26 22:38:57,633 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:38:57,633 LT1-thread root DEBUG client.py                 1037  _run_test_case            : Starting TestCase _run_test_case SM SM/CEN/SCJW/BV-01-C
+2026-06-26 22:38:57,633 LT1-thread root DEBUG testcase.py               727   pre_run                   : pre_run SM SM/CEN/SCJW/BV-01-C
+2026-06-26 22:38:57,633 LT1-thread root DEBUG testcase.py               729   pre_run                   : About to run test case SM SM/CEN/SCJW/BV-01-C with commands:
+2026-06-26 22:38:57,633 LT1-thread root DEBUG testcase.py               731   pre_run                   : 0) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<bound method ZTestCase._test_case_start of <autopts.ptsprojects.zephyr.ztestcase.ZTestCase object at 0x788789a090d0>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=0 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 1) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function core_reg_svc_gap at 0x78878cfd5620> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 2) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<bound method Stack.gap_init of <autopts.ptsprojects.stack.stack.Stack object at 0x78878ab50f20>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=(b'Tester_F6B11A',) kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 3) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function gap_read_controller_info at 0x78878cff8400> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 4) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789b3e520> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 5) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789bdd300> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 6) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789bdda80> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 7) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function set_pts_addr at 0x78878cfd51c0> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=22 args=('DF:A9:FF:F6:B1:1A', 0) kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 8) class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function gap_set_bondable_off at 0x78878cff8220> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=0 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               731   pre_run                   : 9) class=<class 'autopts.ptsprojects.testcase.TestFuncCleanUp'>, func=<bound method ZTestCase._test_case_cleanup of <autopts.ptsprojects.zephyr.ztestcase.ZTestCase object at 0x788789a090d0>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=0 args=() kwds={}
+2026-06-26 22:38:57,634 LT1-thread root DEBUG testcase.py               738   pre_run                   : pre_run, run pre test case script
+2026-06-26 22:38:57,635 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<bound method ZTestCase._test_case_start of <autopts.ptsprojects.zephyr.ztestcase.ZTestCase object at 0x788789a090d0>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=1 args=() kwds={}
+2026-06-26 22:38:57,635 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:57,635 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:38:57,635 LT1-thread root DEBUG iutctl.py                 172   start                     : <class 'autopts.ptsprojects.iutctl.IutCtl'>.start
+2026-06-26 22:38:57,635 LT1-thread root DEBUG rtt.py                    163   start                     : <class 'autopts.rtt.BTMON'>.start
+2026-06-26 22:38:57,639 LT1-thread root DEBUG iutctl.py                 318   _start_native_mode        : Starting native process: /home/codecoup/workspace/zephyrproject/zephyr/tests/bluetooth/tester/build/zephyr/zephyr.exe --bt-dev=hci1 --attach_uart_cmd="socat %s,rawer,b1000000, UNIX-CONNECT:/tmp/bt-stack-tester1057789983 &"
+2026-06-26 22:38:57,640 LT1-thread root DEBUG native.py                 33    start                     : Starting native process: /home/codecoup/workspace/zephyrproject/zephyr/tests/bluetooth/tester/build/zephyr/zephyr.exe --bt-dev=hci1 --attach_uart_cmd="socat %s,rawer,b1000000, UNIX-CONNECT:/tmp/bt-stack-tester1057789983 &"
+2026-06-26 22:38:57,640 LT1-thread root DEBUG iutctl_common.py          402   accept                    : 
+2026-06-26 22:38:57,647 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          299   _rx_task                  : BTPWorkerThread-11961 (_rx_task) started
+2026-06-26 22:38:57,647 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: None->iut0
+2026-06-26 22:38:57,648 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:38:57,648 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x00, op=0x80, ctrl_index=0xff, data_len=0x00) bytearray(b'\x00\x80\xff\x00\x00')
+2026-06-26 22:38:57,649 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:38:57,649 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=0, op=128, ctrl_index=255, data_len=0) (b'',)
+2026-06-26 22:38:57,649 BTPWorkerThread-11961 (_rx_task) root DEBUG core.py                   23    core_iut_ready_ev         : 
+2026-06-26 22:38:57,748 LT1-thread root DEBUG iutctl.py                 395   wait_iut_ready_event      : IUT ready event received OK
+2026-06-26 22:38:57,749 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:38:57,749 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function core_reg_svc_gap at 0x78878cfd5620> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=() kwds={}
+2026-06-26 22:38:57,749 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:57,750 LT1-thread root DEBUG btp.py                    117   core_reg_svc_univ         : core_reg_svc_univ: gap_reg (GAP)
+2026-06-26 22:38:57,750 LT1-thread root DEBUG iutctl_common.py          161   send                      : 0 3 255 '1'
+2026-06-26 22:38:57,750 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0003ff010001'
+2026-06-26 22:38:57,751 LT1-thread root DEBUG btp.py                    613   core_reg_svc_rsp_succ     : 
+2026-06-26 22:38:57,751 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:38:58,124 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:38:58,124 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x00, op=0x03, ctrl_index=0xff, data_len=0x00) bytearray(b'\x00\x03\xff\x00\x00')
+2026-06-26 22:38:58,125 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:38:58,126 LT1-thread root DEBUG btp.py                    624   core_reg_svc_rsp_succ     : received Header(svc_id=0, op=3, ctrl_index=255, data_len=0) (b'',)
+2026-06-26 22:38:58,126 LT1-thread root DEBUG btp.py                    625   core_reg_svc_rsp_succ     : expected ((0, 3, 255, 0), (b'',))
+2026-06-26 22:38:58,126 LT1-thread root DEBUG btp.py                    630   core_reg_svc_rsp_succ     : response is valid
+2026-06-26 22:38:58,126 LT1-thread root DEBUG btp.py                    633   core_reg_svc_rsp_succ     : Reading supported commands for service: GAP
+2026-06-26 22:38:58,126 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 1 255 ''
+2026-06-26 22:38:58,126 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0101ff0000'
+2026-06-26 22:38:58,126 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:38:58,134 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:38:58,134 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x01, ctrl_index=0xff, data_len=0x07) bytearray(b'\x01\x01\xff\x07\x00')
+2026-06-26 22:38:58,135 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 7 bytes data
+2026-06-26 22:38:58,135 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'6e ff 7f 1f fe f7 0e'}, bytearray(b'n\xff\x7f\x1f\xfe\xf7\x0e')
+2026-06-26 22:38:58,137 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<bound method Stack.gap_init of <autopts.ptsprojects.stack.stack.Stack object at 0x78878ab50f20>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=(b'Tester_F6B11A',) kwds={}
+2026-06-26 22:38:58,137 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(b'Tester_F6B11A',), kwds={}
+2026-06-26 22:38:58,137 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function gap_read_controller_info at 0x78878cff8400> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=() kwds={}
+2026-06-26 22:38:58,137 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:58,137 LT1-thread root DEBUG gap.py                    1158  gap_read_controller_info  : 
+2026-06-26 22:38:58,137 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 3 0 ''
+2026-06-26 22:38:58,137 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0103000000'
+2026-06-26 22:38:58,137 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:38:58,154 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:38:58,155 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x03, ctrl_index=0x00, data_len=0x115) bytearray(b'\x01\x03\x00\x15\x01')
+2026-06-26 22:38:58,155 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 277 bytes data
+2026-06-26 22:38:58,155 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'3b db 31 cc b6 d5 13 06 02 00 13 82 00 00 00 00 00 62 74 70 5f 74 65 73 74 65 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00'}, bytearray(b';\xdb1\xcc\xb6\xd5\x13\x06\x02\x00\x13\x82\x00\x00\x00\x00\x00btp_tester\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+2026-06-26 22:38:58,157 LT1-thread root DEBUG gap.py                    1165  gap_read_controller_info  : received Header(svc_id=1, op=3, ctrl_index=0, data_len=277) (b';\xdb1\xcc\xb6\xd5\x13\x06\x02\x00\x13\x82\x00\x00\x00\x00\x00btp_tester\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00',)
+2026-06-26 22:38:58,157 LT1-thread root DEBUG gap.py                    1186  gap_read_controller_info  : IUT address 'd5b6cc31db3b' 'random'
+2026-06-26 22:38:58,157 LT1-thread root DEBUG gap.py                    591   __gap_current_settings_update : 33299
+2026-06-26 22:38:58,157 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789b3e520> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=() kwds={}
+2026-06-26 22:38:58,157 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:58,162 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789bdd300> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=() kwds={}
+2026-06-26 22:38:58,162 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:58,172 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function test_cases.<locals>.<lambda> at 0x788789bdda80> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=() kwds={}
+2026-06-26 22:38:58,173 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:58,181 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function set_pts_addr at 0x78878cfd51c0> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=23 args=('DF:A9:FF:F6:B1:1A', 0) kwds={}
+2026-06-26 22:38:58,181 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=('DF:A9:FF:F6:B1:1A', 0), kwds={}
+2026-06-26 22:38:58,181 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFunc'>, func=<function gap_set_bondable_off at 0x78878cff8220> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=1 args=() kwds={}
+2026-06-26 22:38:58,182 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:38:58,182 LT1-thread root DEBUG gap.py                    1091  gap_set_bondable_off      : 
+2026-06-26 22:38:58,182 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 9 0 '0'
+2026-06-26 22:38:58,182 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010900010000'
+2026-06-26 22:38:58,182 LT1-thread root DEBUG gap.py                    1193  gap_command_rsp_succ      : 
+2026-06-26 22:38:58,182 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:38:58,194 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:38:58,199 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x09, ctrl_index=0x00, data_len=0x04) bytearray(b'\x01\t\x00\x04\x00')
+2026-06-26 22:38:58,205 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 4 bytes data
+2026-06-26 22:38:58,216 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'03 82 00 00'}, bytearray(b'\x03\x82\x00\x00')
+2026-06-26 22:38:58,226 LT1-thread root DEBUG gap.py                    1198  gap_command_rsp_succ      : received Header(svc_id=1, op=9, ctrl_index=0, data_len=4) (b'\x03\x82\x00\x00',)
+2026-06-26 22:38:58,226 LT1-thread root DEBUG gap.py                    591   __gap_current_settings_update : (b'\x03\x82\x00\x00',)
+2026-06-26 22:38:58,230 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:38:59,739 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 100
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Initiate an connection from the IUT to the PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:38:59,739 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:38:59,739 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:00,231 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:00,231 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 100, Initiate an connection from the IUT to the PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:00,231 LT1-thread root DEBUG gap.py                    757   gap_connect               : None None
+2026-06-26 22:39:00,232 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 14 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf\\x00')"
+2026-06-26 22:39:00,232 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010e000800001ab1f6ffa9df00'
+2026-06-26 22:39:00,232 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:00,264 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:00,265 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0e, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0e\x00\x00\x00')
+2026-06-26 22:39:00,265 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:00,275 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:00,276 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x82, ctrl_index=0x00, data_len=0x0d) bytearray(b'\x01\x82\x00\r\x00')
+2026-06-26 22:39:00,276 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 13 bytes data
+2026-06-26 22:39:00,276 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 28 00 00 00 90 01'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01')
+2026-06-26 22:39:00,277 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=130, ctrl_index=0, data_len=13) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01',)
+2026-06-26 22:39:00,277 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    210   gap_connected_ev_         : b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01'
+2026-06-26 22:39:00,365 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:00,365 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 100 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:00,367 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:00,369 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 108
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please start pairing process.
+    style: MMI_Style_Ok 0x11040
+2026-06-26 22:39:00,369 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:00,369 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:01,367 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:01,367 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 108, Please start pairing process., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:01,367 LT1-thread root DEBUG gap.py                    868   gap_pair                  : None None
+2026-06-26 22:39:01,367 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 17 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:01,367 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0111000700001ab1f6ffa9df'
+2026-06-26 22:39:01,367 LT1-thread root DEBUG gap.py                    1193  gap_command_rsp_succ      : 
+2026-06-26 22:39:01,367 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:01,374 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:01,374 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x11, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x11\x00\x00\x00')
+2026-06-26 22:39:01,375 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:01,375 LT1-thread root DEBUG gap.py                    1198  gap_command_rsp_succ      : received Header(svc_id=1, op=17, ctrl_index=0, data_len=0) (b'',)
+2026-06-26 22:39:01,375 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:01,375 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'Ok' to wid 108 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:01,376 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:01,378 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:01,379 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=Ok
+2026-06-26 22:39:02,381 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 102
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:39:02,381 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:02,381 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:02,485 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:02,485 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x91, ctrl_index=0x00, data_len=0x09) bytearray(b'\x01\x91\x00\t\x00')
+2026-06-26 22:39:02,486 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 9 bytes data
+2026-06-26 22:39:02,486 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 01 10'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10')
+2026-06-26 22:39:02,486 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=145, ctrl_index=0, data_len=9) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10',)
+2026-06-26 22:39:02,487 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    489   gap_encryption_change_ev_ : 
+2026-06-26 22:39:02,487 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    491   gap_encryption_change_ev_ : enc change received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10'
+2026-06-26 22:39:02,487 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    500   gap_encryption_change_ev_ : received (0, 'dfa9fff6b11a', 1, 16)
+2026-06-26 22:39:02,487 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:02,488 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x89, ctrl_index=0x00, data_len=0x08) bytearray(b'\x01\x89\x00\x08\x00')
+2026-06-26 22:39:02,488 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 8 bytes data
+2026-06-26 22:39:02,489 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 02'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02')
+2026-06-26 22:39:02,489 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=137, ctrl_index=0, data_len=8) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02',)
+2026-06-26 22:39:02,489 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    295   gap_sec_level_changed_ev_ : 
+2026-06-26 22:39:02,489 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    297   gap_sec_level_changed_ev_ : received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02'
+2026-06-26 22:39:02,490 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    308   gap_sec_level_changed_ev_ : received (0, 'dfa9fff6b11a', 2)
+2026-06-26 22:39:03,377 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:03,377 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 102, Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:03,377 LT1-thread root DEBUG gap.py                    829   gap_disconnect            : None None
+2026-06-26 22:39:03,378 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 15 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:03,378 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010f000700001ab1f6ffa9df'
+2026-06-26 22:39:03,378 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:03,405 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:03,411 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0f, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0f\x00\x00\x00')
+2026-06-26 22:39:03,411 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:03,474 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:03,475 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x83, ctrl_index=0x00, data_len=0x07) bytearray(b'\x01\x83\x00\x07\x00')
+2026-06-26 22:39:03,475 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 7 bytes data
+2026-06-26 22:39:03,475 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf')
+2026-06-26 22:39:03,475 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=131, ctrl_index=0, data_len=7) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf',)
+2026-06-26 22:39:03,475 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    223   gap_disconnected_ev_      : b'\x00\x1a\xb1\xf6\xff\xa9\xdf'
+2026-06-26 22:39:03,517 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:03,517 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 102 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:03,525 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:03,532 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:03,658 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 100
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Initiate an connection from the IUT to the PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:39:03,658 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:03,658 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:04,525 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:04,526 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 100, Initiate an connection from the IUT to the PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:04,526 LT1-thread root DEBUG gap.py                    757   gap_connect               : None None
+2026-06-26 22:39:04,526 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 14 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf\\x00')"
+2026-06-26 22:39:04,526 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010e000800001ab1f6ffa9df00'
+2026-06-26 22:39:04,527 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:04,564 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:04,565 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0e, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0e\x00\x00\x00')
+2026-06-26 22:39:04,565 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:04,614 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:04,615 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x82, ctrl_index=0x00, data_len=0x0d) bytearray(b'\x01\x82\x00\r\x00')
+2026-06-26 22:39:04,615 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 13 bytes data
+2026-06-26 22:39:04,615 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 28 00 00 00 90 01'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01')
+2026-06-26 22:39:04,615 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=130, ctrl_index=0, data_len=13) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01',)
+2026-06-26 22:39:04,615 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    210   gap_connected_ev_         : b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01'
+2026-06-26 22:39:04,665 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:04,666 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 100 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:04,670 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:04,681 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 108
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please start pairing process.
+    style: MMI_Style_Ok 0x11040
+2026-06-26 22:39:04,681 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:04,681 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:05,671 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:05,671 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 108, Please start pairing process., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:05,672 LT1-thread root DEBUG gap.py                    868   gap_pair                  : None None
+2026-06-26 22:39:05,672 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 17 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:05,672 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0111000700001ab1f6ffa9df'
+2026-06-26 22:39:05,673 LT1-thread root DEBUG gap.py                    1193  gap_command_rsp_succ      : 
+2026-06-26 22:39:05,673 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:05,680 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:05,686 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x11, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x11\x00\x00\x00')
+2026-06-26 22:39:05,687 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:05,687 LT1-thread root DEBUG gap.py                    1198  gap_command_rsp_succ      : received Header(svc_id=1, op=17, ctrl_index=0, data_len=0) (b'',)
+2026-06-26 22:39:05,688 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:05,688 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'Ok' to wid 108 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:05,693 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:05,701 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:05,710 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=Ok
+2026-06-26 22:39:06,721 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 102
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:39:06,721 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:06,722 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:06,824 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x91, ctrl_index=0x00, data_len=0x09) bytearray(b'\x01\x91\x00\t\x00')
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 9 bytes data
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 01 10'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10')
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=145, ctrl_index=0, data_len=9) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10',)
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    489   gap_encryption_change_ev_ : 
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    491   gap_encryption_change_ev_ : enc change received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10'
+2026-06-26 22:39:06,825 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    500   gap_encryption_change_ev_ : received (0, 'dfa9fff6b11a', 1, 16)
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x89, ctrl_index=0x00, data_len=0x08) bytearray(b'\x01\x89\x00\x08\x00')
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 8 bytes data
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 02'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02')
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=137, ctrl_index=0, data_len=8) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02',)
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    295   gap_sec_level_changed_ev_ : 
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    297   gap_sec_level_changed_ev_ : received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02'
+2026-06-26 22:39:06,826 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    308   gap_sec_level_changed_ev_ : received (0, 'dfa9fff6b11a', 2)
+2026-06-26 22:39:07,694 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:07,694 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 102, Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:07,695 LT1-thread root DEBUG gap.py                    829   gap_disconnect            : None None
+2026-06-26 22:39:07,695 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 15 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:07,695 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010f000700001ab1f6ffa9df'
+2026-06-26 22:39:07,696 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:07,724 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:07,725 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0f, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0f\x00\x00\x00')
+2026-06-26 22:39:07,725 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:07,815 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:07,816 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x83, ctrl_index=0x00, data_len=0x07) bytearray(b'\x01\x83\x00\x07\x00')
+2026-06-26 22:39:07,816 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 7 bytes data
+2026-06-26 22:39:07,817 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf')
+2026-06-26 22:39:07,817 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=131, ctrl_index=0, data_len=7) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf',)
+2026-06-26 22:39:07,817 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    223   gap_disconnected_ev_      : b'\x00\x1a\xb1\xf6\xff\xa9\xdf'
+2026-06-26 22:39:07,826 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:07,826 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 102 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:07,830 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:07,838 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:07,970 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 100
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Initiate an connection from the IUT to the PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:39:07,970 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:07,971 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:08,831 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:08,831 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 100, Initiate an connection from the IUT to the PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:08,831 LT1-thread root DEBUG gap.py                    757   gap_connect               : None None
+2026-06-26 22:39:08,832 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 14 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf\\x00')"
+2026-06-26 22:39:08,832 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010e000800001ab1f6ffa9df00'
+2026-06-26 22:39:08,833 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:08,864 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:08,865 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0e, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0e\x00\x00\x00')
+2026-06-26 22:39:08,865 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:08,915 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:08,916 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x82, ctrl_index=0x00, data_len=0x0d) bytearray(b'\x01\x82\x00\r\x00')
+2026-06-26 22:39:08,916 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 13 bytes data
+2026-06-26 22:39:08,917 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 28 00 00 00 90 01'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01')
+2026-06-26 22:39:08,917 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=130, ctrl_index=0, data_len=13) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01',)
+2026-06-26 22:39:08,917 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    210   gap_connected_ev_         : b'\x00\x1a\xb1\xf6\xff\xa9\xdf(\x00\x00\x00\x90\x01'
+2026-06-26 22:39:08,965 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:08,966 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 100 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:08,970 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:08,979 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 108
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please start pairing process.
+    style: MMI_Style_Ok 0x11040
+2026-06-26 22:39:08,980 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:08,980 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:09,971 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:09,971 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 108, Please start pairing process., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:09,971 LT1-thread root DEBUG gap.py                    868   gap_pair                  : None None
+2026-06-26 22:39:09,971 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 17 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:09,971 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '0111000700001ab1f6ffa9df'
+2026-06-26 22:39:09,971 LT1-thread root DEBUG gap.py                    1193  gap_command_rsp_succ      : 
+2026-06-26 22:39:09,971 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:09,984 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:09,995 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x11, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x11\x00\x00\x00')
+2026-06-26 22:39:10,005 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:10,016 LT1-thread root DEBUG gap.py                    1198  gap_command_rsp_succ      : received Header(svc_id=1, op=17, ctrl_index=0, data_len=0) (b'',)
+2026-06-26 22:39:10,016 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:10,016 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'Ok' to wid 108 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:10,017 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:10,019 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:10,021 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=Ok
+2026-06-26 22:39:11,023 LT1-callback ClientCallback.on_implicit_send INFO client.py                 274   on_implicit_send          : 
+    ********************
+    BEGIN OnImplicitSend:
+    project_name: SM
+    wid: 102
+    test_case_name: SM/CEN/SCJW/BV-01-C
+    description: Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+    style: MMI_Style_Ok_Cancel2 0x11141
+2026-06-26 22:39:11,023 LT1-callback ClientCallback.on_implicit_send INFO client.py                 287   on_implicit_send          : Calling test cases on_implicit_send
+2026-06-26 22:39:11,024 LT1-callback ClientCallback.on_implicit_send INFO client.py                 300   on_implicit_send          : 
+    on_implicit_send returned response: WAIT
+    END OnImplicitSend
+    ********************
+2026-06-26 22:39:11,124 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:11,125 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x91, ctrl_index=0x00, data_len=0x09) bytearray(b'\x01\x91\x00\t\x00')
+2026-06-26 22:39:11,125 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 9 bytes data
+2026-06-26 22:39:11,125 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 01 10'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10')
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=145, ctrl_index=0, data_len=9) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10',)
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    489   gap_encryption_change_ev_ : 
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    491   gap_encryption_change_ev_ : enc change received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x01\x10'
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    500   gap_encryption_change_ev_ : received (0, 'dfa9fff6b11a', 1, 16)
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x89, ctrl_index=0x00, data_len=0x08) bytearray(b'\x01\x89\x00\x08\x00')
+2026-06-26 22:39:11,126 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 8 bytes data
+2026-06-26 22:39:11,127 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df 02'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02')
+2026-06-26 22:39:11,127 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=137, ctrl_index=0, data_len=8) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02',)
+2026-06-26 22:39:11,127 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    295   gap_sec_level_changed_ev_ : 
+2026-06-26 22:39:11,127 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    297   gap_sec_level_changed_ev_ : received b'\x00\x1a\xb1\xf6\xff\xa9\xdf\x02'
+2026-06-26 22:39:11,127 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    308   gap_sec_level_changed_ev_ : received (0, 'dfa9fff6b11a', 2)
+2026-06-26 22:39:12,017 LT1-thread root DEBUG testcase.py               679   run_wid                   : SM SM/CEN/SCJW/BV-01-C on_implicit_send
+2026-06-26 22:39:12,018 LT1-thread root DEBUG sm_wid.py                 27    sm_wid_hdl                : sm_wid_hdl, 102, Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS., SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:12,018 LT1-thread root DEBUG gap.py                    829   gap_disconnect            : None None
+2026-06-26 22:39:12,018 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 15 0 "bytearray(b'\\x00\\x1a\\xb1\\xf6\\xff\\xa9\\xdf')"
+2026-06-26 22:39:12,019 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010f000700001ab1f6ffa9df'
+2026-06-26 22:39:12,019 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:12,044 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:12,045 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x0f, ctrl_index=0x00, data_len=0x00) bytearray(b'\x01\x0f\x00\x00\x00')
+2026-06-26 22:39:12,045 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {''}, bytearray(b'')
+2026-06-26 22:39:12,115 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:12,116 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x83, ctrl_index=0x00, data_len=0x07) bytearray(b'\x01\x83\x00\x07\x00')
+2026-06-26 22:39:12,116 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 7 bytes data
+2026-06-26 22:39:12,116 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'00 1a b1 f6 ff a9 df'}, bytearray(b'\x00\x1a\xb1\xf6\xff\xa9\xdf')
+2026-06-26 22:39:12,116 BTPWorkerThread-11961 (_rx_task) root DEBUG btp.py                    695   event_handler             : Header(svc_id=1, op=131, ctrl_index=0, data_len=7) (b'\x00\x1a\xb1\xf6\xff\xa9\xdf',)
+2026-06-26 22:39:12,117 BTPWorkerThread-11961 (_rx_task) root DEBUG gap.py                    223   gap_disconnected_ev_      : b'\x00\x1a\xb1\xf6\xff\xa9\xdf'
+2026-06-26 22:39:12,145 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:12,146 LT1-thread root DEBUG testcase.py               722   run_wid                   : Sending response 'OK' to wid 102 test case SM/CEN/SCJW/BV-01-C
+2026-06-26 22:39:12,150 LT1-thread root DEBUG client.py                 327   get_result                : ClientCallback.get_result run_test_case
+2026-06-26 22:39:12,159 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_IMPLICIT_SEND PTS ControlServer  SM/CEN/SCJW/BV-01-C Server: SUCCESS with response=OK
+2026-06-26 22:39:15,845 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Message                  Message 
+
++46 ms
+ SM/CEN/SCJW/BV-01-C 
+2026-06-26 22:39:15,850 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Initialize Test Case 
+
++46 ms
+ SM/CEN/SCJW/BV-01-C Build date: Apr 30 2026, 13:20:25
+
+2026-06-26 22:39:15,863 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_START_TEST Start Test Case 
+
++46 ms
+ SM/CEN/SCJW/BV-01-C SM/CEN/SCJW/BV-01-C
+
+2026-06-26 22:39:15,883 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1062 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_RESET
+2026-06-26 22:39:15,886 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,889 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,892 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_READ_LOCAL_VERSION_INFORMATION
+2026-06-26 22:39:15,896 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_READ_LOCAL_VERSION_INFORMATION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           hciVersion=0x10,
+                           hciRevision=0x3020,
+                           lmpVersion=0x10,
+                           manufacturerName=0x0059,
+                           lmpSubversion=0x3020
+                         }
+2026-06-26 22:39:15,900 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,903 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_EVENT_MASK{
+                           leEventMask=0x005FFCFE7F8FFFFF
+                         }
+2026-06-26 22:39:15,905 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,908 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1078 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_SET_EVENT_MASK{
+                           eventMask=0x3FFFFFFFFFFFFFFF
+                         }
+2026-06-26 22:39:15,911 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,914 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,917 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_READ_LOCAL_SUPPORTED_FEATURES
+2026-06-26 22:39:15,919 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           lmpFeatures=0x0000006000000000
+                         }
+2026-06-26 22:39:15,922 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,925 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1093 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_READ_LOCAL_SUPPORTED_COMMANDS
+2026-06-26 22:39:15,928 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_READ_LOCAL_SUPPORTED_COMMANDS_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           supported_commands=0x000000000000000000000000000000E21FE7419FFFFFE3E007FFFFFFFE79C0300000077FFFFFF782180400E0000000C02228000C00E400000C00C00000800020
+                         }
+2026-06-26 22:39:15,948 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,951 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_READ_BD_ADDR
+2026-06-26 22:39:15,953 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_READ_BD_ADDR_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           bdAddress=0xDFA9FFF6B11A
+                         }
+2026-06-26 22:39:15,957 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,960 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_LOCAL_SUPPORTED_FEATURES
+2026-06-26 22:39:15,962 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_READ_LOCAL_SUPPORTED_FEATURES_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           leFeatures=0x80015936F70079FD
+                         }
+2026-06-26 22:39:15,965 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,968 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,971 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_EVENT_MASK{
+                           leEventMask=0x005FFCFE7F8FFFFF
+                         }
+2026-06-26 22:39:15,973 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,976 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1109 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_SET_EVENT_MASK{
+                           eventMask=0x3FFFFFFFFFFFFFFF
+                         }
+2026-06-26 22:39:15,979 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_SET_EVENT_MASK_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,982 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,984 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x20,
+                           bit_value=0x01
+                         }
+2026-06-26 22:39:15,987 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:15,991 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:15,994 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x26,
+                           bit_value=0x01
+                         }
+2026-06-26 22:39:15,997 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,000 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,003 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_HOST_FEATURE{
+                           bit_number=0x2F,
+                           bit_value=0x01
+                         }
+2026-06-26 22:39:16,006 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_HOST_FEATURE_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,009 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,011 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_READ_BUFFER_V2
+2026-06-26 22:39:16,014 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1125 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_READ_RESOLVING_LIST_SIZE
+2026-06-26 22:39:16,017 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_READ_BUFFER_SIZE_V2_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           HC_LE_Data_Packet_Length=0x00FB,
+                           HC_Total_Num_LE_Data_Packets=0x03,
+                           HC_LE_ISO_Packet_Length=0x05E4,
+                           HC_Total_Num_LE_ISO_Packets=0x03
+                         }
+2026-06-26 22:39:16,020 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_READ_RESOLVING_LIST_SIZE_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           res_list_size=0x08
+                         }
+2026-06-26 22:39:16,023 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           address=0xD5B6CC31DB3B
+                         }
+2026-06-26 22:39:16,029 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,034 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST{
+                           addressType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           address=0xD5B6CC31DB3B
+                         }
+2026-06-26 22:39:16,040 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,045 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,048 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1140 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_ADVERTISING_PARAMETERS{
+                           advertisingIntervalMin=0x00A0,
+                           advertisingIntervalMax=0x00C0,
+                           advertisingType=HCI_LE_CONNECTABLE_UNDIRECTED_ADVERTISING,
+                           ownAddressType=HCI_LE_PUBLIC_DEVICE_ADDRESS,
+                           directAddressType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           directAddress=0xD5B6CC31DB3B,
+                           advertisingChannelMap=0x07,
+                           advertisingFilterPolicy=HCI_LE_ALLOW_REQ_SCAN_ANY_CONNECT_ANY
+                         }
+2026-06-26 22:39:16,052 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_ADVERTISING_PARAMETERS_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,055 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,057 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_ADVERTISING_DATA{
+                           advertisingDataLength=0x14,
+                           advertisingData=0x020102030200180C095054532D534D2D31414231
+                         }
+2026-06-26 22:39:16,060 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_ADVERTISING_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,063 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,066 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_SCAN_RESPONSE_DATA{
+                           scanResponseDataLength=0x04,
+                           scanResponseData=0x03190000
+                         }
+2026-06-26 22:39:16,071 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_SCAN_RESPONSE_DATA_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,075 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1156 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,078 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1187 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+2026-06-26 22:39:16,081 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1187 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,084 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1187 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,086 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1187 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,089 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++1187 ms
+ SM/CEN/SCJW/BV-01-C MMI_100 (MMI_Style_Ok_Cancel2=0x00011141): Initiate an connection from the IUT to the PTS.
+
+2026-06-26 22:39:16,092 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_CONNECT_IND{
+                           bdAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           lcid=0x1205,
+                           status=0x0000
+                         }
+2026-06-26 22:39:16,095 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_ENHANCED_CONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle=0x0892,
+                           role=0x01,
+                           peerAddrType=0x01,
+                           peer_addr=0xD5B6CC31DB3B,
+                           local_rpa=0x000000000000,
+                           peer_rpa=0x000000000000,
+                           conn_interval=0x0028,
+                           conn_latency=0x0000,
+                           conn_timeout=0x0190,
+                           central_clock_accuracy=0x05
+                         }
+2026-06-26 22:39:16,100 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0xFFFF
+                         }
+2026-06-26 22:39:16,103 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x0892
+                         }
+2026-06-26 22:39:16,106 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,109 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x0892
+                         }
+2026-06-26 22:39:16,135 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C Connection established successfully.
+
+2026-06-26 22:39:16,139 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,141 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,144 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++1734 ms
+ SM/CEN/SCJW/BV-01-C MMI_108 (MMI_Style_Ok1=0x00011040): Please start pairing process.
+
+2026-06-26 22:39:16,146 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++2375 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_PHY_UPDATE_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle0x0892,
+                           tx_phy=0x02,
+                           rx_phy=0x02
+                         }
+2026-06-26 22:39:16,149 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++2875 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=7,
+                           data=01030008100000
+                         }
+2026-06-26 22:39:16,152 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++2875 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0007,
+                           Data=02010008100000
+                         }
+2026-06-26 22:39:16,155 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++2875 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=7,
+                           data=02010008100000
+                         }
+2026-06-26 22:39:16,158 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++2984 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=65,
+                           data=0C98308440221E2D910F0E54B71E7EC652857AA9B5A0DC65028824CC19DB1226E967A4816BCB62EFB21701E31FDB27561A6217575FB007A8BBDABE7E28B6F68482
+                         }
+2026-06-26 22:39:16,214 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3000 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0041,
+                           Data=0C8B0C99897B965C05B2266D305F4523164B6C2DE2CB27DDA5606C9984786BC37F882A11785824FCD578DB0BF6561A203EC252166F7C93BF01044DF3F7E39ABD7E
+                         }
+2026-06-26 22:39:16,217 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3000 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=65,
+                           data=0C8B0C99897B965C05B2266D305F4523164B6C2DE2CB27DDA5606C9984786BC37F882A11785824FCD578DB0BF6561A203EC252166F7C93BF01044DF3F7E39ABD7E
+                         }
+2026-06-26 22:39:16,277 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3078 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=035A3C23488611EA45727BE7A5F7B76DF5
+                         }
+2026-06-26 22:39:16,338 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3093 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=035A3C23488611EA45727BE7A5F7B76DF5
+                         }
+2026-06-26 22:39:16,343 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3171 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=048E6108F966A694CBE26DF70BB96773E6
+                         }
+2026-06-26 22:39:16,348 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3375 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0421C68F6ACA9E8F2E96C193AF1CE085AE
+                         }
+2026-06-26 22:39:16,353 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3375 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0421C68F6ACA9E8F2E96C193AF1CE085AE
+                         }
+2026-06-26 22:39:16,358 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3437 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=0D0EE01C191ED67BAD6170A996377CB32F
+                         }
+2026-06-26 22:39:16,363 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++3453 ms
+ SM/CEN/SCJW/BV-01-C Secure connection LTK: 1CADCF7AF6C00766E031819D5A5861F9
+
+2026-06-26 22:39:16,367 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3453 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0D503D0F0856201892CD5563022A68FF26
+                         }
+2026-06-26 22:39:16,371 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3453 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0D503D0F0856201892CD5563022A68FF26
+                         }
+2026-06-26 22:39:16,374 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3531 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x0892
+                         }
+2026-06-26 22:39:16,377 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++3531 ms
+ SM/CEN/SCJW/BV-01-C Final KeySize: 16, Masked LTK: 0x1CADCF7AF6C00766E031819D5A5861F9
+
+2026-06-26 22:39:16,380 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3578 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_LONG_TERM_KEY_REQUESTED_EVENT{
+                           connectionHandle=0x0892,
+                           randomNumber=0x0000000000000000,
+                           ediv=0x0000
+                         }
+2026-06-26 22:39:16,383 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++3578 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_LONG_TERM_KEY_REQUESTED_REPLY{
+                           connHandle=0x0892,
+                           ltk=0xF961585A9D8131E06607C0F67ACFAD1C
+                         }
+2026-06-26 22:39:16,386 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++3828 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_ENCRYPTION_CHANGE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x0892,
+                           encryptionEnable=0x01
+                         }
+2026-06-26 22:39:16,389 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++3828 ms
+ SM/CEN/SCJW/BV-01-C MMI_102 (MMI_Style_Ok_Cancel2=0x00011141): Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+
+2026-06-26 22:39:16,392 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++4921 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_DISCONNECT_IND{
+                           lcid=0x1205
+                         }
+2026-06-26 22:39:16,395 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++4921 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_DISCONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x0892,
+                           reason=HCI_REMOTE_USER_TERMINATED_CONNECTION
+                         }
+2026-06-26 22:39:16,398 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++4921 ms
+ SM/CEN/SCJW/BV-01-C Received HCI disconnection event. Handle = 0x0892
+
+2026-06-26 22:39:16,400 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++4921 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,403 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++4921 ms
+ SM/CEN/SCJW/BV-01-C Connection terminated successfully.
+
+2026-06-26 22:39:16,405 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,408 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,411 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+2026-06-26 22:39:16,413 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,416 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,419 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,422 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++5109 ms
+ SM/CEN/SCJW/BV-01-C MMI_100 (MMI_Style_Ok_Cancel2=0x00011141): Initiate an connection from the IUT to the PTS.
+
+2026-06-26 22:39:16,424 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_CONNECT_IND{
+                           bdAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           lcid=0x1205,
+                           status=0x0000
+                         }
+2026-06-26 22:39:16,435 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_ENHANCED_CONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle=0x08A1,
+                           role=0x01,
+                           peerAddrType=0x01,
+                           peer_addr=0xD5B6CC31DB3B,
+                           local_rpa=0x000000000000,
+                           peer_rpa=0x000000000000,
+                           conn_interval=0x0028,
+                           conn_latency=0x0000,
+                           conn_timeout=0x0190,
+                           central_clock_accuracy=0x05
+                         }
+2026-06-26 22:39:16,438 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0xFFFF
+                         }
+2026-06-26 22:39:16,441 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08A1
+                         }
+2026-06-26 22:39:16,444 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,447 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08A1
+                         }
+2026-06-26 22:39:16,450 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C Connection established successfully.
+
+2026-06-26 22:39:16,453 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,455 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,458 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++6062 ms
+ SM/CEN/SCJW/BV-01-C MMI_108 (MMI_Style_Ok1=0x00011040): Please start pairing process.
+
+2026-06-26 22:39:16,461 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++6718 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_PHY_UPDATE_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle0x08A1,
+                           tx_phy=0x02,
+                           rx_phy=0x02
+                         }
+2026-06-26 22:39:16,464 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7171 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=7,
+                           data=01030008100000
+                         }
+2026-06-26 22:39:16,467 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7171 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0007,
+                           Data=02010008100000
+                         }
+2026-06-26 22:39:16,470 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7171 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=7,
+                           data=02010008100000
+                         }
+2026-06-26 22:39:16,473 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7265 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=65,
+                           data=0C98308440221E2D910F0E54B71E7EC652857AA9B5A0DC65028824CC19DB1226E967A4816BCB62EFB21701E31FDB27561A6217575FB007A8BBDABE7E28B6F68482
+                         }
+2026-06-26 22:39:16,476 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7281 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0041,
+                           Data=0C5F7E00E3E5B3A56C64B02369188995B13904F0708DDA532D11725499F1EAAEACF2478A9C1C960C1AADA4D49BBBFA4001F67016F91FB7B7893FFB4DBA86532DE8
+                         }
+2026-06-26 22:39:16,479 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7281 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=65,
+                           data=0C5F7E00E3E5B3A56C64B02369188995B13904F0708DDA532D11725499F1EAAEACF2478A9C1C960C1AADA4D49BBBFA4001F67016F91FB7B7893FFB4DBA86532DE8
+                         }
+2026-06-26 22:39:16,482 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7359 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=035E3393F6C5EE469932FE0B09F0D09EB4
+                         }
+2026-06-26 22:39:16,485 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7359 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=035E3393F6C5EE469932FE0B09F0D09EB4
+                         }
+2026-06-26 22:39:16,490 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7468 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=045DA095555CC64D02679F89A05211AF56
+                         }
+2026-06-26 22:39:16,494 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7671 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0440687C334EE2E90EE160605410164DF0
+                         }
+2026-06-26 22:39:16,497 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7671 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0440687C334EE2E90EE160605410164DF0
+                         }
+2026-06-26 22:39:16,500 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7765 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=0D39BC71E02E12A2A4CDFD4427851A22D5
+                         }
+2026-06-26 22:39:16,503 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++7781 ms
+ SM/CEN/SCJW/BV-01-C Secure connection LTK: 682E60262482A313DFDA754FE996BE6C
+
+2026-06-26 22:39:16,506 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7781 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0DC4F7B689F8340AA25C01DAF8F6730962
+                         }
+2026-06-26 22:39:16,508 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7781 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0DC4F7B689F8340AA25C01DAF8F6730962
+                         }
+2026-06-26 22:39:16,511 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7859 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08A1
+                         }
+2026-06-26 22:39:16,514 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++7859 ms
+ SM/CEN/SCJW/BV-01-C Final KeySize: 16, Masked LTK: 0x682E60262482A313DFDA754FE996BE6C
+
+2026-06-26 22:39:16,517 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++7906 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_LONG_TERM_KEY_REQUESTED_EVENT{
+                           connectionHandle=0x08A1,
+                           randomNumber=0x0000000000000000,
+                           ediv=0x0000
+                         }
+2026-06-26 22:39:16,520 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++7906 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_LONG_TERM_KEY_REQUESTED_REPLY{
+                           connHandle=0x08A1,
+                           ltk=0x6CBE96E94F75DADF13A3822426602E68
+                         }
+2026-06-26 22:39:16,523 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++8171 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_ENCRYPTION_CHANGE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x08A1,
+                           encryptionEnable=0x01
+                         }
+2026-06-26 22:39:16,526 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++8171 ms
+ SM/CEN/SCJW/BV-01-C MMI_102 (MMI_Style_Ok_Cancel2=0x00011141): Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+
+2026-06-26 22:39:16,529 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++9265 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_DISCONNECT_IND{
+                           lcid=0x1205
+                         }
+2026-06-26 22:39:16,531 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++9265 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_DISCONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x08A1,
+                           reason=HCI_REMOTE_USER_TERMINATED_CONNECTION
+                         }
+2026-06-26 22:39:16,534 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++9265 ms
+ SM/CEN/SCJW/BV-01-C Received HCI disconnection event. Handle = 0x08A1
+
+2026-06-26 22:39:16,537 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++9265 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,540 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++9265 ms
+ SM/CEN/SCJW/BV-01-C Connection terminated successfully.
+
+2026-06-26 22:39:16,545 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++9406 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,550 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++9406 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,556 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++9421 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_SET_ADVERTISE_ENABLE{
+                           advertisingEnable=HCI_LE_ADVERTISING_ENABLE
+                         }
+2026-06-26 22:39:16,561 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++9421 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_SET_ADVERTISE_ENABLE_COMMAND_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,564 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++9421 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,567 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++9421 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,570 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++9421 ms
+ SM/CEN/SCJW/BV-01-C MMI_100 (MMI_Style_Ok_Cancel2=0x00011141): Initiate an connection from the IUT to the PTS.
+
+2026-06-26 22:39:16,572 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_CONNECT_IND{
+                           bdAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           lcid=0x1205,
+                           status=0x0000
+                         }
+2026-06-26 22:39:16,575 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0xFFFF
+                         }
+2026-06-26 22:39:16,579 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_ENHANCED_CONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle=0x08B3,
+                           role=0x01,
+                           peerAddrType=0x01,
+                           peer_addr=0xD5B6CC31DB3B,
+                           local_rpa=0x000000000000,
+                           peer_rpa=0x000000000000,
+                           conn_interval=0x0028,
+                           conn_latency=0x0000,
+                           conn_timeout=0x0190,
+                           central_clock_accuracy=0x05
+                         }
+2026-06-26 22:39:16,583 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08B3
+                         }
+2026-06-26 22:39:16,586 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,589 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08B3
+                         }
+2026-06-26 22:39:16,592 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C Connection established successfully.
+
+2026-06-26 22:39:16,594 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,597 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated connection.
+
+2026-06-26 22:39:16,600 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++10375 ms
+ SM/CEN/SCJW/BV-01-C MMI_108 (MMI_Style_Ok1=0x00011040): Please start pairing process.
+
+2026-06-26 22:39:16,603 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11031 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_PHY_UPDATE_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           conn_handle0x08B3,
+                           tx_phy=0x02,
+                           rx_phy=0x02
+                         }
+2026-06-26 22:39:16,606 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11468 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=7,
+                           data=01030008100000
+                         }
+2026-06-26 22:39:16,609 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++11468 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0007,
+                           Data=02010008100000
+                         }
+2026-06-26 22:39:16,612 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11484 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=7,
+                           data=02010008100000
+                         }
+2026-06-26 22:39:16,615 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11578 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=65,
+                           data=0C98308440221E2D910F0E54B71E7EC652857AA9B5A0DC65028824CC19DB1226E967A4816BCB62EFB21701E31FDB27561A6217575FB007A8BBDABE7E28B6F68482
+                         }
+2026-06-26 22:39:16,618 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++11593 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0041,
+                           Data=0C5B9BFA0267C7A6469C6243A5C880D1A617C3F4A6454A9C061F42C960054B639464AB2AFE27A51887B2DDA41820159FB731E963761CDC9D783A556FC65AFAEAD6
+                         }
+2026-06-26 22:39:16,621 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11609 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=65,
+                           data=0C5B9BFA0267C7A6469C6243A5C880D1A617C3F4A6454A9C061F42C960054B639464AB2AFE27A51887B2DDA41820159FB731E963761CDC9D783A556FC65AFAEAD6
+                         }
+2026-06-26 22:39:16,624 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++11671 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0332D0199AD7A5305A5D339CFA2EAA4292
+                         }
+2026-06-26 22:39:16,627 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11687 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0332D0199AD7A5305A5D339CFA2EAA4292
+                         }
+2026-06-26 22:39:16,630 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11781 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=04DA64D21EC8845E8286BC235A02440D0C
+                         }
+2026-06-26 22:39:16,633 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++11984 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=043BBDBCB0C1397095466AE4585BB11D5C
+                         }
+2026-06-26 22:39:16,636 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++11984 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=043BBDBCB0C1397095466AE4585BB11D5C
+                         }
+2026-06-26 22:39:16,639 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++12078 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_READ_IND{
+                           peerAddr=0xD5B6CC31DB3B,
+                           peerAddrType=HCI_LE_RANDOM_DEVICE_ADDRESS,
+                           length=17,
+                           data=0D7690F9193FC4FDF97584600DD3846CFA
+                         }
+2026-06-26 22:39:16,642 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++12093 ms
+ SM/CEN/SCJW/BV-01-C Secure connection LTK: DA5E1A94200A2D3652A4E4DD7A16ADEE
+
+2026-06-26 22:39:16,648 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++12093 ms
+ SM/CEN/SCJW/BV-01-C Send Event               L2CAP!L2CAP_LE_FIXED_CH_DATA_SEND_REQ{
+                           handle=12,
+                           length=0x0011,
+                           Data=0DA5673B7C2535AC5600A9689CA27E3193
+                         }
+2026-06-26 22:39:16,655 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++12093 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            L2CAP?L2CAP_FIXED_CH_DATA_TX_ECHO_IND{
+                           length=17,
+                           data=0DA5673B7C2535AC5600A9689CA27E3193
+                         }
+2026-06-26 22:39:16,660 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++12171 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!GET_CONNECTION_HANDLE{
+                           addr=0xD5B6CC31DB3B,
+                           addr_type=0x01,
+                           conn_handle=0x08B3
+                         }
+2026-06-26 22:39:16,665 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++12171 ms
+ SM/CEN/SCJW/BV-01-C Final KeySize: 16, Masked LTK: 0xDA5E1A94200A2D3652A4E4DD7A16ADEE
+
+2026-06-26 22:39:16,673 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++12234 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_LE_LONG_TERM_KEY_REQUESTED_EVENT{
+                           connectionHandle=0x08B3,
+                           randomNumber=0x0000000000000000,
+                           ediv=0x0000
+                         }
+2026-06-26 22:39:16,679 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++12234 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_LE_LONG_TERM_KEY_REQUESTED_REPLY{
+                           connHandle=0x08B3,
+                           ltk=0xEEAD167ADDE4A452362D0A20941A5EDA
+                         }
+2026-06-26 22:39:16,683 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++12484 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_ENCRYPTION_CHANGE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x08B3,
+                           encryptionEnable=0x01
+                         }
+2026-06-26 22:39:16,687 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE User Action Required 
+
++12484 ms
+ SM/CEN/SCJW/BV-01-C MMI_102 (MMI_Style_Ok_Cancel2=0x00011141): Please initiate a disconnection to the PTS.
+
+Description: Verify that the Implementation Under Test(IUT) can initiate a disconnect request to PTS.
+
+2026-06-26 22:39:16,691 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++13578 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            ATT?ATT_DISCONNECT_IND{
+                           lcid=0x1205
+                         }
+2026-06-26 22:39:16,694 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++13578 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_DISCONNECTION_COMPLETE_EVENT{
+                           status=HCI_OK,
+                           connectionHandle=0x08B3,
+                           reason=HCI_REMOTE_USER_TERMINATED_CONNECTION
+                         }
+2026-06-26 22:39:16,697 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++13578 ms
+ SM/CEN/SCJW/BV-01-C Received HCI disconnection event. Handle = 0x08B3
+
+2026-06-26 22:39:16,700 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Preliminary Verdict 
+
++13578 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,702 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++13578 ms
+ SM/CEN/SCJW/BV-01-C Connection terminated successfully.
+
+2026-06-26 22:39:16,705 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_PRELIMINARY_VERDICT Pass 
+
++13734 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,709 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_MESSAGE Verdict Description 
+
++13734 ms
+ SM/CEN/SCJW/BV-01-C IUT successfully initiated disconnection.
+
+2026-06-26 22:39:16,713 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_SEND_EVENT  
+
++14734 ms
+ SM/CEN/SCJW/BV-01-C Send Event               HCI!HCI_RESET
+2026-06-26 22:39:16,715 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++14734 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,718 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_RECEIVE_EVENT  
+
++15734 ms
+ SM/CEN/SCJW/BV-01-C Receive Event            HCI?HCI_RESET_COMPLETE_EVENT{
+                           status=HCI_OK
+                         }
+2026-06-26 22:39:16,721 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_FINAL_VERDICT Final Verdict 
+
++17296 ms
+ SM/CEN/SCJW/BV-01-C PASS
+
+2026-06-26 22:39:16,724 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_FINAL_VERDICT Encrypted Verdict 
+
++17296 ms
+ SM/CEN/SCJW/BV-01-C A1#ZWY4MzQ5MDg3MmQwNTIxOGQzMzQ5YjY2ODA5M2MzNjQ5ZDY4NmY0Yjc2MzIzM2VkNTUyNTFhNGU4Mjg1MjI0NA==#hGHh10ykBWhqKh37pQmEPXkCx+8RxglFZAA46tKIe1qBfbfjktI9k0dlyuY+cF1l
+
+2026-06-26 22:39:16,727 LT1-callback ClientCallback.log INFO client.py                 251   log                       : PTS_LOGTYPE_END_TEST Test Case Ended 
+
++17296 ms
+ SM/CEN/SCJW/BV-01-C SM/CEN/SCJW/BV-01-C
+
+2026-06-26 22:39:18,954 LT1-callback root DEBUG client.py                 312   set_result                : ClientCallback, set_result, run_test_case, PASS
+2026-06-26 22:39:18,955 LT1-thread root DEBUG client.py                 1117  _run_test_case            : After run_test_case error_code=0 status='PASS'
+2026-06-26 22:39:18,955 LT1-thread root DEBUG testcase.py               766   post_run                  : post_run SM SM/CEN/SCJW/BV-01-C 0
+2026-06-26 22:39:18,955 LT1-thread root DEBUG testcase.py               254   start                     : Starting test function: class=<class 'autopts.ptsprojects.testcase.TestFuncCleanUp'>, func=<bound method ZTestCase._test_case_cleanup of <autopts.ptsprojects.zephyr.ztestcase.ZTestCase object at 0x788789a090d0>> start_wid=None stop_wid=None post_wid=None skip_call=None call_count=1 args=() kwds={}
+2026-06-26 22:39:18,955 LT1-thread root DEBUG testcase.py               266   start                     : Test function parameters: args=(), kwds={}
+2026-06-26 22:39:18,955 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:18,955 LT1-thread root DEBUG iutctl.py                 415   stop                      : <class 'autopts.ptsprojects.iutctl.IutCtl'>.stop
+2026-06-26 22:39:18,955 LT1-thread root DEBUG gap.py                    1063  gap_set_powered_off       : 
+2026-06-26 22:39:18,955 LT1-thread root DEBUG iutctl_common.py          161   send                      : 1 5 0 '0'
+2026-06-26 22:39:18,955 LT1-thread root DEBUG iutctl_common.py          166   send                      : sending frame '010500010000'
+2026-06-26 22:39:18,955 LT1-thread root DEBUG gap.py                    1193  gap_command_rsp_succ      : 
+2026-06-26 22:39:18,955 LT1-thread root DEBUG iutctl_common.py          339   read                      : 
+2026-06-26 22:39:18,985 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          123   read                      : Read 5 bytes
+2026-06-26 22:39:18,985 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          131   read                      : Received: hdr: Header(svc_id=0x01, op=0x05, ctrl_index=0x00, data_len=0x04) bytearray(b'\x01\x05\x00\x04\x00')
+2026-06-26 22:39:18,990 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          139   read                      : Read 4 bytes data
+2026-06-26 22:39:19,000 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          154   read                      : Received data: {'02 82 00 00'}, bytearray(b'\x02\x82\x00\x00')
+2026-06-26 22:39:19,005 LT1-thread root DEBUG gap.py                    1198  gap_command_rsp_succ      : received Header(svc_id=1, op=5, ctrl_index=0, data_len=4) (b'\x02\x82\x00\x00',)
+2026-06-26 22:39:19,005 LT1-thread root DEBUG gap.py                    591   __gap_current_settings_update : (b'\x02\x82\x00\x00',)
+2026-06-26 22:39:19,005 LT1-thread root DEBUG iutctl_common.py          416   close                     : Waiting for _rx_worker to finish ...
+2026-06-26 22:39:20,006 LT1-thread root DEBUG iutctl_common.py          416   close                     : Waiting for _rx_worker to finish ...
+2026-06-26 22:39:20,006 BTPWorkerThread-11961 (_rx_task) root DEBUG iutctl_common.py          332   _rx_task                  : BTPWorkerThread-11961 (_rx_task) finishing...
+2026-06-26 22:39:20,008 LT1-thread root DEBUG rtt.py                    224   stop                      : <class 'autopts.rtt.BTMON'>.stop
+2026-06-26 22:39:20,008 LT1-thread root DEBUG rtt.py                    112   stop                      : <class 'autopts.rtt.RTT'>.stop
+2026-06-26 22:39:20,018 LT1-thread root DEBUG iutctl.py                 525   select_iut                : Selected IUT controller: 0->iut0
+2026-06-26 22:39:23,019 LT1-thread root DEBUG testcase.py               794   post_run                  : post_run, cleanup running post test case script
+2026-06-26 22:39:23,019 LT1-thread root DEBUG testcase.py               802   post_run                  : post_run, run post test case script
+2026-06-26 22:39:23,036 LT1-thread root DEBUG client.py                 1147  _run_test_case            : Done TestCase _run_test_case SM SM/CEN/SCJW/BV-01-C
