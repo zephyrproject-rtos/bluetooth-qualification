@@ -1,10 +1,10 @@
 # AutoPTS report
 
-    Start time: 2026_08_18_01_07_30
+    Start time: 2026_08_20_01_07_27
 
-    End time: 2026_08_18_01_42_02
+    End time: 2026_08_20_02_00_34
 
-    PTS version: 8.14.0.4
+    PTS version: 8.14.1.6
 
     Test Group/Profile Summary: 
 |  Suite  | Total | Pass | Fail | Pass Rate|
@@ -13,7 +13,7 @@
 |ASCS     |1      |1     |0     | 100.00 % |
 |BAP      |6      |6     |0     | 100.00 % |
 |BASS     |1      |1     |0     | 100.00 % |
-|CAP      |3      |3     |0     | 100.00 % |
+|CAP      |3      |2     |1     |  66.67 % |
 |CCP      |1      |1     |0     | 100.00 % |
 |CSIP     |1      |1     |0     | 100.00 % |
 |CSIS     |1      |1     |0     | 100.00 % |
@@ -27,7 +27,7 @@
 |HAS      |1      |1     |0     | 100.00 % |
 |IAS      |1      |1     |0     | 100.00 % |
 |L2CAP    |2      |2     |0     | 100.00 % |
-|MBTM     |2      |2     |0     | 100.00 % |
+|MBTM     |2      |1     |1     |  50.00 % |
 |MCP      |1      |1     |0     | 100.00 % |
 |MESH     |3      |3     |0     | 100.00 % |
 |MICP     |1      |1     |0     | 100.00 % |
@@ -41,8 +41,8 @@
 |VCP      |1      |1     |0     | 100.00 % |
 |VCS      |1      |1     |0     | 100.00 % |
 |VOCS     |1      |1     |0     | 100.00 % |
-|Total    |56     |56    |0     | 100.00 % |
+|Total    |56     |54    |2     |  96.43 % |
 
     Repositories:
 
-	zephyr: edc09eb9efe45d5384efe09201839b2463d9504c [v4.4.0-12033-gedc09eb9efe]
+	zephyr: 93db4e5dfc8ad37286a97dc5f2c1785aab3f3165 [v4.4.0-12406-g93db4e5dfc8]
