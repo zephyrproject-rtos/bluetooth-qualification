@@ -1,0 +1,4224 @@
+Bluetooth monitor ver 5.72
+= Note: Linux version 6.14.0-36-generic (x86_64)                       0.123404
+= Note: Bluetooth subsystem version 2.22                               0.123406
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci2)              [hci2] 0.123406
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci1)              [hci1] 0.123407
+= New Index: 48:5F:99:8E:E0:64 (Primary,USB,hci0)               [hci0] 0.123408
+= Open Index: 00:00:00:00:00:00                                 [hci1] 0.206526
+= Index Info: 00:00:00:00:00:00 (Nordic Semiconductor ASA)      [hci1] 0.206531
+@ USER Open: main (privileged) version 2.22            {0x0001} [hci1] 0.206535
+< HCI Command: Reset (0x03|0x0003) plen 0                    #1 [hci1] 0.206908
+> HCI Event: Command Complete (0x0e) plen 4                  #2 [hci1] 0.207479
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Supported... (0x04|0x0003) plen 0  #3 [hci1] 0.226482
+> HCI Event: Command Complete (0x0e) plen 12                 #4 [hci1] 0.227024
+      Read Local Supported Features (0x04|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0x00 0x00 0x00 0x00 0x60 0x00 0x00 0x00
+          BR/EDR Not Supported
+          LE Supported (Controller)
+< HCI Command: Read Local Version In.. (0x04|0x0001) plen 0  #5 [hci1] 0.246529
+> HCI Event: Command Complete (0x0e) plen 12                 #6 [hci1] 0.246999
+      Read Local Version Information (0x04|0x0001) ncmd 1
+        Status: Success (0x00)
+        HCI version: Reserved (0x11) - Revision 12345 (0x3039)
+        LMP version: Reserved (0x11) - Subversion 12345 (0x3039)
+        Manufacturer: Nordic Semiconductor ASA (89)
+< HCI Command: Read Local Supported... (0x04|0x0002) plen 0  #7 [hci1] 0.266531
+> HCI Event: Command Complete (0x0e) plen 68                 #8 [hci1] 0.267555
+      Read Local Supported Commands (0x04|0x0002) ncmd 1
+        Status: Success (0x00)
+        Commands: 115 entries
+          Disconnect (Octet 0 - Bit 5)
+          Read Remote Version Information (Octet 2 - Bit 7)
+          Set Event Mask (Octet 5 - Bit 6)
+          Reset (Octet 5 - Bit 7)
+          Read Connection Accept Timeout (Octet 7 - Bit 2)
+          Write Connection Accept Timeout (Octet 7 - Bit 3)
+          Read Transmit Power Level (Octet 10 - Bit 2)
+          Set Controller To Host Flow Control (Octet 10 - Bit 5)
+          Host Buffer Size (Octet 10 - Bit 6)
+          Host Number of Completed Packets (Octet 10 - Bit 7)
+          Read Local Version Information (Octet 14 - Bit 3)
+          Read Local Supported Features (Octet 14 - Bit 5)
+          Read BD ADDR (Octet 15 - Bit 1)
+          Read RSSI (Octet 15 - Bit 5)
+          Set Event Mask Page 2 (Octet 22 - Bit 2)
+          LE Set Event Mask (Octet 25 - Bit 0)
+          LE Read Buffer Size (Octet 25 - Bit 1)
+          LE Read Local Supported Features (Octet 25 - Bit 2)
+          LE Set Random Address (Octet 25 - Bit 4)
+          LE Set Advertising Parameters (Octet 25 - Bit 5)
+          LE Read Advertising Channel TX Power (Octet 25 - Bit 6)
+          LE Set Advertising Data (Octet 25 - Bit 7)
+          LE Set Scan Response Data (Octet 26 - Bit 0)
+          LE Set Advertise Enable (Octet 26 - Bit 1)
+          LE Set Scan Parameters (Octet 26 - Bit 2)
+          LE Set Scan Enable (Octet 26 - Bit 3)
+          LE Create Connection (Octet 26 - Bit 4)
+          LE Create Connection Cancel (Octet 26 - Bit 5)
+          LE Read Accept List Size (Octet 26 - Bit 6)
+          LE Clear Accept List (Octet 26 - Bit 7)
+          LE Add Device To Accept List (Octet 27 - Bit 0)
+          LE Remove Device From Accept List (Octet 27 - Bit 1)
+          LE Connection Update (Octet 27 - Bit 2)
+          LE Set Host Channel Classification (Octet 27 - Bit 3)
+          LE Read Channel Map (Octet 27 - Bit 4)
+          LE Read Remote Used Features (Octet 27 - Bit 5)
+          LE Encrypt (Octet 27 - Bit 6)
+          LE Rand (Octet 27 - Bit 7)
+          LE Start Encryption (Octet 28 - Bit 0)
+          LE Long Term Key Request Reply (Octet 28 - Bit 1)
+          LE Long Term Key Request Neg Reply (Octet 28 - Bit 2)
+          LE Read Supported States (Octet 28 - Bit 3)
+          Read Authenticated Payload Timeout (Octet 32 - Bit 4)
+          Write Authenticated Payload Timeout (Octet 32 - Bit 5)
+          LE Set Data Length (Octet 33 - Bit 6)
+          LE Read Suggested Default Data Length (Octet 33 - Bit 7)
+          LE Write Suggested Default Data Length (Octet 34 - Bit 0)
+          LE Add Device To Resolving List (Octet 34 - Bit 3)
+          LE Remove Device From Resolving List (Octet 34 - Bit 4)
+          LE Clear Resolving List (Octet 34 - Bit 5)
+          LE Read Resolving List Size (Octet 34 - Bit 6)
+          LE Set Address Resolution Enable (Octet 35 - Bit 1)
+          LE Set Resolvable Private Address Timeout (Octet 35 - Bit 2)
+          LE Read Maximum Data Length (Octet 35 - Bit 3)
+          LE Read PHY (Octet 35 - Bit 4)
+          LE Set Default PHY (Octet 35 - Bit 5)
+          LE Set PHY (Octet 35 - Bit 6)
+          LE Set Advertising Set Random Address (Octet 36 - Bit 1)
+          LE Set Extended Advertising Parameters (Octet 36 - Bit 2)
+          LE Set Extended Advertising Data (Octet 36 - Bit 3)
+          LE Set Extended Scan Response Data (Octet 36 - Bit 4)
+          LE Set Extended Advertising Enable (Octet 36 - Bit 5)
+          LE Read Maximum Advertising Data Length (Octet 36 - Bit 6)
+          LE Read Number of Supported Advertising Sets (Octet 36 - Bit 7)
+          LE Remove Advertising Set (Octet 37 - Bit 0)
+          LE Clear Advertising Sets (Octet 37 - Bit 1)
+          LE Set Periodic Advertising Parameters (Octet 37 - Bit 2)
+          LE Set Periodic Advertising Data (Octet 37 - Bit 3)
+          LE Set Periodic Advertising Enable (Octet 37 - Bit 4)
+          LE Set Extended Scan Parameters (Octet 37 - Bit 5)
+          LE Set Extended Scan Enable (Octet 37 - Bit 6)
+          LE Extended Create Connection (Octet 37 - Bit 7)
+          LE Periodic Advertising Create Sync (Octet 38 - Bit 0)
+          LE Periodic Advertising Create Sync Cancel (Octet 38 - Bit 1)
+          LE Periodic Advertising Terminate Sync (Octet 38 - Bit 2)
+          LE Add Device To Periodic Advertiser List (Octet 38 - Bit 3)
+          LE Remove Device From Periodic Advertiser List (Octet 38 - Bit 4)
+          LE Clear Periodic Advertiser List (Octet 38 - Bit 5)
+          LE Read Periodic Advertiser List Size (Octet 38 - Bit 6)
+          LE Read Transmit Power (Octet 38 - Bit 7)
+          LE Read RF Path Compensation (Octet 39 - Bit 0)
+          LE Write RF Path Compensation (Octet 39 - Bit 1)
+          LE Set Privacy Mode (Octet 39 - Bit 2)
+          LE Periodic Advertising Receive Enable (Octet 40 - Bit 5)
+          LE Periodic Advertising Sync Transfer (Octet 40 - Bit 6)
+          LE Periodic Advertising Set Info Transfer (Octet 40 - Bit 7)
+          LE Periodic Advertising Sync Transfer Parameters (Octet 41 - Bit 0)
+          LE Set Default Periodic Advertisng Sync Transfer Parameters (Octet 41 - Bit 1)
+          LE Read Buffer v2 (Octet 41 - Bit 5)
+          LE Read ISO TX Sync (Octet 41 - Bit 6)
+          LE Set Connected Isochronous Group Parameters (Octet 41 - Bit 7)
+          LE Set Connected Isochronous Group Parameters Test (Octet 42 - Bit 0)
+          LE Create Connected Isochronous Stream (Octet 42 - Bit 1)
+          LE Remove Connected Isochronous Group (Octet 42 - Bit 2)
+          LE Accept Connected Isochronous Stream Request (Octet 42 - Bit 3)
+          LE Reject Connected Isochronous Stream Request (Octet 42 - Bit 4)
+          LE Create Broadcast Isochronous Group (Octet 42 - Bit 5)
+          LE Create Broadcast Isochronous Group Test (Octet 42 - Bit 6)
+          LE Terminate Broadcast Isochronous Group (Octet 42 - Bit 7)
+          LE Broadcast Isochronous Group Create Sync (Octet 43 - Bit 0)
+          LE Broadcast Isochronous Group Terminate Sync (Octet 43 - Bit 1)
+          LE Request Peer SCA (Octet 43 - Bit 2)
+          LE Setup Isochronous Data Path (Octet 43 - Bit 3)
+          LE Remove Isochronous Data Path (Octet 43 - Bit 4)
+          LE Isochronous Transmit Test (Octet 43 - Bit 5)
+          LE Isochronous Receive Test (Octet 43 - Bit 6)
+          LE Isochronous Read Test Counters (Octet 43 - Bit 7)
+          LE Isochronous Read Test Counters (Octet 44 - Bit 0)
+          LE Set Host Feature (Octet 44 - Bit 1)
+          Octet 44 - Bit 2 
+          Octet 45 - Bit 6 
+          Octet 46 - Bit 0 
+          Octet 46 - Bit 1 
+          Octet 46 - Bit 2 
+          Octet 47 - Bit 4 
+< HCI Command: Host Buffer Size (0x03|0x0033) plen 7         #9 [hci1] 0.286554
+        ACL MTU: 255  ACL max packet: 16
+        SCO MTU: 0    SCO max packet: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #10 [hci1] 0.287033
+      Host Buffer Size (0x03|0x0033) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Controller To Ho.. (0x03|0x0031) plen 1  #11 [hci1] 0.306534
+        Flow control: ACL Data Packets (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #12 [hci1] 0.306943
+      Set Controller To Host Flow Control (0x03|0x0031) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Local Suppor.. (0x08|0x0003) plen 0  #13 [hci1] 0.326497
+> HCI Event: Command Complete (0x0e) plen 12                #14 [hci1] 0.326935
+      LE Read Local Supported Features (0x08|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0xfd 0x79 0x00 0xf7 0x30 0x01 0x00 0x00
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Ping
+          LE Data Packet Length Extension
+          LL Privacy
+          Extended Scanner Filter Policies
+          LE 2M PHY
+          LE Coded PHY
+          LE Extended Advertising
+          LE Periodic Advertising
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Periodic Advertising ADI support
+          Connection Subrating
+          Unknown features (0x0000010000000000)
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #15 [hci1] 0.346507
+        Bit Number: 32
+          Connected Isochronous Stream (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #16 [hci1] 0.347003
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Buffer v2 (0x08|0x0060) plen 0       #17 [hci1] 0.366534
+> HCI Event: Command Complete (0x0e) plen 10                #18 [hci1] 0.367009
+      LE Read Buffer v2 (0x08|0x0060) ncmd 1
+        Status: Success (0x00)
+        ACL MTU: 27
+        ACL max packet: 3
+        ISO MTU: 318
+        ISO max packet: 3
+< HCI Command: LE Read Maximum Adve.. (0x08|0x003a) plen 0  #19 [hci1] 0.386544
+> HCI Event: Command Complete (0x0e) plen 6                 #20 [hci1] 0.387002
+      LE Read Maximum Advertising Data Length (0x08|0x003a) ncmd 1
+        Status: Success (0x00)
+        Max length: 1650
+< HCI Command: LE Read Supported St.. (0x08|0x001c) plen 0  #21 [hci1] 0.406551
+> HCI Event: Command Complete (0x0e) plen 12                #22 [hci1] 0.406979
+      LE Read Supported States (0x08|0x001c) ncmd 1
+        Status: Success (0x00)
+        States: 0x000003ff3e0306ff
+          Non-connectable Advertising State
+          Scannable Advertising State
+          Connectable Advertising State
+          High Duty Cycle Directed Advertising State
+          Passive Scanning State
+          Active Scanning State
+          Initiating State
+            and Connection State (Central Role)
+          Connection State (Peripheral Role)
+          Scannable Advertising State
+            and Passive Scanning State
+          Connectable Advertising State
+            and Passive Scanning State
+          Non-connectable Advertising State
+            and Initiating State
+          Scannable Advertising State
+            and Initiating State
+          Active Scanning State
+            and Connection State (Central Role)
+          Passive Scanning State
+            and Connection State (Peripheral Role)
+          Active Scanning State
+            and Connection State (Peripheral Role)
+          Initiating State
+            and Connection State (Central Role)
+            and Central Role & Central Role
+          Low Duty Cycle Directed Advertising State
+          Connectable Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Initiating State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+< HCI Command: LE Read Maximum Data.. (0x08|0x002f) plen 0  #23 [hci1] 0.426530
+> HCI Event: Command Complete (0x0e) plen 12                #24 [hci1] 0.427032
+      LE Read Maximum Data Length (0x08|0x002f) ncmd 1
+        Status: Success (0x00)
+        Max TX octets: 251
+        Max TX time: 2704
+        Max RX octets: 251
+        Max RX time: 2704
+< HCI Command: LE Write Suggested D.. (0x08|0x0024) plen 4  #25 [hci1] 0.446522
+        TX octets: 251
+        TX time: 2704
+> HCI Event: Command Complete (0x0e) plen 4                 #26 [hci1] 0.447077
+      LE Write Suggested Default Data Length (0x08|0x0024) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Resolving Li.. (0x08|0x002a) plen 0  #27 [hci1] 0.466530
+> HCI Event: Command Complete (0x0e) plen 5                 #28 [hci1] 0.467010
+      LE Read Resolving List Size (0x08|0x002a) ncmd 1
+        Status: Success (0x00)
+        Size: 8
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #29 [hci1] 0.486484
+        Bit Number: 38
+          Connection Subrating (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #30 [hci1] 0.486996
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8       #31 [hci1] 0.506537
+        Mask: 0x000002063f87fa5e
+          LE Advertising Report
+          LE Connection Update Complete
+          LE Read Remote Used Features Complete
+          LE Long Term Key Request
+          LE Data Length Change
+          LE Enhanced Connection Complete
+          LE PHY Update Complete
+          LE Extended Advertising Report
+          LE Periodic Advertising Sync Established
+          LE Periodic Advertising Report
+          LE Periodic Advertising Sync Lost
+          LE Extended Scan Timeout
+          LE Extended Advertising Set Terminated
+          LE Scan Request Received
+          LE Periodic Advertising Sync Transfer Rvc
+          LE CIS Established
+          LE CIS Request
+          LE Create BIG Complete
+          LE Terminate BIG Complete
+          LE BIG Sync Estabilished Complete
+          LE BIG Sync Lost
+          LE BIG Info Advertising Report
+          LE Subrate Change
+          Unknown mask (0x0000020000000000)
+> HCI Event: Command Complete (0x0e) plen 4                 #32 [hci1] 0.507054
+      LE Set Event Mask (0x08|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8          #33 [hci1] 0.526533
+        Mask: 0x2000800002008890
+          Disconnection Complete
+          Encryption Change
+          Read Remote Version Information Complete
+          Hardware Error
+          Data Buffer Overflow
+          Encryption Key Refresh Complete
+          LE Meta
+> HCI Event: Command Complete (0x0e) plen 4                 #34 [hci1] 0.527172
+      Set Event Mask (0x03|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0            #35 [hci1] 0.546532
+> HCI Event: Command Complete (0x0e) plen 10                #36 [hci1] 0.546942
+      Read BD ADDR (0x04|0x0009) ncmd 1
+        Status: Success (0x00)
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #37 [hci1] 0.566538
+        Address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #38 [hci1] 0.567139
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0036) plen 25  #39 [hci1] 8.556594
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                 #40 [hci1] 8.557388
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #41 [hci1] 8.566609
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #42 [hci1] 8.567183
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 22  #43 [hci1] 8.586596
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x12
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Name (complete): Tester_F6B11A
+> HCI Event: Command Complete (0x0e) plen 4                 #44 [hci1] 8.587355
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0038) plen 4  #45 [hci1] 8.606598
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                 #46 [hci1] 8.607096
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #47 [hci1] 8.626635
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #48 [hci1] 8.627252
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 31                   #49 [hci1] 8.949215
+      LE Enhanced Connection Complete (0x0a)
+        Status: Success (0x00)
+        Handle: 3153
+        Role: Peripheral (0x01)
+        Peer address type: Public (0x00)
+        Peer address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Local resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Peer resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Connection interval: 87.50 msec (0x0046)
+        Connection latency: 0 (0x0000)
+        Supervision timeout: 20000 msec (0x07d0)
+        Central clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 6                    #50 [hci1] 8.949268
+      LE Advertising Set Terminated (0x12)
+        Status: Success (0x00)
+        Handle: 0
+        Connection handle: 3153
+        Number of completed extended advertising events: 0
+< HCI Command: LE Read Remote Used... (0x08|0x0016) plen 2  #51 [hci1] 8.966719
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Command Status (0x0f) plen 4                   #52 [hci1] 8.967107
+      LE Read Remote Used Features (0x08|0x0016) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 12                   #53 [hci1] 9.213134
+      LE Read Remote Used Features (0x04)
+        Status: Success (0x00)
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Features: 0x2d 0x49 0x00 0xf7 0x67 0xd9 0x00 0x80
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Data Packet Length Extension
+          LE 2M PHY
+          LE Coded PHY
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Connected Isochronous Stream (Host Support)
+          LE Power Control Request
+          LE Power Control Request
+          Connection Subrating
+          Connection Subrating (Host Support)
+          Unknown features (0x8000d90000000000)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #54 [hci1] 10.175470
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #55 [hci1] 10.187123
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #56 [hci1] 10.187176
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0002
+        Value: 200300052a
+            Properties: 0x20
+              Indicate (0x20)
+            Value Handle: 0x0003
+            Value UUID: Service Changed (0x2a05)
+        Handle: 0x0005
+        Value: 0a0600292b
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0006
+            Value UUID: Client Supported Features (0x2b29)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #57 [hci1] 10.350528
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #56: len 20 (0 Kb/s)
+        Latency: 163 msec (163-163 msec ~163 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #58 [hci1] 10.350537
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0006-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #59 [hci1] 10.367203
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #60 [hci1] 10.367312
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0007
+        Value: 0208002a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0008
+            Value UUID: Database Hash (0x2b2a)
+        Handle: 0x0009
+        Value: 020a003a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x000a
+            Value UUID: Server Supported Features (0x2b3a)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #61 [hci1] 10.525385
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #60: len 20 (1 Kb/s)
+        Latency: 158 msec (158-163 msec ~160 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #62 [hci1] 10.525510
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000a-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #63 [hci1] 10.526764
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #64 [hci1] 10.526861
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x000c
+        Value: 0a0d00002a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000d
+            Value UUID: Device Name (0x2a00)
+        Handle: 0x000e
+        Value: 0a0f00012a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000f
+            Value UUID: Appearance (0x2a01)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #65 [hci1] 10.700436
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #64: len 20 (0 Kb/s)
+        Latency: 173 msec (158-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #66 [hci1] 10.700643
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000f-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #67 [hci1] 10.707133
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #68 [hci1] 10.707175
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0010
+        Value: 021100042a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0011
+            Value UUID: Peripheral Preferred Connection Parameters (0x2a04)
+        Handle: 0x0013
+        Value: 021400242a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0014
+            Value UUID: Model Number String (0x2a24)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #69 [hci1] 10.875437
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #68: len 20 (0 Kb/s)
+        Latency: 168 msec (158-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #70 [hci1] 10.875641
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0014-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #71 [hci1] 10.887033
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #72 [hci1] 10.887253
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0015
+        Value: 021600292a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0016
+            Value UUID: Manufacturer Name String (0x2a29)
+        Handle: 0x0017
+        Value: 021800502a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0018
+            Value UUID: PnP ID (0x2a50)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #73 [hci1] 11.050344
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #72: len 20 (0 Kb/s)
+        Latency: 163 msec (158-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #74 [hci1] 11.050578
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0018-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #75 [hci1] 11.067238
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #76 [hci1] 11.067422
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0019
+        Value: 021a00252a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001a
+            Value UUID: Serial Number String (0x2a25)
+        Handle: 0x001b
+        Value: 021c00262a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001c
+            Value UUID: Firmware Revision String (0x2a26)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #77 [hci1] 11.225369
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #76: len 20 (1 Kb/s)
+        Latency: 157 msec (157-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #78 [hci1] 11.225512
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x001c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #79 [hci1] 11.227166
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #80 [hci1] 11.227228
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x001d
+        Value: 021e00272a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001e
+            Value UUID: Hardware Revision String (0x2a27)
+        Handle: 0x001f
+        Value: 022000282a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0020
+            Value UUID: Software Revision String (0x2a28)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #81 [hci1] 11.400502
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #80: len 20 (0 Kb/s)
+        Latency: 173 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #82 [hci1] 11.400583
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0020-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #83 [hci1] 11.406808
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #84 [hci1] 11.406842
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0021
+        Value: 022200ff2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0022
+            Value UUID: Unknown (0x2bff)
+        Handle: 0x0023
+        Value: 022400232a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0024
+            Value UUID: System ID (0x2a23)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #85 [hci1] 11.575419
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #84: len 20 (0 Kb/s)
+        Latency: 168 msec (157-173 msec ~168 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #86 [hci1] 11.575546
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0024-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #87 [hci1] 11.586850
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #88 [hci1] 11.586881
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0025
+        Value: 0226002a2a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0026
+            Value UUID: IEEE 11073-20601 Regulatory Cert. Data List (0x2a2a)
+        Handle: 0x0028
+        Value: 0a290050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0029
+            Value UUID: Unknown (0xaa50)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #89 [hci1] 11.750379
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #88: len 20 (0 Kb/s)
+        Latency: 163 msec (157-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #90 [hci1] 11.750581
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0029-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #91 [hci1] 11.767125
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #92 [hci1] 11.767189
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002a
+        Value: 0a2b0051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002b
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x002c
+        Value: 0a2d0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002d
+            Value UUID: Unknown (0xaa52)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #93 [hci1] 11.925515
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #92: len 20 (1 Kb/s)
+        Latency: 158 msec (157-173 msec ~162 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #94 [hci1] 11.925683
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x002d-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #95 [hci1] 11.927237
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20              #96 [hci1] 11.927352
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002e
+        Value: 0a2f0053aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002f
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x0030
+        Value: 3a310054aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0031
+            Value UUID: Unknown (0xaa54)
+> HCI Event: Number of Completed Packets (0x13) plen 5     #97 [hci1] 12.100344
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #96: len 20 (0 Kb/s)
+        Latency: 172 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11              #98 [hci1] 12.100526
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0031-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Comp.. (0x03|0x0035) plen 5  #99 [hci1] 12.106775
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #100 [hci1] 12.106827
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0033
+        Value: 3a340055aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0034
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0036
+        Value: 06370056aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0037
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #101 [hci1] 12.275323
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #100: len 20 (0 Kb/s)
+        Latency: 168 msec (157-173 msec ~168 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #102 [hci1] 12.275524
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0037-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #103 [hci1] 12.287166
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #104 [hci1] 12.287228
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0038
+        Value: 06390057aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0039
+            Value UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        Value: 8a3b0058aa
+            Properties: 0x8a
+              Read (0x02)
+              Write (0x08)
+            Unknown fields (0x80)
+            Value Handle: 0x003b
+            Value UUID: Unknown (0xaa58)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #105 [hci1] 12.450366
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #104: len 20 (0 Kb/s)
+        Latency: 163 msec (157-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #106 [hci1] 12.450548
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x003b-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #107 [hci1] 12.467360
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #108 [hci1] 12.467508
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x003d
+        Value: 0a3e0059aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x003e
+            Value UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        Value: 0a40005aaa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0040
+            Value UUID: Unknown (0xaa5a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #109 [hci1] 12.625368
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #108: len 20 (1 Kb/s)
+        Latency: 157 msec (157-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #110 [hci1] 12.625565
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0040-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #111 [hci1] 12.627074
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #112 [hci1] 12.627145
+      ATT: Read By Type Response (0x09) len 22
+        Attribute data length: 21
+        Attribute data list: 1 entry
+        Handle: 0x0041
+        Value: 0a4200efcdab89674523b10040510450bb00f0
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0042
+            Value UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #113 [hci1] 12.800369
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #112: len 27 (1 Kb/s)
+        Latency: 173 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #114 [hci1] 12.800562
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0042-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #115 [hci1] 12.807181
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #116 [hci1] 12.807474
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0045
+        Value: 0a460050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0046
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        Value: 0a480051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0048
+            Value UUID: Unknown (0xaa51)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #117 [hci1] 12.975289
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #116: len 20 (0 Kb/s)
+        Latency: 167 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #118 [hci1] 12.975517
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0048-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #119 [hci1] 12.987328
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #120 [hci1] 12.987442
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0049
+        Value: 0a4a0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004a
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        Value: 024c0053aa
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x004c
+            Value UUID: Unknown (0xaa53)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #121 [hci1] 13.150286
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #120: len 20 (0 Kb/s)
+        Latency: 162 msec (157-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #122 [hci1] 13.150573
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x004c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #123 [hci1] 13.166886
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #124 [hci1] 13.166923
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x004e
+        Value: 0a4f0055aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004f
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        Value: 0a510056aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0051
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #125 [hci1] 13.325323
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #124: len 20 (1 Kb/s)
+        Latency: 158 msec (157-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #126 [hci1] 13.325534
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0051-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #127 [hci1] 13.326752
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 9              #128 [hci1] 13.326806
+      ATT: Error Response (0x01) len 4
+        Read By Type Request (0x08)
+        Handle: 0x0051
+        Error: Attribute Not Found (0x0a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #129 [hci1] 13.500245
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #128: len 9 (0 Kb/s)
+        Latency: 173 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 7              #130 [hci1] 13.500606
+      ATT: Read Request (0x0a) len 2
+        Handle: 0x000a
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #131 [hci1] 13.507339
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 6              #132 [hci1] 13.507429
+      ATT: Read Response (0x0b) len 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #133 [hci1] 13.675252
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #132: len 6 (0 Kb/s)
+        Latency: 167 msec (157-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #134 [hci1] 13.675548
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #135 [hci1] 13.687119
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #136 [hci1] 13.687174
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0002
+        Value: 200300052a
+            Properties: 0x20
+              Indicate (0x20)
+            Value Handle: 0x0003
+            Value UUID: Service Changed (0x2a05)
+        Handle: 0x0005
+        Value: 0a0600292b
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0006
+            Value UUID: Client Supported Features (0x2b29)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #137 [hci1] 13.850362
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #136: len 20 (0 Kb/s)
+        Latency: 163 msec (157-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #138 [hci1] 13.850462
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0006-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #139 [hci1] 13.866877
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #140 [hci1] 13.866911
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0007
+        Value: 0208002a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0008
+            Value UUID: Database Hash (0x2b2a)
+        Handle: 0x0009
+        Value: 020a003a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x000a
+            Value UUID: Server Supported Features (0x2b3a)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 16             #141 [hci1] 13.976593
+      LE L2CAP: Connection Parameter Update Request (0x12) ident 1 len 8
+        Min interval: 24
+        Max interval: 40
+        Peripheral latency: 0
+        Timeout multiplier: 42
+> HCI Event: Number of Completed Packets (0x13) plen 5    #142 [hci1] 14.025361
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #140: len 20 (1 Kb/s)
+        Latency: 158 msec (157-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #143 [hci1] 14.025438
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000a-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #144 [hci1] 14.026797
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #145 [hci1] 14.026899
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x000c
+        Value: 0a0d00002a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000d
+            Value UUID: Device Name (0x2a00)
+        Handle: 0x000e
+        Value: 0a0f00012a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000f
+            Value UUID: Appearance (0x2a01)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #146 [hci1] 14.112744
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #141: len 16 (0 Kb/s)
+        Latency: 136 msec (136-173 msec ~149 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 10             #147 [hci1] 14.112945
+      LE L2CAP: Connection Parameter Update Response (0x13) ident 1 len 2
+        Result: Connection Parameters accepted (0x0000)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #148 [hci1] 14.127108
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #149 [hci1] 14.200332
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #145: len 20 (0 Kb/s)
+        Latency: 173 msec (136-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #150 [hci1] 14.200541
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000f-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #151 [hci1] 14.206897
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #152 [hci1] 14.206984
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0010
+        Value: 021100042a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0011
+            Value UUID: Peripheral Preferred Connection Parameters (0x2a04)
+        Handle: 0x0013
+        Value: 021400242a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0014
+            Value UUID: Model Number String (0x2a24)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #153 [hci1] 14.375360
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #152: len 20 (0 Kb/s)
+        Latency: 168 msec (136-173 msec ~164 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #154 [hci1] 14.375486
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0014-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #155 [hci1] 14.387341
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #156 [hci1] 14.387490
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0015
+        Value: 021600292a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0016
+            Value UUID: Manufacturer Name String (0x2a29)
+        Handle: 0x0017
+        Value: 021800502a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0018
+            Value UUID: PnP ID (0x2a50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #157 [hci1] 14.550355
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #156: len 20 (0 Kb/s)
+        Latency: 162 msec (136-173 msec ~163 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #158 [hci1] 14.550522
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0018-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #159 [hci1] 14.566889
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #160 [hci1] 14.566929
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0019
+        Value: 021a00252a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001a
+            Value UUID: Serial Number String (0x2a25)
+        Handle: 0x001b
+        Value: 021c00262a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001c
+            Value UUID: Firmware Revision String (0x2a26)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #161 [hci1] 14.725545
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #160: len 20 (1 Kb/s)
+        Latency: 158 msec (136-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #162 [hci1] 14.725552
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x001c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #163 [hci1] 14.727087
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #164 [hci1] 14.727146
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x001d
+        Value: 021e00272a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001e
+            Value UUID: Hardware Revision String (0x2a27)
+        Handle: 0x001f
+        Value: 022000282a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0020
+            Value UUID: Software Revision String (0x2a28)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #165 [hci1] 14.900268
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #164: len 20 (0 Kb/s)
+        Latency: 173 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #166 [hci1] 14.900450
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0020-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #167 [hci1] 14.907302
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #168 [hci1] 14.907403
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0021
+        Value: 022200ff2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0022
+            Value UUID: Unknown (0x2bff)
+        Handle: 0x0023
+        Value: 022400232a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0024
+            Value UUID: System ID (0x2a23)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #169 [hci1] 15.075402
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #168: len 20 (0 Kb/s)
+        Latency: 167 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #170 [hci1] 15.075549
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0024-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #171 [hci1] 15.086965
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #172 [hci1] 15.087003
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0025
+        Value: 0226002a2a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0026
+            Value UUID: IEEE 11073-20601 Regulatory Cert. Data List (0x2a2a)
+        Handle: 0x0028
+        Value: 0a290050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0029
+            Value UUID: Unknown (0xaa50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #173 [hci1] 15.250274
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #172: len 20 (0 Kb/s)
+        Latency: 163 msec (136-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #174 [hci1] 15.250415
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0029-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #175 [hci1] 15.266987
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #176 [hci1] 15.267062
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002a
+        Value: 0a2b0051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002b
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x002c
+        Value: 0a2d0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002d
+            Value UUID: Unknown (0xaa52)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #177 [hci1] 15.425242
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #176: len 20 (1 Kb/s)
+        Latency: 158 msec (136-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #178 [hci1] 15.425498
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x002d-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #179 [hci1] 15.427380
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #180 [hci1] 15.427466
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002e
+        Value: 0a2f0053aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002f
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x0030
+        Value: 3a310054aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0031
+            Value UUID: Unknown (0xaa54)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #181 [hci1] 15.600259
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #180: len 20 (0 Kb/s)
+        Latency: 172 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #182 [hci1] 15.600573
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0031-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #183 [hci1] 15.606929
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #184 [hci1] 15.606977
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0033
+        Value: 3a340055aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0034
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0036
+        Value: 06370056aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0037
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #185 [hci1] 15.775330
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #184: len 20 (0 Kb/s)
+        Latency: 168 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #186 [hci1] 15.775431
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0037-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #187 [hci1] 15.787024
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #188 [hci1] 15.787078
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0038
+        Value: 06390057aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0039
+            Value UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        Value: 8a3b0058aa
+            Properties: 0x8a
+              Read (0x02)
+              Write (0x08)
+            Unknown fields (0x80)
+            Value Handle: 0x003b
+            Value UUID: Unknown (0xaa58)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #189 [hci1] 15.950300
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #188: len 20 (0 Kb/s)
+        Latency: 163 msec (136-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #190 [hci1] 15.950524
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x003b-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #191 [hci1] 15.967418
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #192 [hci1] 15.967476
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x003d
+        Value: 0a3e0059aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x003e
+            Value UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        Value: 0a40005aaa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0040
+            Value UUID: Unknown (0xaa5a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #193 [hci1] 16.125349
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #192: len 20 (1 Kb/s)
+        Latency: 157 msec (136-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #194 [hci1] 16.125523
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0040-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #195 [hci1] 16.126942
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #196 [hci1] 16.126949
+      ATT: Read By Type Response (0x09) len 22
+        Attribute data length: 21
+        Attribute data list: 1 entry
+        Handle: 0x0041
+        Value: 0a4200efcdab89674523b10040510450bb00f0
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0042
+            Value UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #197 [hci1] 16.300285
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #196: len 27 (1 Kb/s)
+        Latency: 173 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #198 [hci1] 16.300442
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0042-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #199 [hci1] 16.306868
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #200 [hci1] 16.306898
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0045
+        Value: 0a460050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0046
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        Value: 0a480051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0048
+            Value UUID: Unknown (0xaa51)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #201 [hci1] 16.475352
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #200: len 20 (0 Kb/s)
+        Latency: 168 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #202 [hci1] 16.475548
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0048-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #203 [hci1] 16.487226
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #204 [hci1] 16.487304
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0049
+        Value: 0a4a0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004a
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        Value: 024c0053aa
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x004c
+            Value UUID: Unknown (0xaa53)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #205 [hci1] 16.650249
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #204: len 20 (0 Kb/s)
+        Latency: 162 msec (136-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #206 [hci1] 16.650566
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x004c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #207 [hci1] 16.667126
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 20             #208 [hci1] 16.667540
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x004e
+        Value: 0a4f0055aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004f
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        Value: 0a510056aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0051
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #209 [hci1] 16.825284
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #208: len 20 (1 Kb/s)
+        Latency: 157 msec (136-173 msec ~161 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #210 [hci1] 16.825378
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0051-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #211 [hci1] 16.827097
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 9              #212 [hci1] 16.827115
+      ATT: Error Response (0x01) len 4
+        Read By Type Request (0x08)
+        Handle: 0x0051
+        Error: Attribute Not Found (0x0a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #213 [hci1] 17.000260
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #212: len 9 (0 Kb/s)
+        Latency: 173 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 7              #214 [hci1] 17.000353
+      ATT: Read Request (0x0a) len 2
+        Handle: 0x0006
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #215 [hci1] 17.006877
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 6              #216 [hci1] 17.006948
+      ATT: Read Response (0x0b) len 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #217 [hci1] 17.175248
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #216: len 6 (0 Kb/s)
+        Latency: 168 msec (136-173 msec ~167 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 8              #218 [hci1] 17.175489
+      ATT: Write Request (0x12) len 3
+        Handle: 0x0006
+          Data: 02
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #219 [hci1] 17.187198
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 5              #220 [hci1] 17.187345
+      ATT: Write Response (0x13) len 0
+> HCI Event: Number of Completed Packets (0x13) plen 5    #221 [hci1] 17.350145
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #220: len 5 (0 Kb/s)
+        Latency: 162 msec (136-173 msec ~165 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #222 [hci1] 19.800221
+      SMP: Pairing Request (0x01) len 6
+        IO capability: KeyboardDisplay (0x04)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: No bonding, No MITM, SC, No Keypresses (0x08)
+        Max encryption key size: 16
+        Initiator key distribution: <none> (0x00)
+        Responder key distribution: <none> (0x00)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #223 [hci1] 19.807189
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 11             #224 [hci1] 19.807384
+      SMP: Pairing Response (0x02) len 6
+        IO capability: DisplayOnly (0x00)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: Bonding, No MITM, SC, No Keypresses (0x09)
+        Max encryption key size: 16
+        Initiator key distribution: <none> (0x00)
+        Responder key distribution: <none> (0x00)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #225 [hci1] 19.975350
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #224: len 11 (0 Kb/s)
+        Latency: 167 msec (136-173 msec ~166 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 27             #226 [hci1] 19.975664
+> ACL Data RX: Handle 3153 flags 0x01 dlen 27             #227 [hci1] 19.976163
+> ACL Data RX: Handle 3153 flags 0x01 dlen 15             #228 [hci1] 19.976740
+      SMP: Pairing Public Key (0x0c) len 64
+        X: d2cbca8adff9a5de729283340995d31d4c2f2380b97eb3d0cc3e49b7e2efb3c1
+        Y: 4128885bc5d1fbe6ccc9e023235b6e49538880641596f67629ecd403381cc0a8
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #229 [hci1] 19.987526
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #230 [hci1] 19.987729
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #231 [hci1] 19.988055
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #232 [hci1] 19.988076
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #233 [hci1] 19.988109
+< ACL Data TX: Handle 3153 flags 0x01 dlen 15             #234 [hci1] 19.988128
+      SMP: Pairing Public Key (0x0c) len 64
+        X: 98308440221e2d910f0e54b71e7ec652857aa9b5a0dc65028824cc19db1226e9
+        Y: 67a4816bcb62efb21701e31fdb27561a6217575fb007a8bbdabe7e28b6f68482
+> HCI Event: Number of Completed Packets (0x13) plen 5    #235 [hci1] 20.063240
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #232: len 27 (2 Kb/s)
+        Latency: 75 msec (75-173 msec ~120 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #236 [hci1] 20.063930
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #233: len 27 (2 Kb/s)
+        Latency: 75 msec (75-173 msec ~98 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 21             #237 [hci1] 20.067106
+      SMP: Pairing Confirm (0x03) len 16
+        Confim value: e98f712ae617c846773ad79a41b30f47
+> HCI Event: Number of Completed Packets (0x13) plen 5    #238 [hci1] 20.150047
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #234: len 15 (0 Kb/s)
+        Latency: 161 msec (75-173 msec ~130 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #239 [hci1] 20.237828
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #237: len 21 (0 Kb/s)
+        Latency: 170 msec (75-173 msec ~150 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 21             #240 [hci1] 20.238146
+      SMP: Pairing Random (0x04) len 16
+        Random value: 1d049b8e9d7c2f480000000000000000
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #241 [hci1] 20.246955
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 21             #242 [hci1] 20.246988
+      SMP: Pairing Random (0x04) len 16
+        Random value: 8e6108f966a694cbe26df70bb96773e6
+> HCI Event: Number of Completed Packets (0x13) plen 5    #243 [hci1] 20.412555
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #242: len 21 (1 Kb/s)
+        Latency: 165 msec (75-173 msec ~157 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 21             #244 [hci1] 20.588057
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: ff6d0ba3a725d85d338e24e710fb07e7
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #245 [hci1] 20.607575
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 21             #246 [hci1] 20.607679
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: 98256ca09b36c4c6a5b1a5ae03ae450f
+> HCI Event: Number of Completed Packets (0x13) plen 5    #247 [hci1] 20.762630
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #246: len 21 (1 Kb/s)
+        Latency: 154 msec (75-173 msec ~156 msec)
+> HCI Event: LE Meta Event (0x3e) plen 13                 #248 [hci1] 20.850636
+      LE Long Term Key Request (0x05)
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Random number: 0x0000000000000000
+        Encrypted diversifier: 0x0000
+< HCI Command: LE Long Term Key... (0x08|0x001a) plen 18  #249 [hci1] 20.867125
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Long term key: 6aeee8800cd05225b7f826ebc2ae64b1
+> HCI Event: Command Complete (0x0e) plen 6               #250 [hci1] 20.867873
+      LE Long Term Key Request Reply (0x08|0x001a) ncmd 1
+        Status: Success (0x00)
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Encryption Change (0x08) plen 4              #251 [hci1] 21.287792
+        Status: Success (0x00)
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Encryption: Enabled with AES-CCM (0x01)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 26             #252 [hci1] 21.375600
+      LE L2CAP: Enhanced Credit Connection Request (0x17) ident 1 len 18
+        PSM: 39 (0x0027)
+        MTU: 64
+        MPS: 64
+        Credits: 5
+        Source CID: 84
+        Source CID: 83
+        Source CID: 82
+        Source CID: 81
+        Source CID: 80
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #253 [hci1] 21.417194
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 26             #254 [hci1] 21.417287
+      LE L2CAP: Enhanced Credit Connection Response (0x18) ident 1 len 18
+        MTU: 249
+        MPS: 251
+        Credits: 1
+        Result: Connection successful (0x0000)
+        Destination CID: 64
+        Destination CID: 65
+        Destination CID: 66
+        Destination CID: 67
+        Destination CID: 68
+> HCI Event: Number of Completed Packets (0x13) plen 5    #255 [hci1] 21.550093
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #254: len 26 (1 Kb/s)
+        Latency: 132 msec (75-173 msec ~144 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #256 [hci1] 23.563278
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #257 [hci1] 23.568414
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #258 [hci1] 23.569303
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #259 [hci1] 23.569314
+< ACL Data TX: Handle 3153 flags 0x01 dlen 10             #260 [hci1] 23.569316
+      Channel: 80 len 60 sdu 58 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 57
+        Attribute data length: 7
+        Attribute data list: 8 entries
+        Handle: 0x0002
+        Value: 200300052a
+            Properties: 0x20
+              Indicate (0x20)
+            Value Handle: 0x0003
+            Value UUID: Service Changed (0x2a05)
+        Handle: 0x0005
+        Value: 0a0600292b
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0006
+            Value UUID: Client Supported Features (0x2b29)
+        Handle: 0x0007
+        Value: 0208002a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0008
+            Value UUID: Database Hash (0x2b2a)
+        Handle: 0x0009
+        Value: 020a003a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x000a
+            Value UUID: Server Supported Features (0x2b3a)
+        Handle: 0x000c
+        Value: 0a0d00002a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000d
+            Value UUID: Device Name (0x2a00)
+        Handle: 0x000e
+        Value: 0a0f00012a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000f
+            Value UUID: Appearance (0x2a01)
+        Handle: 0x0010
+        Value: 021100042a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0011
+            Value UUID: Peripheral Preferred Connection Parameters (0x2a04)
+        Handle: 0x0013
+        Value: 021400242a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0014
+            Value UUID: Model Number String (0x2a24)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #261 [hci1] 23.650697
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #258: len 27 (2 Kb/s)
+        Latency: 81 msec (75-173 msec ~113 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 81 msec (81-81 msec ~81 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #262 [hci1] 23.651399
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #259: len 27 (2 Kb/s)
+        Latency: 82 msec (75-173 msec ~97 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 82 msec (81-82 msec ~81 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #263 [hci1] 23.666808
+      LE L2CAP: LE Flow Control Credit (0x16) ident 2 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #264 [hci1] 23.737553
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #260: len 10 (0 Kb/s)
+        Latency: 168 msec (75-173 msec ~132 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #265 [hci1] 23.825212
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #263: len 12 (0 Kb/s)
+        Latency: 158 msec (75-173 msec ~145 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #266 [hci1] 23.825507
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0014-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #267 [hci1] 23.826981
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #268 [hci1] 23.827007
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #269 [hci1] 23.827016
+< ACL Data TX: Handle 3153 flags 0x01 dlen 10             #270 [hci1] 23.827017
+      Channel: 80 len 60 sdu 58 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 57
+        Attribute data length: 7
+        Attribute data list: 8 entries
+        Handle: 0x0015
+        Value: 021600292a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0016
+            Value UUID: Manufacturer Name String (0x2a29)
+        Handle: 0x0017
+        Value: 021800502a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0018
+            Value UUID: PnP ID (0x2a50)
+        Handle: 0x0019
+        Value: 021a00252a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001a
+            Value UUID: Serial Number String (0x2a25)
+        Handle: 0x001b
+        Value: 021c00262a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001c
+            Value UUID: Firmware Revision String (0x2a26)
+        Handle: 0x001d
+        Value: 021e00272a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001e
+            Value UUID: Hardware Revision String (0x2a27)
+        Handle: 0x001f
+        Value: 022000282a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0020
+            Value UUID: Software Revision String (0x2a28)
+        Handle: 0x0021
+        Value: 022200ff2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0022
+            Value UUID: Unknown (0x2bff)
+        Handle: 0x0023
+        Value: 022400232a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0024
+            Value UUID: System ID (0x2a23)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #271 [hci1] 23.913269
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #268: len 27 (2 Kb/s)
+        Latency: 86 msec (75-173 msec ~115 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 86 msec (81-86 msec ~84 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #272 [hci1] 23.913935
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #269: len 27 (2 Kb/s)
+        Latency: 86 msec (75-173 msec ~101 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 86 msec (81-86 msec ~85 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #273 [hci1] 23.927760
+      LE L2CAP: LE Flow Control Credit (0x16) ident 3 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #274 [hci1] 23.999987
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #270: len 10 (0 Kb/s)
+        Latency: 172 msec (75-173 msec ~137 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #275 [hci1] 24.087694
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #273: len 12 (0 Kb/s)
+        Latency: 159 msec (75-173 msec ~148 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #276 [hci1] 24.087883
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0024-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #277 [hci1] 24.106738
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #278 [hci1] 24.106763
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #279 [hci1] 24.106765
+< ACL Data TX: Handle 3153 flags 0x01 dlen 10             #280 [hci1] 24.106771
+      Channel: 80 len 60 sdu 58 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 57
+        Attribute data length: 7
+        Attribute data list: 8 entries
+        Handle: 0x0025
+        Value: 0226002a2a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0026
+            Value UUID: IEEE 11073-20601 Regulatory Cert. Data List (0x2a2a)
+        Handle: 0x0028
+        Value: 0a290050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0029
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x002a
+        Value: 0a2b0051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002b
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x002c
+        Value: 0a2d0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002d
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x002e
+        Value: 0a2f0053aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002f
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x0030
+        Value: 3a310054aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0031
+            Value UUID: Unknown (0xaa54)
+        Handle: 0x0033
+        Value: 3a340055aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0034
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0036
+        Value: 06370056aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0037
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #281 [hci1] 24.175628
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #278: len 27 (3 Kb/s)
+        Latency: 68 msec (68-173 msec ~108 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 68 msec (68-86 msec ~77 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #282 [hci1] 24.176413
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #279: len 27 (3 Kb/s)
+        Latency: 69 msec (68-173 msec ~89 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 69 msec (68-86 msec ~73 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #283 [hci1] 24.186744
+      LE L2CAP: LE Flow Control Credit (0x16) ident 4 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #284 [hci1] 24.262510
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #280: len 10 (0 Kb/s)
+        Latency: 155 msec (68-173 msec ~122 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #285 [hci1] 24.350151
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #283: len 12 (0 Kb/s)
+        Latency: 163 msec (68-173 msec ~142 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #286 [hci1] 24.350406
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0037-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #287 [hci1] 24.366889
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #288 [hci1] 24.366917
+< ACL Data TX: Handle 3153 flags 0x01 dlen 9              #289 [hci1] 24.366927
+      Channel: 80 len 32 sdu 30 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 29
+        Attribute data length: 7
+        Attribute data list: 4 entries
+        Handle: 0x0038
+        Value: 06390057aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0039
+            Value UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        Value: 8a3b0058aa
+            Properties: 0x8a
+              Read (0x02)
+              Write (0x08)
+            Unknown fields (0x80)
+            Value Handle: 0x003b
+            Value UUID: Unknown (0xaa58)
+        Handle: 0x003d
+        Value: 0a3e0059aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x003e
+            Value UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        Value: 0a40005aaa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0040
+            Value UUID: Unknown (0xaa5a)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #290 [hci1] 24.366974
+      LE L2CAP: LE Flow Control Credit (0x16) ident 5 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #291 [hci1] 24.438178
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #288: len 27 (3 Kb/s)
+        Latency: 71 msec (68-173 msec ~107 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 71 msec (68-86 msec ~72 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #292 [hci1] 24.438805
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #289: len 9 (1 Kb/s)
+        Latency: 71 msec (68-173 msec ~89 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 71 msec (68-86 msec ~72 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #293 [hci1] 24.525143
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #290: len 12 (0 Kb/s)
+        Latency: 158 msec (68-173 msec ~123 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 12             #294 [hci1] 24.525325
+      LE L2CAP: LE Flow Control Credit (0x16) ident 2 len 4
+        Source CID: 80
+        Credits: 10
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #295 [hci1] 24.525808
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0040-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #296 [hci1] 24.526879
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #297 [hci1] 24.526947
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #298 [hci1] 24.526959
+< ACL Data TX: Handle 3153 flags 0x01 dlen 2              #299 [hci1] 24.526965
+      Channel: 80 len 25 sdu 23 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 22
+        Attribute data length: 21
+        Attribute data list: 1 entry
+        Handle: 0x0041
+        Value: 0a4200efcdab89674523b10040510450bb00f0
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0042
+            Value UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #300 [hci1] 24.527006
+      LE L2CAP: LE Flow Control Credit (0x16) ident 6 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #301 [hci1] 24.613252
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #298: len 27 (2 Kb/s)
+        Latency: 86 msec (68-173 msec ~105 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 86 msec (68-86 msec ~79 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #302 [hci1] 24.613694
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #299: len 2 (0 Kb/s)
+        Latency: 86 msec (68-173 msec ~95 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 86 msec (68-86 msec ~82 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #303 [hci1] 24.700156
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #300: len 12 (0 Kb/s)
+        Latency: 173 msec (68-173 msec ~134 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #304 [hci1] 24.700422
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0042-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #305 [hci1] 24.706974
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #306 [hci1] 24.707002
+< ACL Data TX: Handle 3153 flags 0x01 dlen 23             #307 [hci1] 24.707004
+      Channel: 80 len 46 sdu 44 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Response (0x09) len 43
+        Attribute data length: 7
+        Attribute data list: 6 entries
+        Handle: 0x0045
+        Value: 0a460050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0046
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        Value: 0a480051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0048
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x0049
+        Value: 0a4a0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004a
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        Value: 024c0053aa
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x004c
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x004e
+        Value: 0a4f0055aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004f
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        Value: 0a510056aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0051
+            Value UUID: Unknown (0xaa56)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #308 [hci1] 24.707128
+      LE L2CAP: LE Flow Control Credit (0x16) ident 7 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #309 [hci1] 24.788175
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #306: len 27 (2 Kb/s)
+        Latency: 81 msec (68-173 msec ~107 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 81 msec (68-86 msec ~82 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #310 [hci1] 24.788803
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #307: len 23 (2 Kb/s)
+        Latency: 81 msec (68-173 msec ~94 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 81 msec (68-86 msec ~81 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #311 [hci1] 24.875099
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #308: len 12 (0 Kb/s)
+        Latency: 167 msec (68-173 msec ~131 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 13             #312 [hci1] 24.875448
+      Channel: 68 len 9 sdu 7 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0051-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #313 [hci1] 24.886985
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 11             #314 [hci1] 24.887079
+      Channel: 80 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Error Response (0x01) len 4
+        Read By Type Request (0x08)
+        Handle: 0x0051
+        Error: Attribute Not Found (0x0a)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #315 [hci1] 24.887136
+      LE L2CAP: LE Flow Control Credit (0x16) ident 8 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #316 [hci1] 24.963274
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #314: len 11 (1 Kb/s)
+        Latency: 76 msec (68-173 msec ~103 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 76 msec (68-86 msec ~79 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #317 [hci1] 25.050174
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #315: len 12 (0 Kb/s)
+        Latency: 163 msec (68-173 msec ~133 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 163 msec (68-163 msec ~121 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #318 [hci1] 25.050362
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Request (0x04) len 4
+        Handle range: 0x0034-0xffff
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #319 [hci1] 25.067309
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #320 [hci1] 25.067437
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #321 [hci1] 25.067452
+< ACL Data TX: Handle 3153 flags 0x01 dlen 10             #322 [hci1] 25.067454
+      Channel: 80 len 60 sdu 58 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Response (0x05) len 57
+        Format: UUID-16 (0x01)
+        Handle: 0x0034
+        UUID: Unknown (0xaa55)
+        Handle: 0x0035
+        UUID: Client Characteristic Configuration (0x2902)
+        Handle: 0x0036
+        UUID: Characteristic (0x2803)
+        Handle: 0x0037
+        UUID: Unknown (0xaa56)
+        Handle: 0x0038
+        UUID: Characteristic (0x2803)
+        Handle: 0x0039
+        UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        UUID: Characteristic (0x2803)
+        Handle: 0x003b
+        UUID: Unknown (0xaa58)
+        Handle: 0x003c
+        UUID: Characteristic Extended Properties (0x2900)
+        Handle: 0x003d
+        UUID: Characteristic (0x2803)
+        Handle: 0x003e
+        UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        UUID: Characteristic (0x2803)
+        Handle: 0x0040
+        UUID: Unknown (0xaa5a)
+        Handle: 0x0041
+        UUID: Characteristic (0x2803)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #323 [hci1] 25.138293
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #320: len 27 (3 Kb/s)
+        Latency: 70 msec (68-173 msec ~102 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #324 [hci1] 25.138859
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #321: len 27 (3 Kb/s)
+        Latency: 71 msec (68-173 msec ~86 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 71 msec (68-163 msec ~96 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #325 [hci1] 25.146952
+      LE L2CAP: LE Flow Control Credit (0x16) ident 9 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #326 [hci1] 25.225079
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #322: len 10 (0 Kb/s)
+        Latency: 157 msec (68-173 msec ~122 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 157 msec (68-163 msec ~126 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #327 [hci1] 25.312706
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #325: len 12 (0 Kb/s)
+        Latency: 165 msec (68-173 msec ~143 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #328 [hci1] 25.312869
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Request (0x04) len 4
+        Handle range: 0x0042-0xffff
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #329 [hci1] 25.327094
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 26             #330 [hci1] 25.327121
+      Channel: 80 len 22 sdu 20 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Response (0x05) len 19
+        Format: UUID-128 (0x02)
+        Handle: 0x0042
+        UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #331 [hci1] 25.327217
+      LE L2CAP: LE Flow Control Credit (0x16) ident 10 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #332 [hci1] 25.400646
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #330: len 26 (2 Kb/s)
+        Latency: 73 msec (68-173 msec ~108 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 73 msec (68-163 msec ~100 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #333 [hci1] 25.487665
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #331: len 12 (0 Kb/s)
+        Latency: 160 msec (68-173 msec ~134 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 160 msec (68-163 msec ~130 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #334 [hci1] 25.487871
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Request (0x04) len 4
+        Handle range: 0x0043-0xffff
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #335 [hci1] 25.507078
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 27             #336 [hci1] 25.507103
+< ACL Data TX: Handle 3153 flags 0x01 dlen 27             #337 [hci1] 25.507114
+< ACL Data TX: Handle 3153 flags 0x01 dlen 14             #338 [hci1] 25.507115
+      Channel: 80 len 64 sdu 62 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Response (0x05) len 61
+        Format: UUID-16 (0x01)
+        Handle: 0x0043
+        UUID: Primary Service (0x2800)
+        Handle: 0x0044
+        UUID: Include (0x2802)
+        Handle: 0x0045
+        UUID: Characteristic (0x2803)
+        Handle: 0x0046
+        UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        UUID: Characteristic (0x2803)
+        Handle: 0x0048
+        UUID: Unknown (0xaa51)
+        Handle: 0x0049
+        UUID: Characteristic (0x2803)
+        Handle: 0x004a
+        UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        UUID: Characteristic (0x2803)
+        Handle: 0x004c
+        UUID: Unknown (0xaa53)
+        Handle: 0x004d
+        UUID: Unknown (0xaa54)
+        Handle: 0x004e
+        UUID: Characteristic (0x2803)
+        Handle: 0x004f
+        UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        UUID: Characteristic (0x2803)
+        Handle: 0x0051
+        UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #339 [hci1] 25.575646
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #336: len 27 (3 Kb/s)
+        Latency: 68 msec (68-173 msec ~101 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #340 [hci1] 25.576377
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #337: len 27 (3 Kb/s)
+        Latency: 69 msec (68-173 msec ~85 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 69 msec (68-163 msec ~99 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #341 [hci1] 25.586970
+      LE L2CAP: LE Flow Control Credit (0x16) ident 11 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #342 [hci1] 25.662546
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #338: len 14 (0 Kb/s)
+        Latency: 155 msec (68-173 msec ~120 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 155 msec (68-163 msec ~127 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #343 [hci1] 25.750099
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #341: len 12 (0 Kb/s)
+        Latency: 163 msec (68-173 msec ~141 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #344 [hci1] 25.750351
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Find Information Request (0x04) len 4
+        Handle range: 0x0052-0xffff
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #345 [hci1] 25.767442
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 11             #346 [hci1] 25.767657
+      Channel: 80 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Error Response (0x01) len 4
+        Find Information Request (0x04)
+        Handle: 0x0052
+        Error: Attribute Not Found (0x0a)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #347 [hci1] 25.767829
+      LE L2CAP: LE Flow Control Credit (0x16) ident 12 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #348 [hci1] 25.837987
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #346: len 11 (1 Kb/s)
+        Latency: 70 msec (68-173 msec ~106 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 70 msec (68-163 msec ~98 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #349 [hci1] 25.925220
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #347: len 12 (0 Kb/s)
+        Latency: 157 msec (68-173 msec ~131 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 157 msec (68-163 msec ~128 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #350 [hci1] 25.925448
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Write Request (0x12) len 4
+        Handle: 0x0035
+          Data: 0000
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #351 [hci1] 25.927279
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 7              #352 [hci1] 25.927359
+      Channel: 80 len 3 sdu 1 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Write Response (0x13) len 0
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #353 [hci1] 25.927538
+      LE L2CAP: LE Flow Control Credit (0x16) ident 13 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #354 [hci1] 26.013044
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #352: len 7 (0 Kb/s)
+        Latency: 85 msec (68-173 msec ~108 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #355 [hci1] 26.100179
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #353: len 12 (0 Kb/s)
+        Latency: 172 msec (68-173 msec ~140 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 172 msec (68-172 msec ~150 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 11             #356 [hci1] 26.100328
+      Channel: 68 len 7 sdu 5 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Write Request (0x12) len 4
+        Handle: 0x0035
+          Data: 0200
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #357 [hci1] 26.107015
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 7              #358 [hci1] 26.107094
+      Channel: 80 len 3 sdu 1 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Write Response (0x13) len 0
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #359 [hci1] 26.107166
+      LE L2CAP: LE Flow Control Credit (0x16) ident 14 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #360 [hci1] 26.188009
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #358: len 7 (0 Kb/s)
+        Latency: 80 msec (68-173 msec ~110 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 80 msec (68-172 msec ~115 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #361 [hci1] 26.274955
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #359: len 12 (0 Kb/s)
+        Latency: 167 msec (68-173 msec ~139 msec)
+< ACL Data TX: Handle 3153 flags 0x00 dlen 17             #362 [hci1] 29.037447
+      Channel: 80 len 13 sdu 11 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Handle Value Indication (0x1d) len 10
+        Handle: 0x0034
+          Data: 0123456789abcdef
+> HCI Event: Number of Completed Packets (0x13) plen 5    #363 [hci1] 29.162584
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #362: len 17 (1 Kb/s)
+        Latency: 125 msec (68-173 msec ~132 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 125 msec (68-172 msec ~120 msec)
+> ACL Data RX: Handle 3153 flags 0x02 dlen 12             #364 [hci1] 29.162792
+      LE L2CAP: LE Flow Control Credit (0x16) ident 3 len 4
+        Source CID: 80
+        Credits: 10
+> ACL Data RX: Handle 3153 flags 0x02 dlen 7              #365 [hci1] 29.163153
+      Channel: 68 len 3 sdu 1 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+      ATT: Handle Value Confirmation (0x1e) len 0
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #366 [hci1] 29.167360
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #367 [hci1] 29.167576
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3153 flags 0x00 dlen 12             #368 [hci1] 29.167723
+      LE L2CAP: LE Flow Control Credit (0x16) ident 15 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #369 [hci1] 29.337537
+        Num handles: 1
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #368: len 12 (0 Kb/s)
+        Latency: 169 msec (68-173 msec ~151 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 4}
+        Channel Latency: 169 msec (68-172 msec ~145 msec)
+> HCI Event: Disconnect Complete (0x05) plen 4            #370 [hci1] 30.475202
+        Status: Success (0x00)
+        Handle: 3153 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Remote User Terminated Connection (0x13)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #371 [hci1] 31.066936
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #372 [hci1] 31.067709
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #373 [hci1] 31.086897
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #374 [hci1] 31.087406
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 22  #375 [hci1] 31.106890
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x12
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Name (complete): Tester_F6B11A
+> HCI Event: Command Complete (0x0e) plen 4               #376 [hci1] 31.107767
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #377 [hci1] 31.126916
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #378 [hci1] 31.127499
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #379 [hci1] 31.146947
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #380 [hci1] 31.147608
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 31                 #381 [hci1] 31.680841
+      LE Enhanced Connection Complete (0x0a)
+        Status: Success (0x00)
+        Handle: 3171
+        Role: Peripheral (0x01)
+        Peer address type: Public (0x00)
+        Peer address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Local resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Peer resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Connection interval: 87.50 msec (0x0046)
+        Connection latency: 0 (0x0000)
+        Supervision timeout: 20000 msec (0x07d0)
+        Central clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 6                  #382 [hci1] 31.680905
+      LE Advertising Set Terminated (0x12)
+        Status: Success (0x00)
+        Handle: 0
+        Connection handle: 3171
+        Number of completed extended advertising events: 0
+< HCI Command: LE Read Remote Use.. (0x08|0x0016) plen 2  #383 [hci1] 31.687100
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Command Status (0x0f) plen 4                 #384 [hci1] 31.687670
+      LE Read Remote Used Features (0x08|0x0016) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 12                 #385 [hci1] 31.944758
+      LE Read Remote Used Features (0x04)
+        Status: Success (0x00)
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Features: 0x2d 0x49 0x00 0xf7 0x67 0xd9 0x00 0x80
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Data Packet Length Extension
+          LE 2M PHY
+          LE Coded PHY
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Connected Isochronous Stream (Host Support)
+          LE Power Control Request
+          LE Power Control Request
+          Connection Subrating
+          Connection Subrating (Host Support)
+          Unknown features (0x8000d90000000000)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #386 [hci1] 32.907030
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #387 [hci1] 32.927503
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #388 [hci1] 32.927600
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0002
+        Value: 200300052a
+            Properties: 0x20
+              Indicate (0x20)
+            Value Handle: 0x0003
+            Value UUID: Service Changed (0x2a05)
+        Handle: 0x0005
+        Value: 0a0600292b
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0006
+            Value UUID: Client Supported Features (0x2b29)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #389 [hci1] 33.081959
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #388: len 20 (1 Kb/s)
+        Latency: 154 msec (154-154 msec ~154 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #390 [hci1] 33.082119
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0006-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #391 [hci1] 33.087591
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #392 [hci1] 33.087642
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0007
+        Value: 0208002a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0008
+            Value UUID: Database Hash (0x2b2a)
+        Handle: 0x0009
+        Value: 020a003a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x000a
+            Value UUID: Server Supported Features (0x2b3a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #393 [hci1] 33.257009
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #392: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #394 [hci1] 33.257163
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000a-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #395 [hci1] 33.267629
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #396 [hci1] 33.267750
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x000c
+        Value: 0a0d00002a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000d
+            Value UUID: Device Name (0x2a00)
+        Handle: 0x000e
+        Value: 0a0f00012a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000f
+            Value UUID: Appearance (0x2a01)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #397 [hci1] 33.431951
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #396: len 20 (0 Kb/s)
+        Latency: 164 msec (154-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #398 [hci1] 33.432234
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000f-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #399 [hci1] 33.447157
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #400 [hci1] 33.447227
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0010
+        Value: 021100042a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0011
+            Value UUID: Peripheral Preferred Connection Parameters (0x2a04)
+        Handle: 0x0013
+        Value: 021400242a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0014
+            Value UUID: Model Number String (0x2a24)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #401 [hci1] 33.606912
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #400: len 20 (1 Kb/s)
+        Latency: 159 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #402 [hci1] 33.607204
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0014-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #403 [hci1] 33.627459
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #404 [hci1] 33.627575
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0015
+        Value: 021600292a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0016
+            Value UUID: Manufacturer Name String (0x2a29)
+        Handle: 0x0017
+        Value: 021800502a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0018
+            Value UUID: PnP ID (0x2a50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #405 [hci1] 33.781983
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #404: len 20 (1 Kb/s)
+        Latency: 154 msec (154-169 msec ~157 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #406 [hci1] 33.782121
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0018-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #407 [hci1] 33.787157
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #408 [hci1] 33.787208
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0019
+        Value: 021a00252a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001a
+            Value UUID: Serial Number String (0x2a25)
+        Handle: 0x001b
+        Value: 021c00262a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001c
+            Value UUID: Firmware Revision String (0x2a26)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #409 [hci1] 33.956943
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #408: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #410 [hci1] 33.957240
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x001c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #411 [hci1] 33.967205
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #412 [hci1] 33.967225
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x001d
+        Value: 021e00272a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001e
+            Value UUID: Hardware Revision String (0x2a27)
+        Handle: 0x001f
+        Value: 022000282a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0020
+            Value UUID: Software Revision String (0x2a28)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #413 [hci1] 34.131927
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #412: len 20 (0 Kb/s)
+        Latency: 164 msec (154-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #414 [hci1] 34.132269
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0020-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #415 [hci1] 34.147699
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #416 [hci1] 34.147728
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0021
+        Value: 022200ff2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0022
+            Value UUID: Unknown (0x2bff)
+        Handle: 0x0023
+        Value: 022400232a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0024
+            Value UUID: System ID (0x2a23)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #417 [hci1] 34.306890
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #416: len 20 (1 Kb/s)
+        Latency: 159 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #418 [hci1] 34.307177
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0024-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #419 [hci1] 34.327330
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #420 [hci1] 34.327382
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0025
+        Value: 0226002a2a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0026
+            Value UUID: IEEE 11073-20601 Regulatory Cert. Data List (0x2a2a)
+        Handle: 0x0028
+        Value: 0a290050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0029
+            Value UUID: Unknown (0xaa50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #421 [hci1] 34.481861
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #420: len 20 (1 Kb/s)
+        Latency: 154 msec (154-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #422 [hci1] 34.482211
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0029-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #423 [hci1] 34.487110
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #424 [hci1] 34.487146
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002a
+        Value: 0a2b0051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002b
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x002c
+        Value: 0a2d0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002d
+            Value UUID: Unknown (0xaa52)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #425 [hci1] 34.657102
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #424: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #426 [hci1] 34.657130
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x002d-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #427 [hci1] 34.667542
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #428 [hci1] 34.667663
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002e
+        Value: 0a2f0053aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002f
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x0030
+        Value: 3a310054aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0031
+            Value UUID: Unknown (0xaa54)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #429 [hci1] 34.832048
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #428: len 20 (0 Kb/s)
+        Latency: 164 msec (154-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #430 [hci1] 34.832220
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0031-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #431 [hci1] 34.847343
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #432 [hci1] 34.847437
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0033
+        Value: 3a340055aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0034
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0036
+        Value: 06370056aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0037
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #433 [hci1] 35.006946
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #432: len 20 (1 Kb/s)
+        Latency: 159 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #434 [hci1] 35.007247
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0037-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #435 [hci1] 35.027583
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #436 [hci1] 35.027695
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0038
+        Value: 06390057aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0039
+            Value UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        Value: 8a3b0058aa
+            Properties: 0x8a
+              Read (0x02)
+              Write (0x08)
+            Unknown fields (0x80)
+            Value Handle: 0x003b
+            Value UUID: Unknown (0xaa58)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #437 [hci1] 35.181996
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #436: len 20 (1 Kb/s)
+        Latency: 154 msec (154-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #438 [hci1] 35.182145
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x003b-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #439 [hci1] 35.187208
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #440 [hci1] 35.187327
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x003d
+        Value: 0a3e0059aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x003e
+            Value UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        Value: 0a40005aaa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0040
+            Value UUID: Unknown (0xaa5a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #441 [hci1] 35.356979
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #440: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #442 [hci1] 35.357066
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0040-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #443 [hci1] 35.367236
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 27             #444 [hci1] 35.367357
+      ATT: Read By Type Response (0x09) len 22
+        Attribute data length: 21
+        Attribute data list: 1 entry
+        Handle: 0x0041
+        Value: 0a4200efcdab89674523b10040510450bb00f0
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0042
+            Value UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #445 [hci1] 35.532038
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #444: len 27 (1 Kb/s)
+        Latency: 164 msec (154-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #446 [hci1] 35.532233
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0042-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #447 [hci1] 35.547193
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #448 [hci1] 35.547228
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0045
+        Value: 0a460050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0046
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        Value: 0a480051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0048
+            Value UUID: Unknown (0xaa51)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #449 [hci1] 35.706888
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #448: len 20 (1 Kb/s)
+        Latency: 159 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #450 [hci1] 35.707267
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0048-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #451 [hci1] 35.727223
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #452 [hci1] 35.727277
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0049
+        Value: 0a4a0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004a
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        Value: 024c0053aa
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x004c
+            Value UUID: Unknown (0xaa53)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #453 [hci1] 35.881829
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #452: len 20 (1 Kb/s)
+        Latency: 154 msec (154-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #454 [hci1] 35.882174
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x004c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #455 [hci1] 35.887704
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #456 [hci1] 35.887819
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x004e
+        Value: 0a4f0055aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004f
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        Value: 0a510056aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0051
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #457 [hci1] 36.056915
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #456: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #458 [hci1] 36.057147
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0051-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #459 [hci1] 36.067137
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 9              #460 [hci1] 36.067245
+      ATT: Error Response (0x01) len 4
+        Read By Type Request (0x08)
+        Handle: 0x0051
+        Error: Attribute Not Found (0x0a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #461 [hci1] 36.231895
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #460: len 9 (0 Kb/s)
+        Latency: 164 msec (154-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 7              #462 [hci1] 36.232042
+      ATT: Read Request (0x0a) len 2
+        Handle: 0x000a
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #463 [hci1] 36.247198
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 6              #464 [hci1] 36.247262
+      ATT: Read Response (0x0b) len 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #465 [hci1] 36.406948
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #464: len 6 (0 Kb/s)
+        Latency: 159 msec (154-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #466 [hci1] 36.407181
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #467 [hci1] 36.427498
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #468 [hci1] 36.427640
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0002
+        Value: 200300052a
+            Properties: 0x20
+              Indicate (0x20)
+            Value Handle: 0x0003
+            Value UUID: Service Changed (0x2a05)
+        Handle: 0x0005
+        Value: 0a0600292b
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0006
+            Value UUID: Client Supported Features (0x2b29)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #469 [hci1] 36.581983
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #468: len 20 (1 Kb/s)
+        Latency: 154 msec (154-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #470 [hci1] 36.582159
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0006-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #471 [hci1] 36.587211
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #472 [hci1] 36.587219
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0007
+        Value: 0208002a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0008
+            Value UUID: Database Hash (0x2b2a)
+        Handle: 0x0009
+        Value: 020a003a2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x000a
+            Value UUID: Server Supported Features (0x2b3a)
+< ACL Data TX: Handle 3171 flags 0x00 dlen 16             #473 [hci1] 36.697004
+      LE L2CAP: Connection Parameter Update Request (0x12) ident 16 len 8
+        Min interval: 24
+        Max interval: 40
+        Peripheral latency: 0
+        Timeout multiplier: 42
+> HCI Event: Number of Completed Packets (0x13) plen 5    #474 [hci1] 36.756959
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #472: len 20 (0 Kb/s)
+        Latency: 169 msec (154-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #475 [hci1] 36.757048
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000a-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #476 [hci1] 36.767125
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #477 [hci1] 36.767166
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x000c
+        Value: 0a0d00002a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000d
+            Value UUID: Device Name (0x2a00)
+        Handle: 0x000e
+        Value: 0a0f00012a
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x000f
+            Value UUID: Appearance (0x2a01)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #478 [hci1] 36.844454
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #473: len 16 (0 Kb/s)
+        Latency: 147 msec (147-169 msec ~155 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 10             #479 [hci1] 36.844563
+      LE L2CAP: Connection Parameter Update Response (0x13) ident 16 len 2
+        Result: Connection Parameters accepted (0x0000)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #480 [hci1] 36.847333
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #481 [hci1] 36.931971
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #477: len 20 (0 Kb/s)
+        Latency: 164 msec (147-169 msec ~160 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #482 [hci1] 36.932158
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x000f-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #483 [hci1] 36.947704
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #484 [hci1] 36.947818
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0010
+        Value: 021100042a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0011
+            Value UUID: Peripheral Preferred Connection Parameters (0x2a04)
+        Handle: 0x0013
+        Value: 021400242a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0014
+            Value UUID: Model Number String (0x2a24)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #485 [hci1] 37.106889
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #484: len 20 (1 Kb/s)
+        Latency: 159 msec (147-169 msec ~159 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #486 [hci1] 37.107063
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0014-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #487 [hci1] 37.127388
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #488 [hci1] 37.127547
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0015
+        Value: 021600292a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0016
+            Value UUID: Manufacturer Name String (0x2a29)
+        Handle: 0x0017
+        Value: 021800502a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0018
+            Value UUID: PnP ID (0x2a50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #489 [hci1] 37.281900
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #488: len 20 (1 Kb/s)
+        Latency: 154 msec (147-169 msec ~157 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #490 [hci1] 37.282184
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0018-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #491 [hci1] 37.287230
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #492 [hci1] 37.287271
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0019
+        Value: 021a00252a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001a
+            Value UUID: Serial Number String (0x2a25)
+        Handle: 0x001b
+        Value: 021c00262a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001c
+            Value UUID: Firmware Revision String (0x2a26)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #493 [hci1] 37.456996
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #492: len 20 (0 Kb/s)
+        Latency: 169 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #494 [hci1] 37.457053
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x001c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #495 [hci1] 37.467622
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #496 [hci1] 37.467723
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x001d
+        Value: 021e00272a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x001e
+            Value UUID: Hardware Revision String (0x2a27)
+        Handle: 0x001f
+        Value: 022000282a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0020
+            Value UUID: Software Revision String (0x2a28)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #497 [hci1] 37.631904
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #496: len 20 (0 Kb/s)
+        Latency: 164 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #498 [hci1] 37.632107
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0020-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #499 [hci1] 37.647617
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #500 [hci1] 37.647738
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0021
+        Value: 022200ff2b
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0022
+            Value UUID: Unknown (0x2bff)
+        Handle: 0x0023
+        Value: 022400232a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0024
+            Value UUID: System ID (0x2a23)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #501 [hci1] 37.807016
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #500: len 20 (1 Kb/s)
+        Latency: 159 msec (147-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #502 [hci1] 37.807046
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0024-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #503 [hci1] 37.827273
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #504 [hci1] 37.827282
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0025
+        Value: 0226002a2a
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x0026
+            Value UUID: IEEE 11073-20601 Regulatory Cert. Data List (0x2a2a)
+        Handle: 0x0028
+        Value: 0a290050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0029
+            Value UUID: Unknown (0xaa50)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #505 [hci1] 37.981948
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #504: len 20 (1 Kb/s)
+        Latency: 154 msec (147-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #506 [hci1] 37.982156
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0029-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #507 [hci1] 37.987696
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #508 [hci1] 37.987818
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002a
+        Value: 0a2b0051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002b
+            Value UUID: Unknown (0xaa51)
+        Handle: 0x002c
+        Value: 0a2d0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002d
+            Value UUID: Unknown (0xaa52)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #509 [hci1] 38.156891
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #508: len 20 (0 Kb/s)
+        Latency: 169 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #510 [hci1] 38.157140
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x002d-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #511 [hci1] 38.167458
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #512 [hci1] 38.167562
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x002e
+        Value: 0a2f0053aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x002f
+            Value UUID: Unknown (0xaa53)
+        Handle: 0x0030
+        Value: 3a310054aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0031
+            Value UUID: Unknown (0xaa54)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #513 [hci1] 38.331925
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #512: len 20 (0 Kb/s)
+        Latency: 164 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #514 [hci1] 38.332119
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0031-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #515 [hci1] 38.347675
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #516 [hci1] 38.347760
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0033
+        Value: 3a340055aa
+            Properties: 0x3a
+              Read (0x02)
+              Write (0x08)
+              Notify (0x10)
+              Indicate (0x20)
+            Value Handle: 0x0034
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0036
+        Value: 06370056aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0037
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #517 [hci1] 38.506876
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #516: len 20 (1 Kb/s)
+        Latency: 159 msec (147-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #518 [hci1] 38.507111
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0037-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #519 [hci1] 38.527156
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #520 [hci1] 38.527220
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0038
+        Value: 06390057aa
+            Properties: 0x06
+              Read (0x02)
+              Write Without Response (0x04)
+            Value Handle: 0x0039
+            Value UUID: Unknown (0xaa57)
+        Handle: 0x003a
+        Value: 8a3b0058aa
+            Properties: 0x8a
+              Read (0x02)
+              Write (0x08)
+            Unknown fields (0x80)
+            Value Handle: 0x003b
+            Value UUID: Unknown (0xaa58)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #521 [hci1] 38.681854
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #520: len 20 (1 Kb/s)
+        Latency: 154 msec (147-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #522 [hci1] 38.682088
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x003b-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #523 [hci1] 38.687160
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #524 [hci1] 38.687202
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x003d
+        Value: 0a3e0059aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x003e
+            Value UUID: Unknown (0xaa59)
+        Handle: 0x003f
+        Value: 0a40005aaa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0040
+            Value UUID: Unknown (0xaa5a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #525 [hci1] 38.857013
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #524: len 20 (0 Kb/s)
+        Latency: 169 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #526 [hci1] 38.857113
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0040-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #527 [hci1] 38.867419
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 27             #528 [hci1] 38.867474
+      ATT: Read By Type Response (0x09) len 22
+        Attribute data length: 21
+        Attribute data list: 1 entry
+        Handle: 0x0041
+        Value: 0a4200efcdab89674523b10040510450bb00f0
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0042
+            Value UUID: Vendor specific (f000bb50-0451-4000-b123-456789abcdef)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #529 [hci1] 39.031781
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #528: len 27 (1 Kb/s)
+        Latency: 164 msec (147-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #530 [hci1] 39.032059
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0042-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #531 [hci1] 39.047441
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #532 [hci1] 39.047454
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0045
+        Value: 0a460050aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0046
+            Value UUID: Unknown (0xaa50)
+        Handle: 0x0047
+        Value: 0a480051aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0048
+            Value UUID: Unknown (0xaa51)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #533 [hci1] 39.206906
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #532: len 20 (1 Kb/s)
+        Latency: 159 msec (147-169 msec ~161 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #534 [hci1] 39.207075
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0048-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #535 [hci1] 39.227205
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #536 [hci1] 39.227213
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x0049
+        Value: 0a4a0052aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004a
+            Value UUID: Unknown (0xaa52)
+        Handle: 0x004b
+        Value: 024c0053aa
+            Properties: 0x02
+              Read (0x02)
+            Value Handle: 0x004c
+            Value UUID: Unknown (0xaa53)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #537 [hci1] 39.381828
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #536: len 20 (1 Kb/s)
+        Latency: 154 msec (147-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #538 [hci1] 39.382007
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x004c-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #539 [hci1] 39.387068
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 20             #540 [hci1] 39.387077
+      ATT: Read By Type Response (0x09) len 15
+        Attribute data length: 7
+        Attribute data list: 2 entries
+        Handle: 0x004e
+        Value: 0a4f0055aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x004f
+            Value UUID: Unknown (0xaa55)
+        Handle: 0x0050
+        Value: 0a510056aa
+            Properties: 0x0a
+              Read (0x02)
+              Write (0x08)
+            Value Handle: 0x0051
+            Value UUID: Unknown (0xaa56)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #541 [hci1] 39.556874
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #540: len 20 (0 Kb/s)
+        Latency: 169 msec (147-169 msec ~163 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #542 [hci1] 39.557028
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0051-0xffff
+        Attribute type: Characteristic (0x2803)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #543 [hci1] 39.567204
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 9              #544 [hci1] 39.567213
+      ATT: Error Response (0x01) len 4
+        Read By Type Request (0x08)
+        Handle: 0x0051
+        Error: Attribute Not Found (0x0a)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #545 [hci1] 39.731881
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #544: len 9 (0 Kb/s)
+        Latency: 164 msec (147-169 msec ~164 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 7              #546 [hci1] 39.731991
+      ATT: Read Request (0x0a) len 2
+        Handle: 0x0006
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #547 [hci1] 39.747086
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 6              #548 [hci1] 39.747120
+      ATT: Read Response (0x0b) len 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #549 [hci1] 39.906820
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #548: len 6 (0 Kb/s)
+        Latency: 159 msec (147-169 msec ~162 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 8              #550 [hci1] 39.906954
+      ATT: Write Request (0x12) len 3
+        Handle: 0x0006
+          Data: 02
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #551 [hci1] 39.927278
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 5              #552 [hci1] 39.927317
+      ATT: Write Response (0x13) len 0
+> HCI Event: Number of Completed Packets (0x13) plen 5    #553 [hci1] 40.081824
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #552: len 5 (0 Kb/s)
+        Latency: 154 msec (147-169 msec ~158 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 11             #554 [hci1] 42.619391
+      SMP: Pairing Request (0x01) len 6
+        IO capability: KeyboardDisplay (0x04)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: No bonding, No MITM, SC, No Keypresses (0x08)
+        Max encryption key size: 16
+        Initiator key distribution: <none> (0x00)
+        Responder key distribution: <none> (0x00)
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #555 [hci1] 42.627532
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 11             #556 [hci1] 42.627645
+      SMP: Pairing Response (0x02) len 6
+        IO capability: DisplayOnly (0x00)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: Bonding, No MITM, SC, No Keypresses (0x09)
+        Max encryption key size: 16
+        Initiator key distribution: <none> (0x00)
+        Responder key distribution: <none> (0x00)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #557 [hci1] 42.794555
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #556: len 11 (0 Kb/s)
+        Latency: 166 msec (147-169 msec ~162 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 27             #558 [hci1] 42.794985
+> ACL Data RX: Handle 3171 flags 0x01 dlen 27             #559 [hci1] 42.795329
+> ACL Data RX: Handle 3171 flags 0x01 dlen 15             #560 [hci1] 42.795670
+      SMP: Pairing Public Key (0x0c) len 64
+        X: ad475cb5240e3cc47ffa75e1a485fffd32af84086ad7c39f8f895a76d3747a68
+        Y: 140c33eb5d5dd8724c7510bc3b87de885cece6093a8e6304028c3a07b74198b8
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #561 [hci1] 42.807923
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #562 [hci1] 42.808139
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #563 [hci1] 42.808363
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 27             #564 [hci1] 42.808408
+< ACL Data TX: Handle 3171 flags 0x01 dlen 27             #565 [hci1] 42.808475
+< ACL Data TX: Handle 3171 flags 0x01 dlen 15             #566 [hci1] 42.808492
+      SMP: Pairing Public Key (0x0c) len 64
+        X: 98308440221e2d910f0e54b71e7ec652857aa9b5a0dc65028824cc19db1226e9
+        Y: 67a4816bcb62efb21701e31fdb27561a6217575fb007a8bbdabe7e28b6f68482
+> HCI Event: Number of Completed Packets (0x13) plen 5    #567 [hci1] 42.882295
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #564: len 27 (2 Kb/s)
+        Latency: 73 msec (73-169 msec ~118 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #568 [hci1] 42.883073
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #565: len 27 (2 Kb/s)
+        Latency: 74 msec (73-169 msec ~96 msec)
+< ACL Data TX: Handle 3171 flags 0x00 dlen 21             #569 [hci1] 42.887224
+      SMP: Pairing Confirm (0x03) len 16
+        Confim value: 994d163e414284c56f2b2810319ca43b
+> HCI Event: Number of Completed Packets (0x13) plen 5    #570 [hci1] 42.969203
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #566: len 15 (0 Kb/s)
+        Latency: 160 msec (73-169 msec ~128 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #571 [hci1] 43.057033
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #569: len 21 (0 Kb/s)
+        Latency: 169 msec (73-169 msec ~149 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 21             #572 [hci1] 43.057156
+      SMP: Pairing Random (0x04) len 16
+        Random value: 7b9a194df873e9390000000000000000
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #573 [hci1] 43.067360
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 21             #574 [hci1] 43.067419
+      SMP: Pairing Random (0x04) len 16
+        Random value: 5da095555cc64d02679f89a05211af56
+> HCI Event: Number of Completed Packets (0x13) plen 5    #575 [hci1] 43.231664
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #574: len 21 (1 Kb/s)
+        Latency: 164 msec (73-169 msec ~156 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 21             #576 [hci1] 43.319589
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: 78d7cb2a7477e138655e958f97f39c12
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #577 [hci1] 43.327305
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 21             #578 [hci1] 43.327330
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: 7091837ea244bd42cd42ba2cbae4999d
+> HCI Event: Number of Completed Packets (0x13) plen 5    #579 [hci1] 43.494134
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #578: len 21 (1 Kb/s)
+        Latency: 166 msec (73-169 msec ~161 msec)
+> HCI Event: LE Meta Event (0x3e) plen 13                 #580 [hci1] 43.582273
+      LE Long Term Key Request (0x05)
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Random number: 0x0000000000000000
+        Encrypted diversifier: 0x0000
+< HCI Command: LE Long Term Key... (0x08|0x001a) plen 18  #581 [hci1] 43.587271
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Long term key: 75697fdc020fb407586c259f00d1ebf6
+> HCI Event: Command Complete (0x0e) plen 6               #582 [hci1] 43.588083
+      LE Long Term Key Request Reply (0x08|0x001a) ncmd 1
+        Status: Success (0x00)
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Encryption Change (0x08) plen 4              #583 [hci1] 44.019558
+        Status: Success (0x00)
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Encryption: Enabled with AES-CCM (0x01)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 26             #584 [hci1] 44.107208
+      LE L2CAP: Enhanced Credit Connection Request (0x17) ident 4 len 18
+        PSM: 39 (0x0027)
+        MTU: 64
+        MPS: 64
+        Credits: 5
+        Source CID: 84
+        Source CID: 83
+        Source CID: 82
+        Source CID: 81
+        Source CID: 80
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #585 [hci1] 44.137438
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 26             #586 [hci1] 44.137527
+      LE L2CAP: Enhanced Credit Connection Response (0x18) ident 4 len 18
+        MTU: 249
+        MPS: 251
+        Credits: 1
+        Result: Connection successful (0x0000)
+        Destination CID: 64
+        Destination CID: 65
+        Destination CID: 66
+        Destination CID: 67
+        Destination CID: 68
+> HCI Event: Number of Completed Packets (0x13) plen 5    #587 [hci1] 44.281841
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #586: len 26 (1 Kb/s)
+        Latency: 144 msec (73-169 msec ~153 msec)
+> ACL Data RX: Handle 3171 flags 0x02 dlen 9              #588 [hci1] 44.282089
+      Channel: 68 len 5 sdu 3 [PSM 39 mode Enhanced Credit (0x81)] {chan 9}
+      ATT: Read Request (0x0a) len 2
+        Handle: 0x0035
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #589 [hci1] 44.287751
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 3171 flags 0x00 dlen 9              #590 [hci1] 44.287870
+      Channel: 80 len 5 sdu 3 [PSM 39 mode Enhanced Credit (0x81)] {chan 9}
+      ATT: Read Response (0x0b) len 2
+< ACL Data TX: Handle 3171 flags 0x00 dlen 12             #591 [hci1] 44.288078
+      LE L2CAP: LE Flow Control Credit (0x16) ident 17 len 4
+        Source CID: 68
+        Credits: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5    #592 [hci1] 44.369683
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #590: len 9 (0 Kb/s)
+        Latency: 81 msec (73-169 msec ~117 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 9}
+        Channel Latency: 81 msec (81-81 msec ~81 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #593 [hci1] 44.456741
+        Num handles: 1
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #591: len 12 (0 Kb/s)
+        Latency: 168 msec (73-169 msec ~143 msec)
+        Channel: 80 [PSM 39 mode Enhanced Credit (0x81)] {chan 9}
+        Channel Latency: 168 msec (81-168 msec ~125 msec)
+> HCI Event: Disconnect Complete (0x05) plen 4            #594 [hci1] 45.856911
+        Status: Success (0x00)
+        Handle: 3171 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Remote User Terminated Connection (0x13)
+< HCI Command: Reset (0x03|0x0003) plen 0                 #595 [hci1] 52.467243
+> HCI Event: Command Complete (0x0e) plen 4               #596 [hci1] 52.467828
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+@ USER Close: main                                    {0x0001} [hci1] 52.487071
+= Close Index: 00:00:00:00:00:00                               [hci1] 52.487080
