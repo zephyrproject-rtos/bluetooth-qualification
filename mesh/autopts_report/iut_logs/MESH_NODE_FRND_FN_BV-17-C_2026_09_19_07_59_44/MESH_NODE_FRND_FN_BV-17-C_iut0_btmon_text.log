@@ -1,0 +1,4067 @@
+Bluetooth monitor ver 5.72
+= Note: Linux version 7.0.0-31-generic (x86_64)                        0.270912
+= Note: Bluetooth subsystem version 2.22                               0.270914
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci1)              [hci1] 0.270914
+= New Index: 48:5F:99:8E:E0:64 (Primary,USB,hci0)               [hci0] 0.270915
+= Open Index: 00:00:00:00:00:00                                 [hci1] 0.404219
+= Index Info: 00:00:00:00:00:00 (Nordic Semiconductor ASA)      [hci1] 0.404226
+@ USER Open: main (privileged) version 2.22            {0x0001} [hci1] 0.404231
+< HCI Command: Reset (0x03|0x0003) plen 0                    #1 [hci1] 0.404755
+> HCI Event: Command Complete (0x0e) plen 4                  #2 [hci1] 0.405266
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Supported... (0x04|0x0003) plen 0  #3 [hci1] 0.424130
+> HCI Event: Command Complete (0x0e) plen 12                 #4 [hci1] 0.424632
+      Read Local Supported Features (0x04|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0x00 0x00 0x00 0x00 0x60 0x00 0x00 0x00
+          BR/EDR Not Supported
+          LE Supported (Controller)
+< HCI Command: Read Local Version In.. (0x04|0x0001) plen 0  #5 [hci1] 0.444127
+> HCI Event: Command Complete (0x0e) plen 12                 #6 [hci1] 0.444595
+      Read Local Version Information (0x04|0x0001) ncmd 1
+        Status: Success (0x00)
+        HCI version: Reserved (0x11) - Revision 12345 (0x3039)
+        LMP version: Reserved (0x11) - Subversion 12345 (0x3039)
+        Manufacturer: Nordic Semiconductor ASA (89)
+< HCI Command: Read Local Supported... (0x04|0x0002) plen 0  #7 [hci1] 0.464113
+> HCI Event: Command Complete (0x0e) plen 68                 #8 [hci1] 0.465163
+      Read Local Supported Commands (0x04|0x0002) ncmd 1
+        Status: Success (0x00)
+        Commands: 115 entries
+          Disconnect (Octet 0 - Bit 5)
+          Read Remote Version Information (Octet 2 - Bit 7)
+          Set Event Mask (Octet 5 - Bit 6)
+          Reset (Octet 5 - Bit 7)
+          Read Connection Accept Timeout (Octet 7 - Bit 2)
+          Write Connection Accept Timeout (Octet 7 - Bit 3)
+          Read Transmit Power Level (Octet 10 - Bit 2)
+          Set Controller To Host Flow Control (Octet 10 - Bit 5)
+          Host Buffer Size (Octet 10 - Bit 6)
+          Host Number of Completed Packets (Octet 10 - Bit 7)
+          Read Local Version Information (Octet 14 - Bit 3)
+          Read Local Supported Features (Octet 14 - Bit 5)
+          Read BD ADDR (Octet 15 - Bit 1)
+          Read RSSI (Octet 15 - Bit 5)
+          Set Event Mask Page 2 (Octet 22 - Bit 2)
+          LE Set Event Mask (Octet 25 - Bit 0)
+          LE Read Buffer Size (Octet 25 - Bit 1)
+          LE Read Local Supported Features (Octet 25 - Bit 2)
+          LE Set Random Address (Octet 25 - Bit 4)
+          LE Set Advertising Parameters (Octet 25 - Bit 5)
+          LE Read Advertising Channel TX Power (Octet 25 - Bit 6)
+          LE Set Advertising Data (Octet 25 - Bit 7)
+          LE Set Scan Response Data (Octet 26 - Bit 0)
+          LE Set Advertise Enable (Octet 26 - Bit 1)
+          LE Set Scan Parameters (Octet 26 - Bit 2)
+          LE Set Scan Enable (Octet 26 - Bit 3)
+          LE Create Connection (Octet 26 - Bit 4)
+          LE Create Connection Cancel (Octet 26 - Bit 5)
+          LE Read Accept List Size (Octet 26 - Bit 6)
+          LE Clear Accept List (Octet 26 - Bit 7)
+          LE Add Device To Accept List (Octet 27 - Bit 0)
+          LE Remove Device From Accept List (Octet 27 - Bit 1)
+          LE Connection Update (Octet 27 - Bit 2)
+          LE Set Host Channel Classification (Octet 27 - Bit 3)
+          LE Read Channel Map (Octet 27 - Bit 4)
+          LE Read Remote Used Features (Octet 27 - Bit 5)
+          LE Encrypt (Octet 27 - Bit 6)
+          LE Rand (Octet 27 - Bit 7)
+          LE Start Encryption (Octet 28 - Bit 0)
+          LE Long Term Key Request Reply (Octet 28 - Bit 1)
+          LE Long Term Key Request Neg Reply (Octet 28 - Bit 2)
+          LE Read Supported States (Octet 28 - Bit 3)
+          Read Authenticated Payload Timeout (Octet 32 - Bit 4)
+          Write Authenticated Payload Timeout (Octet 32 - Bit 5)
+          LE Set Data Length (Octet 33 - Bit 6)
+          LE Read Suggested Default Data Length (Octet 33 - Bit 7)
+          LE Write Suggested Default Data Length (Octet 34 - Bit 0)
+          LE Add Device To Resolving List (Octet 34 - Bit 3)
+          LE Remove Device From Resolving List (Octet 34 - Bit 4)
+          LE Clear Resolving List (Octet 34 - Bit 5)
+          LE Read Resolving List Size (Octet 34 - Bit 6)
+          LE Set Address Resolution Enable (Octet 35 - Bit 1)
+          LE Set Resolvable Private Address Timeout (Octet 35 - Bit 2)
+          LE Read Maximum Data Length (Octet 35 - Bit 3)
+          LE Read PHY (Octet 35 - Bit 4)
+          LE Set Default PHY (Octet 35 - Bit 5)
+          LE Set PHY (Octet 35 - Bit 6)
+          LE Set Advertising Set Random Address (Octet 36 - Bit 1)
+          LE Set Extended Advertising Parameters (Octet 36 - Bit 2)
+          LE Set Extended Advertising Data (Octet 36 - Bit 3)
+          LE Set Extended Scan Response Data (Octet 36 - Bit 4)
+          LE Set Extended Advertising Enable (Octet 36 - Bit 5)
+          LE Read Maximum Advertising Data Length (Octet 36 - Bit 6)
+          LE Read Number of Supported Advertising Sets (Octet 36 - Bit 7)
+          LE Remove Advertising Set (Octet 37 - Bit 0)
+          LE Clear Advertising Sets (Octet 37 - Bit 1)
+          LE Set Periodic Advertising Parameters (Octet 37 - Bit 2)
+          LE Set Periodic Advertising Data (Octet 37 - Bit 3)
+          LE Set Periodic Advertising Enable (Octet 37 - Bit 4)
+          LE Set Extended Scan Parameters (Octet 37 - Bit 5)
+          LE Set Extended Scan Enable (Octet 37 - Bit 6)
+          LE Extended Create Connection (Octet 37 - Bit 7)
+          LE Periodic Advertising Create Sync (Octet 38 - Bit 0)
+          LE Periodic Advertising Create Sync Cancel (Octet 38 - Bit 1)
+          LE Periodic Advertising Terminate Sync (Octet 38 - Bit 2)
+          LE Add Device To Periodic Advertiser List (Octet 38 - Bit 3)
+          LE Remove Device From Periodic Advertiser List (Octet 38 - Bit 4)
+          LE Clear Periodic Advertiser List (Octet 38 - Bit 5)
+          LE Read Periodic Advertiser List Size (Octet 38 - Bit 6)
+          LE Read Transmit Power (Octet 38 - Bit 7)
+          LE Read RF Path Compensation (Octet 39 - Bit 0)
+          LE Write RF Path Compensation (Octet 39 - Bit 1)
+          LE Set Privacy Mode (Octet 39 - Bit 2)
+          LE Periodic Advertising Receive Enable (Octet 40 - Bit 5)
+          LE Periodic Advertising Sync Transfer (Octet 40 - Bit 6)
+          LE Periodic Advertising Set Info Transfer (Octet 40 - Bit 7)
+          LE Periodic Advertising Sync Transfer Parameters (Octet 41 - Bit 0)
+          LE Set Default Periodic Advertisng Sync Transfer Parameters (Octet 41 - Bit 1)
+          LE Read Buffer v2 (Octet 41 - Bit 5)
+          LE Read ISO TX Sync (Octet 41 - Bit 6)
+          LE Set Connected Isochronous Group Parameters (Octet 41 - Bit 7)
+          LE Set Connected Isochronous Group Parameters Test (Octet 42 - Bit 0)
+          LE Create Connected Isochronous Stream (Octet 42 - Bit 1)
+          LE Remove Connected Isochronous Group (Octet 42 - Bit 2)
+          LE Accept Connected Isochronous Stream Request (Octet 42 - Bit 3)
+          LE Reject Connected Isochronous Stream Request (Octet 42 - Bit 4)
+          LE Create Broadcast Isochronous Group (Octet 42 - Bit 5)
+          LE Create Broadcast Isochronous Group Test (Octet 42 - Bit 6)
+          LE Terminate Broadcast Isochronous Group (Octet 42 - Bit 7)
+          LE Broadcast Isochronous Group Create Sync (Octet 43 - Bit 0)
+          LE Broadcast Isochronous Group Terminate Sync (Octet 43 - Bit 1)
+          LE Request Peer SCA (Octet 43 - Bit 2)
+          LE Setup Isochronous Data Path (Octet 43 - Bit 3)
+          LE Remove Isochronous Data Path (Octet 43 - Bit 4)
+          LE Isochronous Transmit Test (Octet 43 - Bit 5)
+          LE Isochronous Receive Test (Octet 43 - Bit 6)
+          LE Isochronous Read Test Counters (Octet 43 - Bit 7)
+          LE Isochronous Read Test Counters (Octet 44 - Bit 0)
+          LE Set Host Feature (Octet 44 - Bit 1)
+          Octet 44 - Bit 2 
+          Octet 45 - Bit 6 
+          Octet 46 - Bit 0 
+          Octet 46 - Bit 1 
+          Octet 46 - Bit 2 
+          Octet 47 - Bit 4 
+< HCI Command: Host Buffer Size (0x03|0x0033) plen 7         #9 [hci1] 0.484136
+        ACL MTU: 255  ACL max packet: 16
+        SCO MTU: 0    SCO max packet: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #10 [hci1] 0.484584
+      Host Buffer Size (0x03|0x0033) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Controller To Ho.. (0x03|0x0031) plen 1  #11 [hci1] 0.504108
+        Flow control: ACL Data Packets (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #12 [hci1] 0.504539
+      Set Controller To Host Flow Control (0x03|0x0031) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Local Suppor.. (0x08|0x0003) plen 0  #13 [hci1] 0.524118
+> HCI Event: Command Complete (0x0e) plen 12                #14 [hci1] 0.524622
+      LE Read Local Supported Features (0x08|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0xfd 0x79 0x00 0xf7 0x30 0x01 0x00 0x00
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Ping
+          LE Data Packet Length Extension
+          LL Privacy
+          Extended Scanner Filter Policies
+          LE 2M PHY
+          LE Coded PHY
+          LE Extended Advertising
+          LE Periodic Advertising
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Periodic Advertising ADI support
+          Connection Subrating
+          Unknown features (0x0000010000000000)
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #15 [hci1] 0.544115
+        Bit Number: 32
+          Connected Isochronous Stream (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #16 [hci1] 0.544548
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Buffer v2 (0x08|0x0060) plen 0       #17 [hci1] 0.564117
+> HCI Event: Command Complete (0x0e) plen 10                #18 [hci1] 0.564593
+      LE Read Buffer v2 (0x08|0x0060) ncmd 1
+        Status: Success (0x00)
+        ACL MTU: 27
+        ACL max packet: 3
+        ISO MTU: 318
+        ISO max packet: 3
+< HCI Command: LE Read Maximum Adve.. (0x08|0x003a) plen 0  #19 [hci1] 0.584142
+> HCI Event: Command Complete (0x0e) plen 6                 #20 [hci1] 0.584609
+      LE Read Maximum Advertising Data Length (0x08|0x003a) ncmd 1
+        Status: Success (0x00)
+        Max length: 1650
+< HCI Command: LE Read Supported St.. (0x08|0x001c) plen 0  #21 [hci1] 0.604141
+> HCI Event: Command Complete (0x0e) plen 12                #22 [hci1] 0.604584
+      LE Read Supported States (0x08|0x001c) ncmd 1
+        Status: Success (0x00)
+        States: 0x000003ff3e0306ff
+          Non-connectable Advertising State
+          Scannable Advertising State
+          Connectable Advertising State
+          High Duty Cycle Directed Advertising State
+          Passive Scanning State
+          Active Scanning State
+          Initiating State
+            and Connection State (Central Role)
+          Connection State (Peripheral Role)
+          Scannable Advertising State
+            and Passive Scanning State
+          Connectable Advertising State
+            and Passive Scanning State
+          Non-connectable Advertising State
+            and Initiating State
+          Scannable Advertising State
+            and Initiating State
+          Active Scanning State
+            and Connection State (Central Role)
+          Passive Scanning State
+            and Connection State (Peripheral Role)
+          Active Scanning State
+            and Connection State (Peripheral Role)
+          Initiating State
+            and Connection State (Central Role)
+            and Central Role & Central Role
+          Low Duty Cycle Directed Advertising State
+          Connectable Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Initiating State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+< HCI Command: LE Read Maximum Data.. (0x08|0x002f) plen 0  #23 [hci1] 0.624123
+> HCI Event: Command Complete (0x0e) plen 12                #24 [hci1] 0.624579
+      LE Read Maximum Data Length (0x08|0x002f) ncmd 1
+        Status: Success (0x00)
+        Max TX octets: 251
+        Max TX time: 2704
+        Max RX octets: 251
+        Max RX time: 2704
+< HCI Command: LE Write Suggested D.. (0x08|0x0024) plen 4  #25 [hci1] 0.644120
+        TX octets: 251
+        TX time: 2704
+> HCI Event: Command Complete (0x0e) plen 4                 #26 [hci1] 0.644606
+      LE Write Suggested Default Data Length (0x08|0x0024) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Resolving Li.. (0x08|0x002a) plen 0  #27 [hci1] 0.664067
+> HCI Event: Command Complete (0x0e) plen 5                 #28 [hci1] 0.664456
+      LE Read Resolving List Size (0x08|0x002a) ncmd 1
+        Status: Success (0x00)
+        Size: 8
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #29 [hci1] 0.684123
+        Bit Number: 38
+          Connection Subrating (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #30 [hci1] 0.684570
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8       #31 [hci1] 0.704120
+        Mask: 0x000002063f87fa5e
+          LE Advertising Report
+          LE Connection Update Complete
+          LE Read Remote Used Features Complete
+          LE Long Term Key Request
+          LE Data Length Change
+          LE Enhanced Connection Complete
+          LE PHY Update Complete
+          LE Extended Advertising Report
+          LE Periodic Advertising Sync Established
+          LE Periodic Advertising Report
+          LE Periodic Advertising Sync Lost
+          LE Extended Scan Timeout
+          LE Extended Advertising Set Terminated
+          LE Scan Request Received
+          LE Periodic Advertising Sync Transfer Rvc
+          LE CIS Established
+          LE CIS Request
+          LE Create BIG Complete
+          LE Terminate BIG Complete
+          LE BIG Sync Estabilished Complete
+          LE BIG Sync Lost
+          LE BIG Info Advertising Report
+          LE Subrate Change
+          Unknown mask (0x0000020000000000)
+> HCI Event: Command Complete (0x0e) plen 4                 #32 [hci1] 0.704586
+      LE Set Event Mask (0x08|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8          #33 [hci1] 0.724126
+        Mask: 0x2000800002008890
+          Disconnection Complete
+          Encryption Change
+          Read Remote Version Information Complete
+          Hardware Error
+          Data Buffer Overflow
+          Encryption Key Refresh Complete
+          LE Meta
+> HCI Event: Command Complete (0x0e) plen 4                 #34 [hci1] 0.724645
+      Set Event Mask (0x03|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0            #35 [hci1] 0.744125
+> HCI Event: Command Complete (0x0e) plen 10                #36 [hci1] 0.744593
+      Read BD ADDR (0x04|0x0009) ncmd 1
+        Status: Success (0x00)
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #37 [hci1] 0.764132
+        Address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #38 [hci1] 0.764621
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0036) plen 25  #39 [hci1] 3.094163
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                 #40 [hci1] 3.094970
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #41 [hci1] 3.104165
+        Advertising handle: 0x00
+        Advertising random address: 24:34:0C:0D:44:02 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #42 [hci1] 3.104637
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #43 [hci1] 3.124192
+        Address: 24:71:FD:F8:AC:A2 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #44 [hci1] 3.124665
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0041) plen 8  #45 [hci1] 3.144167
+        Own address type: Random (0x01)
+        Filter policy: Accept all advertisement (0x00)
+        PHYs: 0x01
+        Entry 0: LE 1M
+          Type: Passive (0x00)
+          Interval: 30.000 msec (0x0030)
+          Window: 30.000 msec (0x0030)
+> HCI Event: Command Complete (0x0e) plen 4                 #46 [hci1] 3.144691
+      LE Set Extended Scan Parameters (0x08|0x0041) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0042) plen 6  #47 [hci1] 3.164159
+        Extended scan: Enabled (0x01)
+        Filter duplicates: Disabled (0x00)
+        Duration: 0 msec (0x0000)
+        Period: 0.00 sec (0x0000)
+> HCI Event: Command Complete (0x0e) plen 4                 #48 [hci1] 3.164627
+      LE Set Extended Scan Enable (0x08|0x0042) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #49 [hci1] 3.184255
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #50 [hci1] 3.184771
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0036) plen 25  #51 [hci1] 3.204237
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                 #52 [hci1] 3.204979
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 33  #53 [hci1] 3.224108
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1d
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Provisioning (0x1827)
+        Service Data: Mesh Provisioning (0x1827)
+          Data: 0c8f05237771437d94c1391f321980ce0000
+> HCI Event: Command Complete (0x0e) plen 4                 #54 [hci1] 3.224968
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 20  #55 [hci1] 3.244152
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x10
+        Unknown EIR field 0x24: 546573746572
+        Name (complete): Tester
+> HCI Event: Command Complete (0x0e) plen 4                 #56 [hci1] 3.244807
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #57 [hci1] 3.264187
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 60000 ms (0x1770)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #58 [hci1] 3.264758
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #59 [hci1] 3.284164
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #60 [hci1] 3.284638
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #61 [hci1] 3.304098
+        Advertising handle: 0x00
+        Advertising random address: 27:DD:CA:1B:4A:5C (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #62 [hci1] 3.304583
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0036) plen 25  #63 [hci1] 3.324141
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                 #64 [hci1] 3.324922
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 29  #65 [hci1] 3.344090
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x19
+        Mesh Beacon: 000c8f05237771437d94c1391f321980ce0002a30a8708
+          Unprovisioned Device Beacon (0x00)
+          Device UUID: 0c8f05237771437d94c1391f321980ce
+          OOB Information: 0x0002
+            Electronic / URI
+          URI Hash: 0xa30a8708
+> HCI Event: Command Complete (0x0e) plen 4                 #66 [hci1] 3.344913
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #67 [hci1] 3.364175
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                 #68 [hci1] 3.364655
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 50                   #69 [hci1] 3.397325
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x18
+        17 29 88 d1 5c b6 00 03 0c 8f 05 23 77 71 43 7d  .)..\......#wqC}
+        94 c1 39 1f 32 19 80 ce                          ..9.2...        
+        Mesh Provisioning: 88d15cb600030c8f05237771437d94c1391f321980ce
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Open (0x00)
+          Device UUID: 030c8f05237771437d94c1391f321980
+> HCI Event: LE Meta Event (0x3e) plen 6                    #70 [hci1] 3.428694
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+> HCI Event: LE Meta Event (0x3e) plen 50                   #71 [hci1] 3.437226
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x18
+        17 29 88 d1 5c b6 00 03 0c 8f 05 23 77 71 43 7d  .)..\......#wqC}
+        94 c1 39 1f 32 19 80 ce                          ..9.2...        
+        Mesh Provisioning: 88d15cb600030c8f05237771437d94c1391f321980ce
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Open (0x00)
+          Device UUID: 030c8f05237771437d94c1391f321980
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 12  #72 [hci1] 3.444744
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Unknown EIR field 0x24: 546573746572
+> HCI Event: Command Complete (0x0e) plen 4                 #73 [hci1] 3.445348
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #74 [hci1] 3.464367
+        Advertising handle: 0x00
+        Advertising random address: 17:BA:00:7B:09:45 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #75 [hci1] 3.464987
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #76 [hci1] 3.484532
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                 #77 [hci1] 3.485130
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 50                   #78 [hci1] 3.486999
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x18
+        17 29 88 d1 5c b6 00 03 0c 8f 05 23 77 71 43 7d  .)..\......#wqC}
+        94 c1 39 1f 32 19 80 ce                          ..9.2...        
+        Mesh Provisioning: 88d15cb600030c8f05237771437d94c1391f321980ce
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Open (0x00)
+          Device UUID: 030c8f05237771437d94c1391f321980
+> HCI Event: LE Meta Event (0x3e) plen 6                    #79 [hci1] 3.551507
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 12  #80 [hci1] 3.564246
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60007
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Ack (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #81 [hci1] 3.564881
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #82 [hci1] 3.584179
+        Advertising handle: 0x00
+        Advertising random address: 3E:52:32:BA:A1:AC (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #83 [hci1] 3.584686
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #84 [hci1] 3.604159
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                 #85 [hci1] 3.604694
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 39                   #86 [hci1] 3.635500
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x0d
+        0c 29 88 d1 5c b6 00 00 00 02 f7 00 02           .)..\........   
+        Mesh Provisioning: 88d15cb600000002f70002
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Transaction Start (0x00)
+          SeqN: 0
+          TotalLength: 2
+          FCS: 0xf7
+          Data: 0002
+        02                                               .               
+> HCI Event: LE Meta Event (0x3e) plen 6                    #87 [hci1] 3.664583
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 12  #88 [hci1] 3.714170
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60001
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #89 [hci1] 3.714699
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #90 [hci1] 3.724158
+        Advertising handle: 0x00
+        Advertising random address: 39:74:E3:B2:33:9F (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #91 [hci1] 3.724651
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #92 [hci1] 3.744158
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                 #93 [hci1] 3.744629
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                    #94 [hci1] 3.810085
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 27  #95 [hci1] 3.884226
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x17
+        Mesh Provisioning: 88d15cb68000000c2a010400030001000000010004
+          Link ID: 0x88d15cb6
+          Transaction Number: 128
+          Transaction Start (0x00)
+          SeqN: 0
+          TotalLength: 12
+          FCS: 0x2a
+          Data: 010400030001000000010004
+        04 00 03 00 01 00 00 00 01 00 04                 ...........     
+> HCI Event: Command Complete (0x0e) plen 4                 #96 [hci1] 3.885024
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #97 [hci1] 3.904187
+        Advertising handle: 0x00
+        Advertising random address: 1F:DB:DD:BA:95:2D (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                 #98 [hci1] 3.904765
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #99 [hci1] 3.924159
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #100 [hci1] 3.924665
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #101 [hci1] 3.933027
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+> HCI Event: LE Meta Event (0x3e) plen 34                  #102 [hci1] 4.014704
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 80 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68001
+          Link ID: 0x88d15cb6
+          Transaction Number: 128
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #103 [hci1] 4.062137
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 80 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68001
+          Link ID: 0x88d15cb6
+          Transaction Number: 128
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #104 [hci1] 4.100318
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 80 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68001
+          Link ID: 0x88d15cb6
+          Transaction Number: 128
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #105 [hci1] 4.142589
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x11
+        10 29 88 d1 5c b6 01 00 00 06 8d 02 01 00 00 00  .)..\...........
+        00                                               .               
+        Mesh Provisioning: 88d15cb6010000068d020100000000
+          Link ID: 0x88d15cb6
+          Transaction Number: 1
+          Transaction Start (0x00)
+          SeqN: 0
+          TotalLength: 6
+          FCS: 0x8d
+          Data: 020100000000
+        01 00 00 00 00                                   .....           
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 12  #106 [hci1] 4.204238
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60101
+          Link ID: 0x88d15cb6
+          Transaction Number: 1
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                #107 [hci1] 4.204935
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #108 [hci1] 4.224177
+        Advertising handle: 0x00
+        Advertising random address: 3E:50:C8:53:43:96 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #109 [hci1] 4.224661
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #110 [hci1] 4.244170
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                #111 [hci1] 4.244715
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #112 [hci1] 4.274054
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 29 88 d1 5c b6 02 08 00 41 08 03 b5 1a 47 b9  .)..\....A....G.
+        0b 5d e2 5e 94 8a 33 23 e6 29 e1 ab e4 ca 43     .].^..3#.)....C 
+        Mesh Provisioning: 88d15cb6020800410803b51a47b90b5de25e948a3323e629e1abe4ca43
+          Link ID: 0x88d15cb6
+          Transaction Number: 2
+          Transaction Start (0x00)
+          SeqN: 8
+          TotalLength: 65
+          FCS: 0x08
+          Data: 03b51a47b90b5de25e948a3323e629e1abe4ca43
+        b5 1a 47 b9 0b 5d e2 5e 94 8a 33 23 e6 29 e1 ab  ..G..].^..3#.)..
+        e4 ca 43                                         ..C             
+> HCI Event: LE Meta Event (0x3e) plen 6                   #113 [hci1] 4.291650
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+> HCI Event: LE Meta Event (0x3e) plen 57                  #114 [hci1] 4.316366
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 29 88 d1 5c b6 02 06 36 b1 4c a8 36 f1 64 74  .)..\...6.L.6.dt
+        65 87 73 11 76 37 9e 4a fa c8 b4 53 fc 5a 4e     e.s.v7.J...S.ZN 
+        Mesh Provisioning: 88d15cb6020636b14ca836f164746587731176379e4afac8b453fc5a4e
+          Link ID: 0x88d15cb6
+          Transaction Number: 2
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: 36b14ca836f164746587731176379e4afac8b453fc5a4e
+        b1 4c a8 36 f1 64 74 65 87 73 11 76 37 9e 4a fa  .L.6.dte.s.v7.J.
+        c8 b4 53 fc 5a 4e                                ..S.ZN          
+> HCI Event: LE Meta Event (0x3e) plen 56                  #115 [hci1] 4.356145
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1e
+        1d 29 88 d1 5c b6 02 0a f7 66 34 27 0f 1f 78 fb  .)..\....f4'..x.
+        22 8e 77 35 a1 71 fd c3 d8 74 d9 7f 95 6a        ".w5.q...t...j  
+        Mesh Provisioning: 88d15cb6020af76634270f1f78fb228e7735a171fdc3d874d97f956a
+          Link ID: 0x88d15cb6
+          Transaction Number: 2
+          Transaction Continuation (0x02)
+          SegmentIndex: 2
+          Data: f76634270f1f78fb228e7735a171fdc3d874d97f956a
+        66 34 27 0f 1f 78 fb 22 8e 77 35 a1 71 fd c3 d8  f4'..x.".w5.q...
+        74 d9 7f 95 6a                                   t...j           
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 12  #116 [hci1] 4.364335
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60201
+          Link ID: 0x88d15cb6
+          Transaction Number: 2
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                #117 [hci1] 4.364894
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #118 [hci1] 4.384315
+        Advertising handle: 0x00
+        Advertising random address: 3C:B6:96:65:53:15 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #119 [hci1] 4.384924
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #120 [hci1] 4.404232
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                #121 [hci1] 4.404750
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #122 [hci1] 4.468824
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 35  #123 [hci1] 4.534176
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1f
+        Mesh Provisioning: 88d15cb681080041ce034636b8a7a6622544b27e36949187ef97ec1595
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Start (0x00)
+          SeqN: 8
+          TotalLength: 65
+          FCS: 0xce
+          Data: 034636b8a7a6622544b27e36949187ef97ec1595
+        46 36 b8 a7 a6 62 25 44 b2 7e 36 94 91 87 ef 97  F6...b%D.~6.....
+        ec 15 95                                         ...             
+> HCI Event: Command Complete (0x0e) plen 4                #124 [hci1] 4.535005
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #125 [hci1] 4.544193
+        Advertising handle: 0x00
+        Advertising random address: 0F:1B:70:19:2B:6B (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #126 [hci1] 4.544715
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #127 [hci1] 4.564185
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #128 [hci1] 4.564712
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #129 [hci1] 4.568588
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 35  #130 [hci1] 4.634178
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1f
+        Mesh Provisioning: 88d15cb6810683450fa93ceca4db684db5b45b5153af0cb7bb33ee3ab0
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: 83450fa93ceca4db684db5b45b5153af0cb7bb33ee3ab0
+        45 0f a9 3c ec a4 db 68 4d b5 b4 5b 51 53 af 0c  E..<...hM..[QS..
+        b7 bb 33 ee 3a b0                                ..3.:.          
+> HCI Event: Command Complete (0x0e) plen 4                #131 [hci1] 4.635041
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #132 [hci1] 4.644177
+        Advertising handle: 0x00
+        Advertising random address: 29:3F:2C:9F:AD:C9 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #133 [hci1] 4.644631
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #134 [hci1] 4.664196
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #135 [hci1] 4.664758
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #136 [hci1] 4.675354
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 34  #137 [hci1] 4.744218
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1e
+        Mesh Provisioning: 88d15cb6810afd105027a980f361ffd0cca0c3a59e2b84b6be44c7ca
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Continuation (0x02)
+          SegmentIndex: 2
+          Data: fd105027a980f361ffd0cca0c3a59e2b84b6be44c7ca
+        10 50 27 a9 80 f3 61 ff d0 cc a0 c3 a5 9e 2b 84  .P'...a.......+.
+        b6 be 44 c7 ca                                   ..D..           
+> HCI Event: Command Complete (0x0e) plen 4                #138 [hci1] 4.745055
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #139 [hci1] 4.764181
+        Advertising handle: 0x00
+        Advertising random address: 21:EB:CF:C3:E1:D5 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #140 [hci1] 4.764655
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #141 [hci1] 4.784147
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #142 [hci1] 4.784715
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #143 [hci1] 4.789045
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+> HCI Event: LE Meta Event (0x3e) plen 34                  #144 [hci1] 4.856272
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 81 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68101
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #145 [hci1] 4.890165
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 81 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68101
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #146 [hci1] 4.934172
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 81 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68101
+          Link ID: 0x88d15cb6
+          Transaction Number: 129
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #147 [hci1] 4.992893
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 29 88 d1 5c b6 03 04 00 21 c8 05 ea 90 34 1b  .)..\....!....4.
+        cc fe af a4 70 11 b4 91 10 2c d0 bc 09 06 60     ....p....,....` 
+        Mesh Provisioning: 88d15cb603040021c805ea90341bccfeafa47011b491102cd0bc090660
+          Link ID: 0x88d15cb6
+          Transaction Number: 3
+          Transaction Start (0x00)
+          SeqN: 4
+          TotalLength: 33
+          FCS: 0xc8
+          Data: 05ea90341bccfeafa47011b491102cd0bc090660
+        ea 90 34 1b cc fe af a4 70 11 b4 91 10 2c d0 bc  ..4.....p....,..
+        09 06 60                                         ..`             
+> HCI Event: LE Meta Event (0x3e) plen 47                  #148 [hci1] 5.032198
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 29 88 d1 5c b6 03 06 63 29 e7 3b ed b6 78 79  .)..\...c).;..xy
+        f2 9a a6 fc a5                                   .....           
+        Mesh Provisioning: 88d15cb603066329e73bedb67879f29aa6fca5
+          Link ID: 0x88d15cb6
+          Transaction Number: 3
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: 6329e73bedb67879f29aa6fca5
+        29 e7 3b ed b6 78 79 f2 9a a6 fc a5              ).;..xy.....    
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 12  #149 [hci1] 5.084391
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60301
+          Link ID: 0x88d15cb6
+          Transaction Number: 3
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                #150 [hci1] 5.085126
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #151 [hci1] 5.104228
+        Advertising handle: 0x00
+        Advertising random address: 16:7F:2C:43:24:37 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #152 [hci1] 5.104699
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #153 [hci1] 5.124197
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                #154 [hci1] 5.124706
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #155 [hci1] 5.189115
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 35  #156 [hci1] 5.264251
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1f
+        Mesh Provisioning: 88d15cb682040021c405f0980ddcac43bf07373a74a7c6533f405642bb
+          Link ID: 0x88d15cb6
+          Transaction Number: 130
+          Transaction Start (0x00)
+          SeqN: 4
+          TotalLength: 33
+          FCS: 0xc4
+          Data: 05f0980ddcac43bf07373a74a7c6533f405642bb
+        f0 98 0d dc ac 43 bf 07 37 3a 74 a7 c6 53 3f 40  .....C..7:t..S?@
+        56 42 bb                                         VB.             
+> HCI Event: Command Complete (0x0e) plen 4                #157 [hci1] 5.265135
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #158 [hci1] 5.284184
+        Advertising handle: 0x00
+        Advertising random address: 32:AC:23:41:74:FF (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #159 [hci1] 5.284749
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #160 [hci1] 5.292708
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -95 dBm (0xa1)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #161 [hci1] 5.304251
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #162 [hci1] 5.304758
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #163 [hci1] 5.311504
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 25  #164 [hci1] 5.374240
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x15
+        Mesh Provisioning: 88d15cb6820636868c8ae0ba1b8b5c8c04ae0a
+          Link ID: 0x88d15cb6
+          Transaction Number: 130
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: 36868c8ae0ba1b8b5c8c04ae0a
+        86 8c 8a e0 ba 1b 8b 5c 8c 04 ae 0a              .......\....    
+> HCI Event: Command Complete (0x0e) plen 4                #165 [hci1] 5.374975
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #166 [hci1] 5.384073
+        Advertising handle: 0x00
+        Advertising random address: 2F:62:B9:A6:C8:14 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #167 [hci1] 5.384513
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #168 [hci1] 5.404189
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #169 [hci1] 5.404724
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #170 [hci1] 5.414632
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+> HCI Event: LE Meta Event (0x3e) plen 34                  #171 [hci1] 5.475088
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 82 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68201
+          Link ID: 0x88d15cb6
+          Transaction Number: 130
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #172 [hci1] 5.505976
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 82 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68201
+          Link ID: 0x88d15cb6
+          Transaction Number: 130
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #173 [hci1] 5.545147
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 82 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68201
+          Link ID: 0x88d15cb6
+          Transaction Number: 130
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #174 [hci1] 5.613447
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 29 88 d1 5c b6 04 04 00 21 6c 06 af 6e 8d a8  .)..\....!l..n..
+        fa 16 0c a1 04 18 3a 21 57 48 19 af cd 22 5b     ......:!WH..."[ 
+        Mesh Provisioning: 88d15cb6040400216c06af6e8da8fa160ca104183a21574819afcd225b
+          Link ID: 0x88d15cb6
+          Transaction Number: 4
+          Transaction Start (0x00)
+          SeqN: 4
+          TotalLength: 33
+          FCS: 0x6c
+          Data: 06af6e8da8fa160ca104183a21574819afcd225b
+        af 6e 8d a8 fa 16 0c a1 04 18 3a 21 57 48 19 af  .n........:!WH..
+        cd 22 5b                                         ."[             
+> HCI Event: LE Meta Event (0x3e) plen 47                  #175 [hci1] 5.664184
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 29 88 d1 5c b6 04 06 51 e5 18 34 57 3b 0d 4c  .)..\...Q..4W;.L
+        0c 6e cc 9b b4                                   .n...           
+        Mesh Provisioning: 88d15cb6040651e51834573b0d4c0c6ecc9bb4
+          Link ID: 0x88d15cb6
+          Transaction Number: 4
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: 51e51834573b0d4c0c6ecc9bb4
+        e5 18 34 57 3b 0d 4c 0c 6e cc 9b b4              ..4W;.L.n...    
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 12  #176 [hci1] 5.724264
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60401
+          Link ID: 0x88d15cb6
+          Transaction Number: 4
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                #177 [hci1] 5.724876
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #178 [hci1] 5.744188
+        Advertising handle: 0x00
+        Advertising random address: 1F:A1:48:74:E6:85 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #179 [hci1] 5.744643
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #180 [hci1] 5.764203
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                #181 [hci1] 5.764791
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #182 [hci1] 5.824621
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 35  #183 [hci1] 5.894180
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1f
+        Mesh Provisioning: 88d15cb683040021ec0699c9491988e877355a9a8321c629a3a987d808
+          Link ID: 0x88d15cb6
+          Transaction Number: 131
+          Transaction Start (0x00)
+          SeqN: 4
+          TotalLength: 33
+          FCS: 0xec
+          Data: 0699c9491988e877355a9a8321c629a3a987d808
+        99 c9 49 19 88 e8 77 35 5a 9a 83 21 c6 29 a3 a9  ..I...w5Z..!.)..
+        87 d8 08                                         ...             
+> HCI Event: Command Complete (0x0e) plen 4                #184 [hci1] 5.895124
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #185 [hci1] 5.904210
+        Advertising handle: 0x00
+        Advertising random address: 23:83:1D:CF:A3:E3 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #186 [hci1] 5.904764
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #187 [hci1] 5.924199
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #188 [hci1] 5.924704
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #189 [hci1] 5.932232
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 25  #190 [hci1] 5.994172
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x15
+        Mesh Provisioning: 88d15cb68306e808655d558dfc1155a0b492f2
+          Link ID: 0x88d15cb6
+          Transaction Number: 131
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: e808655d558dfc1155a0b492f2
+        08 65 5d 55 8d fc 11 55 a0 b4 92 f2              .e]U...U....    
+> HCI Event: Command Complete (0x0e) plen 4                #191 [hci1] 5.994895
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #192 [hci1] 6.004140
+        Advertising handle: 0x00
+        Advertising random address: 02:AF:4F:CE:D3:3F (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #193 [hci1] 6.004669
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #194 [hci1] 6.024131
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #195 [hci1] 6.024656
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #196 [hci1] 6.035316
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+> HCI Event: LE Meta Event (0x3e) plen 34                  #197 [hci1] 6.091761
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 83 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68301
+          Link ID: 0x88d15cb6
+          Transaction Number: 131
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #198 [hci1] 6.116304
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 83 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68301
+          Link ID: 0x88d15cb6
+          Transaction Number: 131
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #199 [hci1] 6.150072
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 83 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68301
+          Link ID: 0x88d15cb6
+          Transaction Number: 131
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #200 [hci1] 6.193537
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 29 88 d1 5c b6 05 04 00 22 d7 07 bc 9b c1 df  .)..\...."......
+        6b a3 bf e5 f9 ce ef f0 da 9d 85 b1 30 60 0b     k...........0`. 
+        Mesh Provisioning: 88d15cb605040022d707bc9bc1df6ba3bfe5f9ceeff0da9d85b130600b
+          Link ID: 0x88d15cb6
+          Transaction Number: 5
+          Transaction Start (0x00)
+          SeqN: 4
+          TotalLength: 34
+          FCS: 0xd7
+          Data: 07bc9bc1df6ba3bfe5f9ceeff0da9d85b130600b
+        bc 9b c1 df 6b a3 bf e5 f9 ce ef f0 da 9d 85 b1  ....k...........
+        30 60 0b                                         0`.             
+> HCI Event: LE Meta Event (0x3e) plen 48                  #201 [hci1] 6.246683
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x16
+        15 29 88 d1 5c b6 05 06 fc dd b5 38 a1 44 0f b9  .)..\......8.D..
+        17 40 6c 7d 2f c5                                .@l}/.          
+        Mesh Provisioning: 88d15cb60506fcddb538a1440fb917406c7d2fc5
+          Link ID: 0x88d15cb6
+          Transaction Number: 5
+          Transaction Continuation (0x02)
+          SegmentIndex: 1
+          Data: fcddb538a1440fb917406c7d2fc5
+        dd b5 38 a1 44 0f b9 17 40 6c 7d 2f c5           ..8.D...@l}/.   
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #202 [hci1] 6.264938
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #203 [hci1] 6.265478
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #204 [hci1] 6.284275
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #205 [hci1] 6.285078
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #206 [hci1] 6.304197
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #207 [hci1] 6.304935
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 4  #208 [hci1] 6.324202
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                #209 [hci1] 6.324704
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #210 [hci1] 6.344215
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #211 [hci1] 6.344838
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #212 [hci1] 6.364203
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #213 [hci1] 6.364826
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #214 [hci1] 6.384206
+        Advertising handle: 0x00
+        Advertising random address: 1A:85:1F:B4:F6:58 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #215 [hci1] 6.384640
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #216 [hci1] 6.404215
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #217 [hci1] 6.404960
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 12  #218 [hci1] 6.424192
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x08
+        Mesh Provisioning: 88d15cb60501
+          Link ID: 0x88d15cb6
+          Transaction Number: 5
+          Transaction Acknowledgment (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                #219 [hci1] 6.424715
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #220 [hci1] 6.444193
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4                #221 [hci1] 6.444637
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #222 [hci1] 6.503547
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #223 [hci1] 6.504183
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #224 [hci1] 6.504664
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #225 [hci1] 6.524196
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #226 [hci1] 6.524970
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #227 [hci1] 6.544151
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #228 [hci1] 6.544894
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 4  #229 [hci1] 6.564208
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                #230 [hci1] 6.564619
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #231 [hci1] 6.584201
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #232 [hci1] 6.584822
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #233 [hci1] 6.604225
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #234 [hci1] 6.604756
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #235 [hci1] 6.624241
+        Advertising handle: 0x00
+        Advertising random address: 2F:E2:84:BD:DE:60 (Non-Resolvable)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #236 [hci1] 6.624577
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -96 dBm (0xa0)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: Command Complete (0x0e) plen 4                #237 [hci1] 6.624742
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #238 [hci1] 6.644261
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #239 [hci1] 6.644971
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 16  #240 [hci1] 6.664197
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x0c
+        Mesh Provisioning: 88d15cb6840000013e08
+          Link ID: 0x88d15cb6
+          Transaction Number: 132
+          Transaction Start (0x00)
+          SeqN: 0
+          TotalLength: 1
+          FCS: 0x3e
+          Data: 08
+> HCI Event: Command Complete (0x0e) plen 4                #241 [hci1] 6.664907
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #242 [hci1] 6.684203
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #243 [hci1] 6.684746
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #244 [hci1] 6.695032
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #245 [hci1] 6.704393
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #246 [hci1] 6.704918
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #247 [hci1] 6.724244
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #248 [hci1] 6.725126
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #249 [hci1] 6.744197
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #250 [hci1] 6.744862
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #251 [hci1] 6.756882
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 84 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68401
+          Link ID: 0x88d15cb6
+          Transaction Number: 132
+          Transaction Acknowledgment (0x01)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 4  #252 [hci1] 6.764436
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                #253 [hci1] 6.764955
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #254 [hci1] 6.784207
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #255 [hci1] 6.784758
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #256 [hci1] 6.792365
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 84 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68401
+          Link ID: 0x88d15cb6
+          Transaction Number: 132
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 34                  #257 [hci1] 6.823008
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x08
+        07 29 88 d1 5c b6 84 01                          .)..\...        
+        Mesh Provisioning: 88d15cb68401
+          Link ID: 0x88d15cb6
+          Transaction Number: 132
+          Transaction Acknowledgment (0x01)
+> HCI Event: LE Meta Event (0x3e) plen 57                  #258 [hci1] 7.774784
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -96 dBm (0xa0)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: LE Meta Event (0x3e) plen 35                  #259 [hci1] 7.869046
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x09
+        08 29 88 d1 5c b6 00 0b 00                       .)..\....       
+        Mesh Provisioning: 88d15cb6000b00
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Close (0x02)
+          Reason: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 35                  #260 [hci1] 7.909981
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x09
+        08 29 88 d1 5c b6 00 0b 00                       .)..\....       
+        Mesh Provisioning: 88d15cb6000b00
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Close (0x02)
+          Reason: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 35                  #261 [hci1] 7.946995
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x09
+        08 29 88 d1 5c b6 00 0b 00                       .)..\....       
+        Mesh Provisioning: 88d15cb6000b00
+          Link ID: 0x88d15cb6
+          Transaction Number: 0
+          Provisioning Bearer Control (0x03)
+          Link Close (0x02)
+          Reason: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 56                  #262 [hci1] 8.538469
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1e
+        1d 2a 34 03 cd 42 17 1d 35 23 34 da 5d 0c f4 70  .*4..B..5#4.]..p
+        3e 9d 5d f0 9d 84 89 cd 84 9d fb ed 22 e8        >.].........".  
+        Mesh Data: 3403cd42171d352334da5d0cf4703e9d5df09d8489cd849dfbed22e8
+          IVI: 0
+          NID: 0x34
+        03 cd 42 17 1d 35 23 34 da 5d 0c f4 70 3e 9d 5d  ..B..5#4.]..p>.]
+        f0 9d 84 89 cd 84 9d fb ed 22 e8                 .........".     
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #263 [hci1] 8.864298
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #264 [hci1] 8.864905
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #265 [hci1] 8.884236
+        Advertising handle: 0x00
+        Advertising random address: 1D:D3:81:04:86:7B (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #266 [hci1] 8.884665
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #267 [hci1] 8.904255
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #268 [hci1] 8.905096
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 30  #269 [hci1] 8.924247
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 34ac613401d7a154b429d302bc2b909bff727b07518e1c70
+          IVI: 0
+          NID: 0x34
+        ac 61 34 01 d7 a1 54 b4 29 d3 02 bc 2b 90 9b ff  .a4...T.)...+...
+        72 7b 07 51 8e 1c 70                             r{.Q..p         
+> HCI Event: Command Complete (0x0e) plen 4                #270 [hci1] 8.925008
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #271 [hci1] 8.944276
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #272 [hci1] 8.944838
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #273 [hci1] 8.948666
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #274 [hci1] 8.964298
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #275 [hci1] 8.964789
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #276 [hci1] 8.984269
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #277 [hci1] 8.984987
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #278 [hci1] 9.004429
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #279 [hci1] 9.005177
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 4  #280 [hci1] 9.026143
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                #281 [hci1] 9.026548
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #282 [hci1] 9.044836
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #283 [hci1] 9.045507
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                  #284 [hci1] 9.123807
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 2a 42 20 20 ef a1 64 aa 1f 21 95 b7 5c 4a 93  .*B  ..d..!..\J.
+        79 68 67 d7 7c                                   yhg.|           
+        Mesh Data: 422020efa164aa1f2195b75c4a93796867d77c
+          IVI: 0
+          NID: 0x42
+        20 20 ef a1 64 aa 1f 21 95 b7 5c 4a 93 79 68 67    ..d..!..\J.yhg
+        d7 7c                                            .|              
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #285 [hci1] 9.354309
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #286 [hci1] 9.354786
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #287 [hci1] 9.364294
+        Advertising handle: 0x00
+        Advertising random address: 39:6D:00:F6:E1:47 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #288 [hci1] 9.364831
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #289 [hci1] 9.384251
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #290 [hci1] 9.385033
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 30  #291 [hci1] 9.404243
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 4256c08b78e1a0fad215f7e4b6c6bdc0b50a6f246e74a43b
+          IVI: 0
+          NID: 0x42
+        56 c0 8b 78 e1 a0 fa d2 15 f7 e4 b6 c6 bd c0 b5  V..x............
+        0a 6f 24 6e 74 a4 3b                             .o$nt.;         
+> HCI Event: Command Complete (0x0e) plen 4                #292 [hci1] 9.405056
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #293 [hci1] 9.424270
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #294 [hci1] 9.424759
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #295 [hci1] 9.437381
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #296 [hci1] 9.444335
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #297 [hci1] 9.444841
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #298 [hci1] 9.464240
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #299 [hci1] 9.464966
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #300 [hci1] 9.484269
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #301 [hci1] 9.484991
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sca.. (0x08|0x0038) plen 4  #302 [hci1] 9.504254
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                #303 [hci1] 9.504683
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #304 [hci1] 9.524237
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #305 [hci1] 9.524786
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                  #306 [hci1] 9.622652
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 2a 42 72 b1 79 d4 c6 8c d4 df 17 50 fb 8a e2  .*Br.y......P...
+        c3 e9 76 e9 fa                                   ..v..           
+        Mesh Data: 4272b179d4c68cd4df1750fb8ae2c3e976e9fa
+          IVI: 0
+          NID: 0x42
+        72 b1 79 d4 c6 8c d4 df 17 50 fb 8a e2 c3 e9 76  r.y......P.....v
+        e9 fa                                            ..              
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #307 [hci1] 9.854307
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                #308 [hci1] 9.854856
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #309 [hci1] 9.864328
+        Advertising handle: 0x00
+        Advertising random address: 1E:9E:9D:BD:74:C9 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4                #310 [hci1] 9.864857
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #311 [hci1] 9.884341
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #312 [hci1] 9.885158
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 30  #313 [hci1] 9.904294
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 42b72281737ec003654d68bc156b00fd109a1c29ff934a3f
+          IVI: 0
+          NID: 0x42
+        b7 22 81 73 7e c0 03 65 4d 68 bc 15 6b 00 fd 10  .".s~..eMh..k...
+        9a 1c 29 ff 93 4a 3f                             ..)..J?         
+> HCI Event: Command Complete (0x0e) plen 4                #314 [hci1] 9.905026
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0039) plen 6  #315 [hci1] 9.924239
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4                #316 [hci1] 9.924793
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                   #317 [hci1] 9.933965
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising... (0x08|0x0035) plen 7  #318 [hci1] 9.944315
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                #319 [hci1] 9.944817
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0036) plen 25  #320 [hci1] 9.964263
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                #321 [hci1] 9.965122
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0037) plen 24  #322 [hci1] 9.984236
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4                #323 [hci1] 9.984947
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #324 [hci1] 10.004270
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #325 [hci1] 10.004731
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #326 [hci1] 10.024258
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #327 [hci1] 10.024861
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #328 [hci1] 10.087119
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -96 dBm (0xa0)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: LE Meta Event (0x3e) plen 52                 #329 [hci1] 10.119106
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1a
+        19 2a 34 62 1b 25 ef 91 0b 89 9a 07 47 e8 1e 8b  .*4b.%......G...
+        39 c3 88 24 43 2a 28 a5 64 8b                    9..$C*(.d.      
+        Mesh Data: 34621b25ef910b899a0747e81e8b39c38824432a28a5648b
+          IVI: 0
+          NID: 0x34
+        62 1b 25 ef 91 0b 89 9a 07 47 e8 1e 8b 39 c3 88  b.%......G...9..
+        24 43 2a 28 a5 64 8b                             $C*(.d.         
+> HCI Event: LE Meta Event (0x3e) plen 52                 #330 [hci1] 11.683449
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1a
+        19 2a 34 59 54 d6 eb 22 ee f0 4f 98 81 f7 61 d0  .*4YT.."..O...a.
+        d8 89 05 44 31 2e cc db 5b e8                    ...D1...[.      
+        Mesh Data: 345954d6eb22eef04f9881f761d0d8890544312eccdb5be8
+          IVI: 0
+          NID: 0x34
+        59 54 d6 eb 22 ee f0 4f 98 81 f7 61 d0 d8 89 05  YT.."..O...a....
+        44 31 2e cc db 5b e8                             D1...[.         
+> HCI Event: LE Meta Event (0x3e) plen 47                 #331 [hci1] 11.748589
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 2a 42 3a 16 fd 2b c0 f4 f8 9c 06 77 38 79 b3  .*B:..+.....w8y.
+        37 f9 dc 4f 5a                                   7..OZ           
+        Mesh Data: 423a16fd2bc0f4f89c06773879b337f9dc4f5a
+          IVI: 0
+          NID: 0x42
+        3a 16 fd 2b c0 f4 f8 9c 06 77 38 79 b3 37 f9 dc  :..+.....w8y.7..
+        4f 5a                                            OZ              
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #332 [hci1] 11.994447
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #333 [hci1] 11.994972
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #334 [hci1] 12.004316
+        Advertising handle: 0x00
+        Advertising random address: 20:F7:E7:49:10:E3 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #335 [hci1] 12.004793
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #336 [hci1] 12.024273
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #337 [hci1] 12.025103
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 30  #338 [hci1] 12.044279
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 42839fa97164a993f30d1d7fb674e9154e02d9fecabe0e10
+          IVI: 0
+          NID: 0x42
+        83 9f a9 71 64 a9 93 f3 0d 1d 7f b6 74 e9 15 4e  ...qd.......t..N
+        02 d9 fe ca be 0e 10                             .......         
+> HCI Event: Command Complete (0x0e) plen 4               #339 [hci1] 12.045071
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #340 [hci1] 12.064273
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4               #341 [hci1] 12.064842
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #342 [hci1] 12.075391
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #343 [hci1] 12.084321
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #344 [hci1] 12.084797
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #345 [hci1] 12.104264
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #346 [hci1] 12.105045
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #347 [hci1] 12.124257
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #348 [hci1] 12.124967
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #349 [hci1] 12.144254
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #350 [hci1] 12.144738
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #351 [hci1] 12.164241
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #352 [hci1] 12.164738
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                 #353 [hci1] 12.259678
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 2a 42 c4 89 8d 8e 29 39 df 32 0b 91 04 b1 94  .*B....)9.2.....
+        1f c2 ee 23 fe                                   ...#.           
+        Mesh Data: 42c4898d8e2939df320b9104b1941fc2ee23fe
+          IVI: 0
+          NID: 0x42
+        c4 89 8d 8e 29 39 df 32 0b 91 04 b1 94 1f c2 ee  ....)9.2........
+        23 fe                                            #.              
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #354 [hci1] 12.494364
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #355 [hci1] 12.494843
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #356 [hci1] 12.504274
+        Advertising handle: 0x00
+        Advertising random address: 17:E4:23:68:47:C2 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #357 [hci1] 12.504767
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #358 [hci1] 12.524313
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #359 [hci1] 12.525092
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 30  #360 [hci1] 12.544272
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 42e41a5564680cc5d08a66e61081f2e32772513914f52d15
+          IVI: 0
+          NID: 0x42
+        e4 1a 55 64 68 0c c5 d0 8a 66 e6 10 81 f2 e3 27  ..Udh....f.....'
+        72 51 39 14 f5 2d 15                             rQ9..-.         
+> HCI Event: Command Complete (0x0e) plen 4               #361 [hci1] 12.545029
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #362 [hci1] 12.564287
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4               #363 [hci1] 12.564784
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #364 [hci1] 12.574440
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #365 [hci1] 12.584343
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #366 [hci1] 12.584813
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #367 [hci1] 12.604267
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #368 [hci1] 12.605036
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #369 [hci1] 12.624276
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #370 [hci1] 12.624937
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #371 [hci1] 12.644301
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #372 [hci1] 12.644715
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #373 [hci1] 12.664280
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #374 [hci1] 12.664775
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #375 [hci1] 12.693553
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -95 dBm (0xa1)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: LE Meta Event (0x3e) plen 57                 #376 [hci1] 13.222283
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8  .*4..M.7........
+        c6 dd ad 0c 14 7b 62 79 89 29 1c 89 7c d6 0a     .....{by.)..|.. 
+        Mesh Data: 34b0ee4da437a5bf95fa93ccffd8c6ddad0c147b627989291c897cd60a
+          IVI: 0
+          NID: 0x34
+        b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8 c6 dd ad  ..M.7...........
+        0c 14 7b 62 79 89 29 1c 89 7c d6 0a              ..{by.)..|..    
+> HCI Event: LE Meta Event (0x3e) plen 57                 #377 [hci1] 13.274646
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8  .*4..M.7........
+        c6 dd ad 0c 14 7b 62 79 89 29 1c 89 7c d6 0a     .....{by.)..|.. 
+        Mesh Data: 34b0ee4da437a5bf95fa93ccffd8c6ddad0c147b627989291c897cd60a
+          IVI: 0
+          NID: 0x34
+        b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8 c6 dd ad  ..M.7...........
+        0c 14 7b 62 79 89 29 1c 89 7c d6 0a              ..{by.)..|..    
+> HCI Event: LE Meta Event (0x3e) plen 57                 #378 [hci1] 13.329740
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8  .*4..M.7........
+        c6 dd ad 0c 14 7b 62 79 89 29 1c 89 7c d6 0a     .....{by.)..|.. 
+        Mesh Data: 34b0ee4da437a5bf95fa93ccffd8c6ddad0c147b627989291c897cd60a
+          IVI: 0
+          NID: 0x34
+        b0 ee 4d a4 37 a5 bf 95 fa 93 cc ff d8 c6 dd ad  ..M.7...........
+        0c 14 7b 62 79 89 29 1c 89 7c d6 0a              ..{by.)..|..    
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #379 [hci1] 13.385064
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #380 [hci1] 13.385605
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #381 [hci1] 13.404663
+        Advertising handle: 0x00
+        Advertising random address: 3B:BA:81:E3:A7:36 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #382 [hci1] 13.405261
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #383 [hci1] 13.424635
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #384 [hci1] 13.425539
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 30  #385 [hci1] 13.444368
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 3471ddb8701c268c50935819ebf1e2ef94e9a2c7099352cf
+          IVI: 0
+          NID: 0x34
+        71 dd b8 70 1c 26 8c 50 93 58 19 eb f1 e2 ef 94  q..p.&.P.X......
+        e9 a2 c7 09 93 52 cf                             .....R.         
+> HCI Event: Command Complete (0x0e) plen 4               #386 [hci1] 13.445184
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #387 [hci1] 13.464359
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4               #388 [hci1] 13.464855
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #389 [hci1] 13.526574
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #390 [hci1] 13.544518
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #391 [hci1] 13.545028
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #392 [hci1] 13.564464
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #393 [hci1] 13.565303
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #394 [hci1] 13.584364
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #395 [hci1] 13.585095
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #396 [hci1] 13.600135
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be  .*4B_i..P.@.f...
+        4a b6 82 bf d9 63 59 ff bf de fc 41 bf f5 c3     J....cY....A... 
+        Mesh Data: 34425f691e8850af409b66d3b6be4ab682bfd96359ffbfdefc41bff5c3
+          IVI: 0
+          NID: 0x34
+        42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be 4a b6 82  B_i..P.@.f...J..
+        bf d9 63 59 ff bf de fc 41 bf f5 c3              ..cY....A...    
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #397 [hci1] 13.604834
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #398 [hci1] 13.605278
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #399 [hci1] 13.624404
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #400 [hci1] 13.625029
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #401 [hci1] 13.644812
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be  .*4B_i..P.@.f...
+        4a b6 82 bf d9 63 59 ff bf de fc 41 bf f5 c3     J....cY....A... 
+        Mesh Data: 34425f691e8850af409b66d3b6be4ab682bfd96359ffbfdefc41bff5c3
+          IVI: 0
+          NID: 0x34
+        42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be 4a b6 82  B_i..P.@.f...J..
+        bf d9 63 59 ff bf de fc 41 bf f5 c3              ..cY....A...    
+> HCI Event: LE Meta Event (0x3e) plen 57                 #402 [hci1] 13.692868
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -25 dBm (0xe7)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e 2a 34 42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be  .*4B_i..P.@.f...
+        4a b6 82 bf d9 63 59 ff bf de fc 41 bf f5 c3     J....cY....A... 
+        Mesh Data: 34425f691e8850af409b66d3b6be4ab682bfd96359ffbfdefc41bff5c3
+          IVI: 0
+          NID: 0x34
+        42 5f 69 1e 88 50 af 40 9b 66 d3 b6 be 4a b6 82  B_i..P.@.f...J..
+        bf d9 63 59 ff bf de fc 41 bf f5 c3              ..cY....A...    
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #403 [hci1] 13.764411
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #404 [hci1] 13.764948
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #405 [hci1] 13.784373
+        Advertising handle: 0x00
+        Advertising random address: 00:8B:FC:CF:3F:7C (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #406 [hci1] 13.784939
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #407 [hci1] 13.804453
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #408 [hci1] 13.805229
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 30  #409 [hci1] 13.824640
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 34859a387b2d2afc7c66790cfb4b94cf9eeca16308787595
+          IVI: 0
+          NID: 0x34
+        85 9a 38 7b 2d 2a fc 7c 66 79 0c fb 4b 94 cf 9e  ..8{-*.|fy..K...
+        ec a1 63 08 78 75 95                             ..c.xu.         
+> HCI Event: Command Complete (0x0e) plen 4               #410 [hci1] 13.825462
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #411 [hci1] 13.844702
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 3
+> HCI Event: Command Complete (0x0e) plen 4               #412 [hci1] 13.845286
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #413 [hci1] 13.902156
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 3
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #414 [hci1] 13.904759
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #415 [hci1] 13.905310
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #416 [hci1] 13.924676
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #417 [hci1] 13.925505
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #418 [hci1] 13.944721
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #419 [hci1] 13.945558
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #420 [hci1] 13.963449
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -96 dBm (0xa0)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #421 [hci1] 13.964391
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #422 [hci1] 13.964862
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #423 [hci1] 13.984325
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #424 [hci1] 13.984966
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 47                 #425 [hci1] 13.990618
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Public (0x00)
+          Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -34 dBm (0xde)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x15
+        14 2a 42 00 cf ab 15 01 12 50 70 10 f9 31 4f a6  .*B......Pp..1O.
+        eb 46 4f 2b ae                                   .FO+.           
+        Mesh Data: 4200cfab150112507010f9314fa6eb464f2bae
+          IVI: 0
+          NID: 0x42
+        00 cf ab 15 01 12 50 70 10 f9 31 4f a6 eb 46 4f  ......Pp..1O..FO
+        2b ae                                            +.              
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #426 [hci1] 14.234375
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #427 [hci1] 14.234910
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #428 [hci1] 14.244312
+        Advertising handle: 0x00
+        Advertising random address: 29:C4:9B:B0:B0:D9 (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #429 [hci1] 14.244739
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #430 [hci1] 14.264310
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #431 [hci1] 14.265143
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 30  #432 [hci1] 14.284308
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x1a
+        Mesh Data: 4267976477a7de572cc29453720683d8a6f7c4f5fb93bcff
+          IVI: 0
+          NID: 0x42
+        67 97 64 77 a7 de 57 2c c2 94 53 72 06 83 d8 a6  g.dw..W,..Sr....
+        f7 c4 f5 fb 93 bc ff                             .......         
+> HCI Event: Command Complete (0x0e) plen 4               #433 [hci1] 14.285137
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #434 [hci1] 14.304302
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4               #435 [hci1] 14.304826
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #436 [hci1] 14.314830
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #437 [hci1] 14.324310
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #438 [hci1] 14.324757
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #439 [hci1] 14.344292
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #440 [hci1] 14.345029
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #441 [hci1] 14.364284
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #442 [hci1] 14.365040
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #443 [hci1] 14.384278
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #444 [hci1] 14.384705
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #445 [hci1] 14.404298
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #446 [hci1] 14.404901
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #447 [hci1] 15.124633
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -95 dBm (0xa1)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: LE Meta Event (0x3e) plen 57                 #448 [hci1] 15.446668
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -95 dBm (0xa1)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #449 [hci1] 16.274550
+        Extended advertising: Disabled (0x00)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #450 [hci1] 16.275106
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #451 [hci1] 16.284571
+        Advertising handle: 0x00
+        Advertising random address: 2E:8F:3A:75:F8:6B (Non-Resolvable)
+> HCI Event: Command Complete (0x0e) plen 4               #452 [hci1] 16.285176
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #453 [hci1] 16.304473
+        Handle: 0x00
+        Properties: 0x0010
+          Use legacy advertising PDUs: ADV_NONCONN_IND
+        Min advertising interval: 20.000 msec (0x0020)
+        Max advertising interval: 20.000 msec (0x0020)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #454 [hci1] 16.305215
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 28  #455 [hci1] 16.324454
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x18
+        Mesh Beacon: 0100e0ce17aba30bd7fb0000000a67e876dfc83e6cc8
+          Secure Network Beacon (0x01)
+          Flags: 0x01
+          Network Id: e0ce17aba30bd7fb
+          IV Index: 0x0000000a
+          Authentication Value: 67e876dfc83e6cc8
+> HCI Event: Command Complete (0x0e) plen 4               #456 [hci1] 16.325296
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #457 [hci1] 16.344479
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 1
+> HCI Event: Command Complete (0x0e) plen 4               #458 [hci1] 16.345024
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 6                  #459 [hci1] 16.349414
+      LE Advertising Set Terminated (0x12)
+        Status: Limit Reached (0x43)
+        Handle: 0
+        Connection handle: 65535
+        Number of completed extended advertising events: 1
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #460 [hci1] 16.364675
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #461 [hci1] 16.365195
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #462 [hci1] 16.382937
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -95 dBm (0xa1)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #463 [hci1] 16.384604
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 1000.000 msec (0x0640)
+        Max advertising interval: 1200.000 msec (0x0780)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #464 [hci1] 16.385403
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 24  #465 [hci1] 16.404539
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 1 entry
+          Mesh Proxy (0x1828)
+        Service Data: Mesh Proxy (0x1828)
+          Data: 00e0ce17aba30bd7fb
+> HCI Event: Command Complete (0x0e) plen 4               #466 [hci1] 16.405260
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #467 [hci1] 16.424543
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #468 [hci1] 16.425082
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #469 [hci1] 16.444400
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #470 [hci1] 16.444968
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 57                 #471 [hci1] 17.246715
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -94 dBm (0xa2)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+> HCI Event: LE Meta Event (0x3e) plen 57                 #472 [hci1] 20.804778
+      LE Extended Advertising Report (0x0d)
+        Num reports: 1
+        Entry 0
+          Event type: 0x0010
+            Props: 0x0010
+              Use legacy advertising PDUs
+            Data status: [0;32mComplete[0m
+          Legacy PDU Type: ADV_NONCONN_IND (0x0010)
+          Address type: Random (0x01)
+          Address: 64:49:1B:5E:CB:01 (Resolvable)
+          Primary PHY: LE 1M
+          Secondary PHY: No packets
+          SID: no ADI field (0xff)
+          TX power: 127 dBm
+          RSSI: -94 dBm (0xa2)
+          Periodic advertising interval: 0.00 msec (0x0000)
+          Direct address type: Reserved (0xff)
+          Direct address: 00-00-00-00-00-00
+          Data length: 0x1f
+        1e ff 06 00 01 09 20 02 cb bb b0 42 44 5c 41 cb  ...... ....BD\A.
+        1c 6d 94 b3 03 71 28 95 86 c1 9c 5d 25 6c 56     .m...q(....]%lV 
+        Company: Microsoft (6)
+          Data: 01092002cbbbb042445c41cb1c6d94b30371289586c19c5d256c56
+< HCI Command: Reset (0x03|0x0003) plen 0                 #473 [hci1] 21.144421
+> HCI Event: Command Complete (0x0e) plen 4               #474 [hci1] 21.146893
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+@ USER Close: main                                    {0x0001} [hci1] 21.164310
+= Close Index: 00:00:00:00:00:00                               [hci1] 21.167466
