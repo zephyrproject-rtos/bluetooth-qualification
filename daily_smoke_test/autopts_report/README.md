@@ -1,10 +1,10 @@
 # AutoPTS report
 
-    Start time: 2026_09_18_01_07_25
+    Start time: 2026_09_23_01_07_21
 
-    End time: 2026_09_18_01_58_33
+    End time: 2026_09_23_01_56_57
 
-    PTS version: 8.14.1.6
+    PTS version: 8.14.2.5
 
     Test Group/Profile Summary: 
 |  Suite  | Total | Pass | Fail | Pass Rate|
@@ -13,7 +13,7 @@
 |ASCS     |1      |1     |0     | 100.00 % |
 |BAP      |6      |6     |0     | 100.00 % |
 |BASS     |1      |1     |0     | 100.00 % |
-|CAP      |3      |2     |1     |  66.67 % |
+|CAP      |3      |3     |0     | 100.00 % |
 |CCP      |1      |1     |0     | 100.00 % |
 |CSIP     |1      |1     |0     | 100.00 % |
 |CSIS     |1      |1     |0     | 100.00 % |
@@ -41,8 +41,8 @@
 |VCP      |1      |1     |0     | 100.00 % |
 |VCS      |1      |1     |0     | 100.00 % |
 |VOCS     |1      |1     |0     | 100.00 % |
-|Total    |56     |54    |2     |  96.43 % |
+|Total    |56     |55    |1     |  98.21 % |
 
     Repositories:
 
-	zephyr: 1b69bc195727c3e464c83f68dd84d9b2f4f553da [v4.4.0-15822-g1b69bc19572]
+	zephyr: 70be2ff0b565a3313128f5577f51cfeb3ebcf602 [v4.4.0-16430-g70be2ff0b56]
