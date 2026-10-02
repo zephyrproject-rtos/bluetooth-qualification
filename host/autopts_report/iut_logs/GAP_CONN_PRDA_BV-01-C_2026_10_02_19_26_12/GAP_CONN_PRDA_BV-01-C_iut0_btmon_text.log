@@ -1,0 +1,936 @@
+Bluetooth monitor ver 5.72
+= Note: Linux version 7.0.0-31-generic (x86_64)                        0.073308
+= Note: Bluetooth subsystem version 2.22                               0.073310
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci2)              [hci2] 0.073311
+= New Index: 00:00:00:00:00:00 (Primary,UART,hci1)              [hci1] 0.073312
+= New Index: 48:5F:99:8E:E0:64 (Primary,USB,hci0)               [hci0] 0.073312
+= Open Index: 00:00:00:00:00:00                                 [hci1] 0.196570
+= Index Info: 00:00:00:00:00:00 (Nordic Semiconductor ASA)      [hci1] 0.196576
+@ USER Open: main (privileged) version 2.22            {0x0001} [hci1] 0.196580
+< HCI Command: Reset (0x03|0x0003) plen 0                    #1 [hci1] 0.196982
+> HCI Event: Command Complete (0x0e) plen 4                  #2 [hci1] 0.197549
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read Local Supported... (0x04|0x0003) plen 0  #3 [hci1] 0.216517
+> HCI Event: Command Complete (0x0e) plen 12                 #4 [hci1] 0.217068
+      Read Local Supported Features (0x04|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0x00 0x00 0x00 0x00 0x60 0x00 0x00 0x00
+          BR/EDR Not Supported
+          LE Supported (Controller)
+< HCI Command: Read Local Version In.. (0x04|0x0001) plen 0  #5 [hci1] 0.236487
+> HCI Event: Command Complete (0x0e) plen 12                 #6 [hci1] 0.237045
+      Read Local Version Information (0x04|0x0001) ncmd 1
+        Status: Success (0x00)
+        HCI version: Reserved (0x11) - Revision 12345 (0x3039)
+        LMP version: Reserved (0x11) - Subversion 12345 (0x3039)
+        Manufacturer: Nordic Semiconductor ASA (89)
+< HCI Command: Read Local Supported... (0x04|0x0002) plen 0  #7 [hci1] 0.256547
+> HCI Event: Command Complete (0x0e) plen 68                 #8 [hci1] 0.257658
+      Read Local Supported Commands (0x04|0x0002) ncmd 1
+        Status: Success (0x00)
+        Commands: 115 entries
+          Disconnect (Octet 0 - Bit 5)
+          Read Remote Version Information (Octet 2 - Bit 7)
+          Set Event Mask (Octet 5 - Bit 6)
+          Reset (Octet 5 - Bit 7)
+          Read Connection Accept Timeout (Octet 7 - Bit 2)
+          Write Connection Accept Timeout (Octet 7 - Bit 3)
+          Read Transmit Power Level (Octet 10 - Bit 2)
+          Set Controller To Host Flow Control (Octet 10 - Bit 5)
+          Host Buffer Size (Octet 10 - Bit 6)
+          Host Number of Completed Packets (Octet 10 - Bit 7)
+          Read Local Version Information (Octet 14 - Bit 3)
+          Read Local Supported Features (Octet 14 - Bit 5)
+          Read BD ADDR (Octet 15 - Bit 1)
+          Read RSSI (Octet 15 - Bit 5)
+          Set Event Mask Page 2 (Octet 22 - Bit 2)
+          LE Set Event Mask (Octet 25 - Bit 0)
+          LE Read Buffer Size (Octet 25 - Bit 1)
+          LE Read Local Supported Features (Octet 25 - Bit 2)
+          LE Set Random Address (Octet 25 - Bit 4)
+          LE Set Advertising Parameters (Octet 25 - Bit 5)
+          LE Read Advertising Channel TX Power (Octet 25 - Bit 6)
+          LE Set Advertising Data (Octet 25 - Bit 7)
+          LE Set Scan Response Data (Octet 26 - Bit 0)
+          LE Set Advertise Enable (Octet 26 - Bit 1)
+          LE Set Scan Parameters (Octet 26 - Bit 2)
+          LE Set Scan Enable (Octet 26 - Bit 3)
+          LE Create Connection (Octet 26 - Bit 4)
+          LE Create Connection Cancel (Octet 26 - Bit 5)
+          LE Read Accept List Size (Octet 26 - Bit 6)
+          LE Clear Accept List (Octet 26 - Bit 7)
+          LE Add Device To Accept List (Octet 27 - Bit 0)
+          LE Remove Device From Accept List (Octet 27 - Bit 1)
+          LE Connection Update (Octet 27 - Bit 2)
+          LE Set Host Channel Classification (Octet 27 - Bit 3)
+          LE Read Channel Map (Octet 27 - Bit 4)
+          LE Read Remote Used Features (Octet 27 - Bit 5)
+          LE Encrypt (Octet 27 - Bit 6)
+          LE Rand (Octet 27 - Bit 7)
+          LE Start Encryption (Octet 28 - Bit 0)
+          LE Long Term Key Request Reply (Octet 28 - Bit 1)
+          LE Long Term Key Request Neg Reply (Octet 28 - Bit 2)
+          LE Read Supported States (Octet 28 - Bit 3)
+          Read Authenticated Payload Timeout (Octet 32 - Bit 4)
+          Write Authenticated Payload Timeout (Octet 32 - Bit 5)
+          LE Set Data Length (Octet 33 - Bit 6)
+          LE Read Suggested Default Data Length (Octet 33 - Bit 7)
+          LE Write Suggested Default Data Length (Octet 34 - Bit 0)
+          LE Add Device To Resolving List (Octet 34 - Bit 3)
+          LE Remove Device From Resolving List (Octet 34 - Bit 4)
+          LE Clear Resolving List (Octet 34 - Bit 5)
+          LE Read Resolving List Size (Octet 34 - Bit 6)
+          LE Set Address Resolution Enable (Octet 35 - Bit 1)
+          LE Set Resolvable Private Address Timeout (Octet 35 - Bit 2)
+          LE Read Maximum Data Length (Octet 35 - Bit 3)
+          LE Read PHY (Octet 35 - Bit 4)
+          LE Set Default PHY (Octet 35 - Bit 5)
+          LE Set PHY (Octet 35 - Bit 6)
+          LE Set Advertising Set Random Address (Octet 36 - Bit 1)
+          LE Set Extended Advertising Parameters (Octet 36 - Bit 2)
+          LE Set Extended Advertising Data (Octet 36 - Bit 3)
+          LE Set Extended Scan Response Data (Octet 36 - Bit 4)
+          LE Set Extended Advertising Enable (Octet 36 - Bit 5)
+          LE Read Maximum Advertising Data Length (Octet 36 - Bit 6)
+          LE Read Number of Supported Advertising Sets (Octet 36 - Bit 7)
+          LE Remove Advertising Set (Octet 37 - Bit 0)
+          LE Clear Advertising Sets (Octet 37 - Bit 1)
+          LE Set Periodic Advertising Parameters (Octet 37 - Bit 2)
+          LE Set Periodic Advertising Data (Octet 37 - Bit 3)
+          LE Set Periodic Advertising Enable (Octet 37 - Bit 4)
+          LE Set Extended Scan Parameters (Octet 37 - Bit 5)
+          LE Set Extended Scan Enable (Octet 37 - Bit 6)
+          LE Extended Create Connection (Octet 37 - Bit 7)
+          LE Periodic Advertising Create Sync (Octet 38 - Bit 0)
+          LE Periodic Advertising Create Sync Cancel (Octet 38 - Bit 1)
+          LE Periodic Advertising Terminate Sync (Octet 38 - Bit 2)
+          LE Add Device To Periodic Advertiser List (Octet 38 - Bit 3)
+          LE Remove Device From Periodic Advertiser List (Octet 38 - Bit 4)
+          LE Clear Periodic Advertiser List (Octet 38 - Bit 5)
+          LE Read Periodic Advertiser List Size (Octet 38 - Bit 6)
+          LE Read Transmit Power (Octet 38 - Bit 7)
+          LE Read RF Path Compensation (Octet 39 - Bit 0)
+          LE Write RF Path Compensation (Octet 39 - Bit 1)
+          LE Set Privacy Mode (Octet 39 - Bit 2)
+          LE Periodic Advertising Receive Enable (Octet 40 - Bit 5)
+          LE Periodic Advertising Sync Transfer (Octet 40 - Bit 6)
+          LE Periodic Advertising Set Info Transfer (Octet 40 - Bit 7)
+          LE Periodic Advertising Sync Transfer Parameters (Octet 41 - Bit 0)
+          LE Set Default Periodic Advertisng Sync Transfer Parameters (Octet 41 - Bit 1)
+          LE Read Buffer v2 (Octet 41 - Bit 5)
+          LE Read ISO TX Sync (Octet 41 - Bit 6)
+          LE Set Connected Isochronous Group Parameters (Octet 41 - Bit 7)
+          LE Set Connected Isochronous Group Parameters Test (Octet 42 - Bit 0)
+          LE Create Connected Isochronous Stream (Octet 42 - Bit 1)
+          LE Remove Connected Isochronous Group (Octet 42 - Bit 2)
+          LE Accept Connected Isochronous Stream Request (Octet 42 - Bit 3)
+          LE Reject Connected Isochronous Stream Request (Octet 42 - Bit 4)
+          LE Create Broadcast Isochronous Group (Octet 42 - Bit 5)
+          LE Create Broadcast Isochronous Group Test (Octet 42 - Bit 6)
+          LE Terminate Broadcast Isochronous Group (Octet 42 - Bit 7)
+          LE Broadcast Isochronous Group Create Sync (Octet 43 - Bit 0)
+          LE Broadcast Isochronous Group Terminate Sync (Octet 43 - Bit 1)
+          LE Request Peer SCA (Octet 43 - Bit 2)
+          LE Setup Isochronous Data Path (Octet 43 - Bit 3)
+          LE Remove Isochronous Data Path (Octet 43 - Bit 4)
+          LE Isochronous Transmit Test (Octet 43 - Bit 5)
+          LE Isochronous Receive Test (Octet 43 - Bit 6)
+          LE Isochronous Read Test Counters (Octet 43 - Bit 7)
+          LE Isochronous Read Test Counters (Octet 44 - Bit 0)
+          LE Set Host Feature (Octet 44 - Bit 1)
+          Octet 44 - Bit 2 
+          Octet 45 - Bit 6 
+          Octet 46 - Bit 0 
+          Octet 46 - Bit 1 
+          Octet 46 - Bit 2 
+          Octet 47 - Bit 4 
+< HCI Command: Host Buffer Size (0x03|0x0033) plen 7         #9 [hci1] 0.276507
+        ACL MTU: 255  ACL max packet: 16
+        SCO MTU: 0    SCO max packet: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #10 [hci1] 0.277012
+      Host Buffer Size (0x03|0x0033) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Controller To Ho.. (0x03|0x0031) plen 1  #11 [hci1] 0.296539
+        Flow control: ACL Data Packets (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #12 [hci1] 0.297000
+      Set Controller To Host Flow Control (0x03|0x0031) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Local Suppor.. (0x08|0x0003) plen 0  #13 [hci1] 0.316507
+> HCI Event: Command Complete (0x0e) plen 12                #14 [hci1] 0.317073
+      LE Read Local Supported Features (0x08|0x0003) ncmd 1
+        Status: Success (0x00)
+        Features: 0xfd 0x79 0x00 0xf7 0x30 0x01 0x00 0x00
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Ping
+          LE Data Packet Length Extension
+          LL Privacy
+          Extended Scanner Filter Policies
+          LE 2M PHY
+          LE Coded PHY
+          LE Extended Advertising
+          LE Periodic Advertising
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Periodic Advertising ADI support
+          Connection Subrating
+          Unknown features (0x0000010000000000)
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #15 [hci1] 0.336501
+        Bit Number: 32
+          Connected Isochronous Stream (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #16 [hci1] 0.336980
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Buffer v2 (0x08|0x0060) plen 0       #17 [hci1] 0.356530
+> HCI Event: Command Complete (0x0e) plen 10                #18 [hci1] 0.357038
+      LE Read Buffer v2 (0x08|0x0060) ncmd 1
+        Status: Success (0x00)
+        ACL MTU: 27
+        ACL max packet: 3
+        ISO MTU: 318
+        ISO max packet: 3
+< HCI Command: LE Read Maximum Adve.. (0x08|0x003a) plen 0  #19 [hci1] 0.376582
+> HCI Event: Command Complete (0x0e) plen 6                 #20 [hci1] 0.377016
+      LE Read Maximum Advertising Data Length (0x08|0x003a) ncmd 1
+        Status: Success (0x00)
+        Max length: 1650
+< HCI Command: LE Read Supported St.. (0x08|0x001c) plen 0  #21 [hci1] 0.396504
+> HCI Event: Command Complete (0x0e) plen 12                #22 [hci1] 0.396989
+      LE Read Supported States (0x08|0x001c) ncmd 1
+        Status: Success (0x00)
+        States: 0x000003ff3e0306ff
+          Non-connectable Advertising State
+          Scannable Advertising State
+          Connectable Advertising State
+          High Duty Cycle Directed Advertising State
+          Passive Scanning State
+          Active Scanning State
+          Initiating State
+            and Connection State (Central Role)
+          Connection State (Peripheral Role)
+          Scannable Advertising State
+            and Passive Scanning State
+          Connectable Advertising State
+            and Passive Scanning State
+          Non-connectable Advertising State
+            and Initiating State
+          Scannable Advertising State
+            and Initiating State
+          Active Scanning State
+            and Connection State (Central Role)
+          Passive Scanning State
+            and Connection State (Peripheral Role)
+          Active Scanning State
+            and Connection State (Peripheral Role)
+          Initiating State
+            and Connection State (Central Role)
+            and Central Role & Central Role
+          Low Duty Cycle Directed Advertising State
+          Connectable Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Initiating State
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Central Role)
+            and Central Role & Peripheral Role
+          Connectable Advertising State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+          High Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Low Duty Cycle Directed Advertising State
+            and Connection State (Peripheral Role)
+            and Peripheral Role & Peripheral Role
+          Initiating State
+            and Connection State (Peripheral Role)
+            and Central Role & Peripheral Role
+< HCI Command: LE Read Maximum Data.. (0x08|0x002f) plen 0  #23 [hci1] 0.416536
+> HCI Event: Command Complete (0x0e) plen 12                #24 [hci1] 0.417200
+      LE Read Maximum Data Length (0x08|0x002f) ncmd 1
+        Status: Success (0x00)
+        Max TX octets: 251
+        Max TX time: 2704
+        Max RX octets: 251
+        Max RX time: 2704
+< HCI Command: LE Write Suggested D.. (0x08|0x0024) plen 4  #25 [hci1] 0.436544
+        TX octets: 251
+        TX time: 2704
+> HCI Event: Command Complete (0x0e) plen 4                 #26 [hci1] 0.437202
+      LE Write Suggested Default Data Length (0x08|0x0024) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Read Resolving Li.. (0x08|0x002a) plen 0  #27 [hci1] 0.456516
+> HCI Event: Command Complete (0x0e) plen 5                 #28 [hci1] 0.457000
+      LE Read Resolving List Size (0x08|0x002a) ncmd 1
+        Status: Success (0x00)
+        Size: 8
+< HCI Command: LE Set Host Feature (0x08|0x0074) plen 2     #29 [hci1] 0.476520
+        Bit Number: 38
+          Connection Subrating (Host Support)
+        Bit Value: 1
+> HCI Event: Command Complete (0x0e) plen 4                 #30 [hci1] 0.476942
+      LE Set Host Feature (0x08|0x0074) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8       #31 [hci1] 0.496522
+        Mask: 0x000002063f87fa5e
+          LE Advertising Report
+          LE Connection Update Complete
+          LE Read Remote Used Features Complete
+          LE Long Term Key Request
+          LE Data Length Change
+          LE Enhanced Connection Complete
+          LE PHY Update Complete
+          LE Extended Advertising Report
+          LE Periodic Advertising Sync Established
+          LE Periodic Advertising Report
+          LE Periodic Advertising Sync Lost
+          LE Extended Scan Timeout
+          LE Extended Advertising Set Terminated
+          LE Scan Request Received
+          LE Periodic Advertising Sync Transfer Rvc
+          LE CIS Established
+          LE CIS Request
+          LE Create BIG Complete
+          LE Terminate BIG Complete
+          LE BIG Sync Estabilished Complete
+          LE BIG Sync Lost
+          LE BIG Info Advertising Report
+          LE Subrate Change
+          Unknown mask (0x0000020000000000)
+> HCI Event: Command Complete (0x0e) plen 4                 #32 [hci1] 0.497089
+      LE Set Event Mask (0x08|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8          #33 [hci1] 0.516523
+        Mask: 0x2000800002008890
+          Disconnection Complete
+          Encryption Change
+          Read Remote Version Information Complete
+          Hardware Error
+          Data Buffer Overflow
+          Encryption Key Refresh Complete
+          LE Meta
+> HCI Event: Command Complete (0x0e) plen 4                 #34 [hci1] 0.517099
+      Set Event Mask (0x03|0x0001) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0            #35 [hci1] 0.536553
+> HCI Event: Command Complete (0x0e) plen 10                #36 [hci1] 0.537052
+      Read BD ADDR (0x04|0x0009) ncmd 1
+        Status: Success (0x00)
+        Address: 00:00:00:00:00:00 (OUI 00-00-00)
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6   #37 [hci1] 0.556566
+        Address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #38 [hci1] 0.557180
+      LE Set Random Address (0x08|0x0005) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0036) plen 25  #39 [hci1] 4.106556
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5                 #40 [hci1] 4.107362
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising S.. (0x08|0x0035) plen 7  #41 [hci1] 4.116579
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4                 #42 [hci1] 4.117110
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adv.. (0x08|0x0037) plen 22  #43 [hci1] 4.136552
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x12
+        Flags: 0x04
+          BR/EDR Not Supported
+        Name (complete): Tester_F6B11A
+> HCI Event: Command Complete (0x0e) plen 4                 #44 [hci1] 4.137289
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Scan.. (0x08|0x0038) plen 4  #45 [hci1] 4.156593
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4                 #46 [hci1] 4.157146
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Adve.. (0x08|0x0039) plen 6  #47 [hci1] 4.176600
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4                 #48 [hci1] 4.177355
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 31                   #49 [hci1] 4.722607
+      LE Enhanced Connection Complete (0x0a)
+        Status: Success (0x00)
+        Handle: 795
+        Role: Peripheral (0x01)
+        Peer address type: Public (0x00)
+        Peer address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Local resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Peer resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Connection interval: 87.50 msec (0x0046)
+        Connection latency: 0 (0x0000)
+        Supervision timeout: 20000 msec (0x07d0)
+        Central clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 6                    #50 [hci1] 4.722765
+      LE Advertising Set Terminated (0x12)
+        Status: Success (0x00)
+        Handle: 0
+        Connection handle: 795
+        Number of completed extended advertising events: 0
+< HCI Command: LE Read Remote Used... (0x08|0x0016) plen 2  #51 [hci1] 4.736720
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Command Status (0x0f) plen 4                   #52 [hci1] 4.737219
+      LE Read Remote Used Features (0x08|0x0016) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 12                   #53 [hci1] 4.986669
+      LE Read Remote Used Features (0x04)
+        Status: Success (0x00)
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Features: 0x2d 0x49 0x00 0xf7 0x67 0xd9 0x00 0x80
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Data Packet Length Extension
+          LE 2M PHY
+          LE Coded PHY
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Connected Isochronous Stream (Host Support)
+          LE Power Control Request
+          LE Power Control Request
+          Connection Subrating
+          Connection Subrating (Host Support)
+          Unknown features (0x8000d90000000000)
+> ACL Data RX: Handle 795 flags 0x02 dlen 11                #54 [hci1] 7.436310
+      SMP: Pairing Request (0x01) len 6
+        IO capability: KeyboardDisplay (0x04)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: Bonding, No MITM, SC, No Keypresses (0x09)
+        Max encryption key size: 16
+        Initiator key distribution: EncKey IdKey (0x03)
+        Responder key distribution: EncKey IdKey Sign (0x07)
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #55 [hci1] 7.436709
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 795 flags 0x00 dlen 11                #56 [hci1] 7.436715
+      SMP: Pairing Response (0x02) len 6
+        IO capability: KeyboardDisplay (0x04)
+        OOB data: Authentication data not present (0x00)
+        Authentication requirement: Bonding, No MITM, SC, No Keypresses (0x09)
+        Max encryption key size: 16
+        Initiator key distribution: IdKey (0x02)
+        Responder key distribution: <none> (0x00)
+> HCI Event: Number of Completed Packets (0x13) plen 5      #57 [hci1] 7.611337
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #56: len 11 (0 Kb/s)
+        Latency: 174 msec (174-174 msec ~174 msec)
+> ACL Data RX: Handle 795 flags 0x02 dlen 27                #58 [hci1] 7.611707
+> ACL Data RX: Handle 795 flags 0x01 dlen 27                #59 [hci1] 7.612256
+> ACL Data RX: Handle 795 flags 0x01 dlen 15                #60 [hci1] 7.612710
+      SMP: Pairing Public Key (0x0c) len 64
+        X: 38baeb86e3554f75681f64992380a5b0404b183c810a5e846e60f44f5ce1d5b1
+        Y: 4e006e05e39d434978c1823babe5d172adc69755cacc0ca53a6a1ff2cebb8cd0
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #61 [hci1] 7.616806
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #62 [hci1] 7.616835
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #63 [hci1] 7.616906
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 795 flags 0x00 dlen 27                #64 [hci1] 7.616920
+< ACL Data TX: Handle 795 flags 0x01 dlen 27                #65 [hci1] 7.616927
+< ACL Data TX: Handle 795 flags 0x01 dlen 15                #66 [hci1] 7.616933
+      SMP: Pairing Public Key (0x0c) len 64
+        X: 98308440221e2d910f0e54b71e7ec652857aa9b5a0dc65028824cc19db1226e9
+        Y: 67a4816bcb62efb21701e31fdb27561a6217575fb007a8bbdabe7e28b6f68482
+> HCI Event: Number of Completed Packets (0x13) plen 5      #67 [hci1] 7.699313
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #64: len 27 (2 Kb/s)
+        Latency: 82 msec (82-174 msec ~128 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5      #68 [hci1] 7.699955
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #65: len 27 (2 Kb/s)
+        Latency: 83 msec (82-174 msec ~105 msec)
+< ACL Data TX: Handle 795 flags 0x00 dlen 21                #69 [hci1] 7.716653
+      SMP: Pairing Confirm (0x03) len 16
+        Confim value: 7dc2838bbd96a126f8387997f585ee28
+> HCI Event: Number of Completed Packets (0x13) plen 5      #70 [hci1] 7.786215
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #66: len 15 (0 Kb/s)
+        Latency: 169 msec (82-174 msec ~137 msec)
+> HCI Event: Number of Completed Packets (0x13) plen 5      #71 [hci1] 7.873888
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #69: len 21 (1 Kb/s)
+        Latency: 157 msec (82-174 msec ~147 msec)
+> ACL Data RX: Handle 795 flags 0x02 dlen 21                #72 [hci1] 7.874076
+      SMP: Pairing Random (0x04) len 16
+        Random value: 43fab77d364e7a870000000000000000
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #73 [hci1] 7.876760
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 795 flags 0x00 dlen 21                #74 [hci1] 7.876835
+      SMP: Pairing Random (0x04) len 16
+        Random value: 8e6108f966a694cbe26df70bb96773e6
+> HCI Event: Number of Completed Packets (0x13) plen 5      #75 [hci1] 8.048701
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #74: len 21 (0 Kb/s)
+        Latency: 171 msec (82-174 msec ~159 msec)
+> ACL Data RX: Handle 795 flags 0x02 dlen 21                #76 [hci1] 8.223934
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: a2ed6f31ebc1e5181e1a0d224c0fd094
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #77 [hci1] 8.236783
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< ACL Data TX: Handle 795 flags 0x00 dlen 21                #78 [hci1] 8.236821
+      SMP: Pairing DHKey Check (0x0d) len 16
+        E: a7302dd6f24f94c55fe2a7c3b55b111f
+> HCI Event: Number of Completed Packets (0x13) plen 5      #79 [hci1] 8.398564
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #78: len 21 (1 Kb/s)
+        Latency: 161 msec (82-174 msec ~160 msec)
+> HCI Event: LE Meta Event (0x3e) plen 13                   #80 [hci1] 8.486650
+      LE Long Term Key Request (0x05)
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Random number: 0x0000000000000000
+        Encrypted diversifier: 0x0000
+< HCI Command: LE Long Term Key Re.. (0x08|0x001a) plen 18  #81 [hci1] 8.496620
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Long term key: 4a64550696d92a2ed8481b50fb4f43e0
+> HCI Event: Command Complete (0x0e) plen 6                 #82 [hci1] 8.497314
+      LE Long Term Key Request Reply (0x08|0x001a) ncmd 1
+        Status: Success (0x00)
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Encryption Change (0x08) plen 4                #83 [hci1] 8.923850
+        Status: Success (0x00)
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Encryption: Enabled with AES-CCM (0x01)
+> ACL Data RX: Handle 795 flags 0x02 dlen 21                #84 [hci1] 9.011514
+      SMP: Identity Information (0x08) len 16
+        Identity resolving key: 7880be74aedee76ea1a4f660ae0d49ff
+< ACL Data TX: Handle 795 flags 0x00 dlen 11                #85 [hci1] 9.046686
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Central Address Resolution (0x2aa6)
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #86 [hci1] 9.046948
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+> HCI Event: Number of Completed Packets (0x13) plen 5      #87 [hci1] 9.186325
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #85: len 11 (0 Kb/s)
+        Latency: 139 msec (82-174 msec ~150 msec)
+> ACL Data RX: Handle 795 flags 0x02 dlen 12                #88 [hci1] 9.186416
+      SMP: Identity Address Information (0x09) len 7
+        Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+< HCI Command: LE Add Device To Re.. (0x08|0x0027) plen 39  #89 [hci1] 9.196853
+        Address type: Public (0x00)
+        Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Peer identity resolving key: 7880be74aedee76ea1a4f660ae0d49ff
+        Local identity resolving key: 00000000000000000000000000000000
+> HCI Event: Command Complete (0x0e) plen 4                 #90 [hci1] 9.197873
+      LE Add Device To Resolving List (0x08|0x0027) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Privacy Mode (0x08|0x004e) plen 8     #91 [hci1] 9.216664
+        Peer Identity address type: Public (0x00)
+        Peer Identity address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Privacy Mode: Use Device Privacy (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #92 [hci1] 9.217270
+      LE Set Privacy Mode (0x08|0x004e) ncmd 1
+        Status: Success (0x00)
+< HCI Command: Disconnect (0x01|0x0006) plen 3              #93 [hci1] 9.239937
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Remote User Terminated Connection (0x13)
+> HCI Event: Command Status (0x0f) plen 4                   #94 [hci1] 9.241105
+      Disconnect (0x01|0x0006) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Address Resol.. (0x08|0x002d) plen 1  #95 [hci1] 9.256542
+        Address resolution: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                 #96 [hci1] 9.257200
+      LE Set Address Resolution Enable (0x08|0x002d) ncmd 1
+        Status: Success (0x00)
+> ACL Data RX: Handle 795 flags 0x02 dlen 9                 #97 [hci1] 9.273708
+      ATT: Read By Type Response (0x09) len 4
+        Attribute data length: 3
+        Attribute data list: 1 entry
+        Handle: 0x000f
+        Value: 01
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #98 [hci1] 9.276629
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Host Number of Compl.. (0x03|0x0035) plen 5  #99 [hci1] 9.276825
+        Num handles: 1
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+> HCI Event: Disconnect Complete (0x05) plen 4             #100 [hci1] 9.448553
+        Status: Success (0x00)
+        Handle: 795 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Connection Terminated By Local Host (0x16)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #101 [hci1] 10.466664
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #102 [hci1] 10.467550
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #103 [hci1] 10.476673
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #104 [hci1] 10.477346
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 22  #105 [hci1] 10.496689
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x12
+        Flags: 0x04
+          BR/EDR Not Supported
+        Name (complete): Tester_F6B11A
+> HCI Event: Command Complete (0x0e) plen 4               #106 [hci1] 10.497646
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #107 [hci1] 10.516666
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #108 [hci1] 10.517258
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #109 [hci1] 10.536663
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #110 [hci1] 10.537282
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 31                 #111 [hci1] 10.864777
+      LE Enhanced Connection Complete (0x0a)
+        Status: Success (0x00)
+        Handle: 813
+        Role: Peripheral (0x01)
+        Peer address type: Resolved Public (0x02)
+        Peer address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Local resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Peer resolvable private address: 4E:78:45:2D:A8:89 (Resolvable)
+          Identity type: Public (0x00)
+          Identity: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Connection interval: 87.50 msec (0x0046)
+        Connection latency: 0 (0x0000)
+        Supervision timeout: 20000 msec (0x07d0)
+        Central clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 6                  #112 [hci1] 10.864898
+      LE Advertising Set Terminated (0x12)
+        Status: Success (0x00)
+        Handle: 0
+        Connection handle: 813
+        Number of completed extended advertising events: 0
+< HCI Command: LE Read Remote Use.. (0x08|0x0016) plen 2  #113 [hci1] 10.876888
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Command Status (0x0f) plen 4                 #114 [hci1] 10.877435
+      LE Read Remote Used Features (0x08|0x0016) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 12                 #115 [hci1] 11.128756
+      LE Read Remote Used Features (0x04)
+        Status: Success (0x00)
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Features: 0x2d 0x49 0x00 0xf7 0x67 0xd9 0x00 0x80
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Data Packet Length Extension
+          LE 2M PHY
+          LE Coded PHY
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Connected Isochronous Stream (Host Support)
+          LE Power Control Request
+          LE Power Control Request
+          Connection Subrating
+          Connection Subrating (Host Support)
+          Unknown features (0x8000d90000000000)
+> HCI Event: LE Meta Event (0x3e) plen 13                 #116 [hci1] 13.666377
+      LE Long Term Key Request (0x05)
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Random number: 0x0000000000000000
+        Encrypted diversifier: 0x0000
+< HCI Command: LE Long Term Key... (0x08|0x001a) plen 18  #117 [hci1] 13.676708
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Long term key: 4a64550696d92a2ed8481b50fb4f43e0
+> HCI Event: Command Complete (0x0e) plen 6               #118 [hci1] 13.677476
+      LE Long Term Key Request Reply (0x08|0x001a) ncmd 1
+        Status: Success (0x00)
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Encryption Change (0x08) plen 4              #119 [hci1] 14.103447
+        Status: Success (0x00)
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Encryption: Enabled with AES-CCM (0x01)
+< ACL Data TX: Handle 813 flags 0x00 dlen 11              #120 [hci1] 14.116816
+      ATT: Read By Type Request (0x08) len 6
+        Handle range: 0x0001-0xffff
+        Attribute type: Central Address Resolution (0x2aa6)
+> HCI Event: Number of Completed Packets (0x13) plen 5    #121 [hci1] 14.278337
+        Num handles: 1
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+        #120: len 11 (0 Kb/s)
+        Latency: 161 msec (161-161 msec ~161 msec)
+> ACL Data RX: Handle 813 flags 0x02 dlen 9               #122 [hci1] 14.278678
+      ATT: Read By Type Response (0x09) len 4
+        Attribute data length: 3
+        Attribute data list: 1 entry
+        Handle: 0x000f
+        Value: 01
+< HCI Command: Host Number of Com.. (0x03|0x0035) plen 5  #123 [hci1] 14.296912
+        Num handles: 1
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Count: 1
+< HCI Command: Disconnect (0x01|0x0006) plen 3            #124 [hci1] 14.566715
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Remote User Terminated Connection (0x13)
+> HCI Event: Command Status (0x0f) plen 4                 #125 [hci1] 14.567323
+      Disconnect (0x01|0x0006) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Disconnect Complete (0x05) plen 4            #126 [hci1] 14.715784
+        Status: Success (0x00)
+        Handle: 813 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Connection Terminated By Local Host (0x16)
+< HCI Command: LE Set Extended A.. (0x08|0x0036) plen 25  #127 [hci1] 15.796813
+        Handle: 0x00
+        Properties: 0x0013
+          Connectable
+          Scannable
+          Use legacy advertising PDUs: ADV_IND
+        Min advertising interval: 100.000 msec (0x00a0)
+        Max advertising interval: 150.000 msec (0x00f0)
+        Channel map: 37, 38, 39 (0x07)
+        Own address type: Random (0x01)
+        Peer address type: Public (0x00)
+        Peer address: 00:00:00:00:00:00 (OUI 00-00-00)
+        Filter policy: Allow Scan Request from Any, Allow Connect Request from Any (0x00)
+        TX power: Host has no preference (0x7f)
+        Primary PHY: LE 1M (0x01)
+        Secondary max skip: 0x00
+        Secondary PHY: LE 1M (0x01)
+        SID: 0x00
+        Scan request notifications: Disabled (0x00)
+> HCI Event: Command Complete (0x0e) plen 5               #128 [hci1] 15.797596
+      LE Set Extended Advertising Parameters (0x08|0x0036) ncmd 1
+        Status: Success (0x00)
+        TX power (selected): 0 dbm (0x00)
+< HCI Command: LE Set Advertising.. (0x08|0x0035) plen 7  #129 [hci1] 15.816716
+        Advertising handle: 0x00
+        Advertising random address: D5:B6:CC:31:DB:3B (Static)
+> HCI Event: Command Complete (0x0e) plen 4               #130 [hci1] 15.817295
+      LE Set Advertising Set Random Address (0x08|0x0035) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended A.. (0x08|0x0037) plen 22  #131 [hci1] 15.836728
+        Handle: 0x00
+        Operation: Complete extended advertising data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x12
+        Flags: 0x04
+          BR/EDR Not Supported
+        Name (complete): Tester_F6B11A
+> HCI Event: Command Complete (0x0e) plen 4               #132 [hci1] 15.837467
+      LE Set Extended Advertising Data (0x08|0x0037) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Sc.. (0x08|0x0038) plen 4  #133 [hci1] 15.856762
+        Handle: 0x00
+        Operation: Complete scan response data (0x03)
+        Fragment preference: Minimize fragmentation (0x01)
+        Data length: 0x00
+> HCI Event: Command Complete (0x0e) plen 4               #134 [hci1] 15.857216
+      LE Set Extended Scan Response Data (0x08|0x0038) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Extended Ad.. (0x08|0x0039) plen 6  #135 [hci1] 15.876751
+        Extended advertising: Enabled (0x01)
+        Number of sets: 1 (0x01)
+        Entry 0
+          Handle: 0x00
+          Duration: 0 ms (0x00)
+          Max ext adv events: 0
+> HCI Event: Command Complete (0x0e) plen 4               #136 [hci1] 15.877346
+      LE Set Extended Advertising Enable (0x08|0x0039) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 31                 #137 [hci1] 16.196128
+      LE Enhanced Connection Complete (0x0a)
+        Status: Success (0x00)
+        Handle: 831
+        Role: Peripheral (0x01)
+        Peer address type: Resolved Public (0x02)
+        Peer address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Local resolvable private address: 00:00:00:00:00:00 (Non-Resolvable)
+        Peer resolvable private address: 4E:78:45:2D:A8:89 (Resolvable)
+          Identity type: Public (0x00)
+          Identity: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Connection interval: 87.50 msec (0x0046)
+        Connection latency: 0 (0x0000)
+        Supervision timeout: 20000 msec (0x07d0)
+        Central clock accuracy: 0x01
+> HCI Event: LE Meta Event (0x3e) plen 6                  #138 [hci1] 16.196171
+      LE Advertising Set Terminated (0x12)
+        Status: Success (0x00)
+        Handle: 0
+        Connection handle: 831
+        Number of completed extended advertising events: 0
+< HCI Command: LE Read Remote Use.. (0x08|0x0016) plen 2  #139 [hci1] 16.196900
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Command Status (0x0f) plen 4                 #140 [hci1] 16.197356
+      LE Read Remote Used Features (0x08|0x0016) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 12                 #141 [hci1] 16.459970
+      LE Read Remote Used Features (0x04)
+        Status: Success (0x00)
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Features: 0x2d 0x49 0x00 0xf7 0x67 0xd9 0x00 0x80
+          LE Encryption
+          Extended Reject Indication
+          Peripheral-initiated Features Exchange
+          LE Data Packet Length Extension
+          LE 2M PHY
+          LE Coded PHY
+          Channel Selection Algorithm #2
+          Periodic Advertising Sync Transfer - Sender
+          Periodic Advertising Sync Transfer - Recipient
+          Sleep Clock Accuracy Updates
+          Connected Isochronous Stream - Central
+          Connected Isochronous Stream - Peripheral
+          Isochronous Broadcaster
+          Synchronized Receiver
+          Connected Isochronous Stream (Host Support)
+          LE Power Control Request
+          LE Power Control Request
+          Connection Subrating
+          Connection Subrating (Host Support)
+          Unknown features (0x8000d90000000000)
+> HCI Event: LE Meta Event (0x3e) plen 13                 #142 [hci1] 18.997619
+      LE Long Term Key Request (0x05)
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Random number: 0x0000000000000000
+        Encrypted diversifier: 0x0000
+< HCI Command: LE Long Term Key... (0x08|0x001a) plen 18  #143 [hci1] 19.016793
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Long term key: 4a64550696d92a2ed8481b50fb4f43e0
+> HCI Event: Command Complete (0x0e) plen 6               #144 [hci1] 19.017488
+      LE Long Term Key Request Reply (0x08|0x001a) ncmd 1
+        Status: Success (0x00)
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+> HCI Event: Encryption Change (0x08) plen 4              #145 [hci1] 19.434851
+        Status: Success (0x00)
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Encryption: Enabled with AES-CCM (0x01)
+< HCI Command: Disconnect (0x01|0x0006) plen 3            #146 [hci1] 19.916824
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Remote User Terminated Connection (0x13)
+> HCI Event: Command Status (0x0f) plen 4                 #147 [hci1] 19.917424
+      Disconnect (0x01|0x0006) ncmd 1
+        Status: Success (0x00)
+> HCI Event: Disconnect Complete (0x05) plen 4            #148 [hci1] 20.047210
+        Status: Success (0x00)
+        Handle: 831 Address: DF:A9:FF:F6:B1:1A (OUI DF-A9-FF)
+        Reason: Connection Terminated By Local Host (0x16)
+< HCI Command: Reset (0x03|0x0003) plen 0                 #149 [hci1] 26.506879
+> HCI Event: Command Complete (0x0e) plen 4               #150 [hci1] 26.507434
+      Reset (0x03|0x0003) ncmd 1
+        Status: Success (0x00)
+@ USER Close: main                                    {0x0001} [hci1] 26.516807
+= Close Index: 00:00:00:00:00:00                               [hci1] 26.520242
